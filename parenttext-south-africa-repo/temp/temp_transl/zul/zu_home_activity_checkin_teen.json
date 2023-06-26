@@ -1,0 +1,986 @@
+[
+  {
+    "SourceText": "You’re doing great towards your goal, @(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal]).",
+    "text": "Wenza kahle mayelana nenjongo yakho, @(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal]).",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "Were you able to spend 5 minutes of 1-on-1 time with your teen?",
+    "text": "Ingabe ukwazile ukuchitha imizuzu emi-5 nengane yakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Well done for making this commitment.",
+    "text": "Kuyancomeka! Wenze kahle ngokuzibophezela ngalokhu.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and set aside some time in the coming days.",
+    "text": "Kulungile! Zama ukuthola isikhathi ezinsukwini ezizayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Sorry, I don't understand what you mean.",
+    "text": "Ngiyaxolisa, angiqondi ukuthi uthini.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to use the three steps of praise: see it, say it, and repeat it?",
+    "text": "Ukwazile ukusebenzisa izinyathelo ezintathu zokuncoma: kubheke, ukusho bese ukuphindaphinda?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for remembering to praise your teen and other family members!",
+    "text": "Wenze kahle ngokukhumbula ukuncoma ingane yakho kanye namanye amalungu omndeni!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to praise @fields.child_nickname today, even if it’s something small.",
+    "text": "Kulungile! Zama ukuncoma @fields.child_nickname namhlanje, ngisho noma kungaba mayelana nento encane kangakanani.",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "That’s okay! Try to praise your teen today, even if it’s something small.",
+    "text": "Kulungile! Zama ukuncoma ingane yakho namhlanje, ngisho noma kungaba mayelana nento encane kangakanani.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about the six steps to coping with their emotions?",
+    "text": "Ingabe ukwazile ukukhuluma nengane yakho mayelana nezinyathelo eziyisithupha zokubhekana nemizwa yayo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! This will help your teen manage difficult emotions when they happen.",
+    "text": "Wenze kahle! Lokhu kuzosiza ingane yakho ukuthi ikwazi ukubhekana nezinkinga ezimayelana nemizwa yayo uma zibakhona.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to talk to your teen about emotions.",
+    "text": "Kulungile! Zama ukuthola isikhathi namhlanje sokukhuluma nengane yakho mayelana nemizwa yayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to stretch and move yesterday?",
+    "text": "Ukwazile ukuzelula nokuhamba izolo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for taking the time to care for yourself!",
+    "text": "Wenze kahle ngokuzinikeza isikhathi sokuzinakekela!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to stretch.",
+    "text": "Kulungile! Zama ukuthola isikhathi sokuzelula namhlanje.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to spend 1-on-1 time with your teen, listen to their experiences, notice their feelings, and thank them for sharing?",
+    "text": "Ingabe ukwazile ukuba nesikhathi nengane yakho, ukulalela lokho ehlangabezana nakho, ukubona imizwa yayo kanye nokuyibonga ukuthi ikhulumile nawe ngalokhu?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for being open to listening to your teen!",
+    "text": "Wenze kahle ngokulalela ingane yakho!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to listen to your teen today during your 1-on-1 time.",
+    "text": "Kulungile! Zama ukulalela ingane yakho ngesikhathi ninobabili.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to use 1-on-1 time to talk to your teen about their friends?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho ngabangane bayo ngesikhathi ninobabili?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! You are learning so much more about your teen.",
+    "text": "Kuyancomeka! Ufunda okuningi ngengane yakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and use your 1-on-1 time today to talk with your teen about their friends.",
+    "text": "Kulungile! Zama ukukhuluma nengane yakho ngabangane bayo namhlanje ngesikhathi ninobabili.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to complete the development assessment?",
+    "text": "Ingabe ukwazile ukuphothula ukuhlola mayelana nokukhula kwayo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great!",
+    "text": "Kuhle!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to complete the assessment this week. You can type GROW at any time to begin.",
+    "text": "Kulungile! Zama ukuphothula lokhu kuhlola kuleli sonto. Ungathayipha igama elithi KHULA noma nini ukuze uqale.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to invite your teen to take a break from their homework and do something active?",
+    "text": "Ingabe ukwazile yini ukutshela ingane yakho ukuthi ike ithi ukuyiyeka kancane i-homework yayo ukuze yenze okuthile okunyakazisa umzimba wayo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Taking a break can help your teen refocus and continue working on their school work. We all need a break sometime!",
+    "text": "Wenze kahle! Ukuthatha ikhefu kusiza ukuthi ingane yakho ikwazi ukupholisa ingqondo ukuze ikwazi ukuqhubeka nomsebenzi wayo wesikole. Sonke siyadinga ukuthatha ikhefu ngezinye izikhathi! ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Next time your teen is doing homework, try and do something active and fun together!",
+    "text": "Kulungile! Ngokuzayo uma ingane yakho yenza i-homework, zama ukuthi nenze isimo sibe mnandi ngokwenza okuthile okuzoninyakazisisa umzimba!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to support your teen with their school work by setting their goals?",
+    "text": "Ingabe ukwazile ukusiza ingane yakho ngomsebenzi wayo wesikole ngokuyibekela izinjongo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! This is one goal you can be proud of!",
+    "text": "Wenza kahle! Le ngenye yezinjongo ongaziqhenya ngayo!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and take a few minutes with your teen to set goals with them. This is a great way to support their learning.",
+    "text": "Kulungile! Zama ukuzinikeza imizuzu embalwa ube nengane yakho ukuze nenze izinjongo ndawonye. Le yindlela enhle yokuyeseka ezifundweni zayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about finding the right study spot?",
+    "text": "Ingabe ukwazile ukukhuluma nengane yakho mayelana nokuthola indawo ekahle yokufunda?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Finding a good place to study will help your teen focus and succeed with their school work.",
+    "text": "Kuyancomeka! Ukuthola indawo enhle yokufundela kuzosiza ingane yakho ukuthi ingaphazamiseki futhi iphumelele nasezifundweni zayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to help your teen find a good study spot today. This will help their learning.",
+    "text": "Kulungile! Zma ukusiza ingane yakho ukuthi ithole indawo ekahle yokufundela namhlanje. lokhu kuzoyisiza ezifundweni zayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share a story with your teen about a time you learned from a mistake?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho mayelana nesikhathi owafunda ngaso ephutheni lakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Being open is not always easy, well done for doing it anyways!",
+    "text": "Ukuvuleleka komunye umuntu akulula, wenze kahle ngokuthi uvuleleke!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Being open can be difficult, but it’s important. Try and find time to share with your teen.",
+    "text": "Kuyancomeka! Ukuvuleleka komunye umuntu kungaba nzima, kodwa kubalulekile. Zama ukuthola isikhathi sokuvuleleka enganeni yakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to chat with your teen and identify a possible study buddy?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho kanye nokubonisana nayo ngomuntu angastadisha naye?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! Studying with a friend is a great way to learn.",
+    "text": "Kuhle! Ukustadisha nomngane kuyindlela enhle yokufunda.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to chat with your teen and find a study buddy. Studying with friends is a great way to learn.",
+    "text": "Kulungile! Zama ukuthola isikhathi sokuxoxa nengane yakho futhi nithole nomuntu engastadisha naye. Ukustadisha nabangane kuyindlela enhle yokufunda.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to set a routine with your teen?",
+    "text": "Ingabe nikwazile wena nengane yakho ukwenza uhlelo okumele lulandelwe njalo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Setting routines with your teen will help provide structure in their lives.",
+    "text": "Kuyancomeka! Uma wena nengane yakho nenza uhlelo okumele lulandelwe njalo kuzosiza ingane yakho ukuthi ikwazi ukuhlela impilo yayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to set a routine with your teen. It's a great way for your teen to feel secure and safe.",
+    "text": "Kulungile! Zama ukuthola isikhathi sokuthi wena nengane yakho nenze uhlelo okumele lulandelwe njalo. Kuyindlela enhle kakhulu eyenza ukuthi ingane yakho izizwe ivikelekile futhi iphephile.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to create a family rule with your teen?",
+    "text": "Ingabe wena nengane yakho nikwazile ukwenza umthetho ozolandelwa wumndeni?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Involving your teen in creating family rules will make it more likely that they follow them in the future.",
+    "text": "Wenze kahle! Uma uhlanganyela nengane yakho ekwenzeni imithetho okumele ilandelwe wumndeni kuzokwenza ukuthi ikwazi ukuyilandela esikhathini esizayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and set up a rule with your teen in the next few days. It will make it more likely that they follow them in the future.!",
+    "text": "Kulungile! Zama ukuthi wena nengane yakho nenze umthetho ezinsukwini ezimbalwa ezizayo. Lokhu kuzokwenza ukuthi ingane yakho iwulandele esikhathini esizayo.!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to ask your teen what they do to stay safe online?",
+    "text": "Ingabe ukwazile ukubuza ingane yakho ukuthi izivikela kanjani ku-inthanethi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! It is so important that we are able to protect our children online.",
+    "text": "Kuhle! Kubalulekile ukuthi sikwazi ukuvikela izingane zethu ku-inthanethi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Online safety is really important so try and find some time to chat to your teen about staying safe online.",
+    "text": "Kulungile! Ukuphepha ku-inthanethi kubaluleke ngempela ngakho zama ukuthola isikhathi sokuxoxa nengane yakho mayelana nokuhlala uphephile ku-inthanethi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about their habits to stay safe online?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho mayelana nezindlela zokuhlala uphephile ku-inthanethi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! You are helping your teen learn how to be safe online!",
+    "text": "Wenze kahle! Usiza ingane yakho ukuthi kumele iphephe kanjani ku-inthanethi!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and chat to your teen in the next few days. Safe online habits are important for your teen's safety.",
+    "text": "Kulungile! Zama ukuxoxa nengane yakho ezinsukwini ezimbalwa ezizayo. Kubalulekile ukuthi ingane yakho ibe nezindlela zokuphepha ku-inthanethi ukuze ihlale iphephile.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to discuss your wants and needs with your teen?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho mayelana nalokho okufunayo kanye nalokho okudingayo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! You’re ready for today’s lesson.",
+    "text": "Kuhle! Ususilungele yini isifundo sanamhlanje.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and talk to your family about needs and wants, it’s the first step to building a family budget.",
+    "text": "Kulungile! Zama ukuxoxa nomndeni wakho mayelana nezinto ezidingekayo nalezo ezifunekayo, lokhu kuyisinyathelo sokuqala sokwenza ibhajethi yomndeni.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to discuss your monthly expenses with your teen?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho mayelana nezindleko zakho zanyanga zonke?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! You are making great progress on your family budget!",
+    "text": "Kuyancomeka! Uqhubeka kahle kakhulu mayelana nebhajethi yomndeni wakho!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Talking about your monthly expenses is an important step to family budgeting. Try to complete this step with your family.",
+    "text": "Kulungile! Ukuxoxa ngezindleko zakho zanyanga zonke kuyisinyathelo esibalulekile mayelana nokwenza ibhajethi yomndeni wakho. Zama ukuphothula lesi sinyathelo nomndeni wakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to make a monthly budget with your teen?",
+    "text": "Ingabe ukwazile wena nengane yakho ukwenza ibhajethi yanyanga zonke?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Making a monthly budget will set your family up for success!",
+    "text": "Wenze kahle! Ukwenza ibhajethi yanyanga zonke kuzokwenza ukuthi umndeni wakho ube wumndeni ophumelelayo!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Completing a monthly budget will set your family up for success. Try to find time to complete this activity.",
+    "text": "Kulungile! Ukwenza ibhajethi yanyanga zonke kuzokwenza ukuthi umndeni wakho ube wumndeni ophumelelayo. Zama ukuthola isikhathi sokwenza lo msebenzi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to create a saving plan with your teen?",
+    "text": "Ingabe ukwazile yini wena nengane yakho ukwenza uhlelo lokulondoloza imali?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! You have completed all the steps for creating a family budget.",
+    "text": "Kuyancomeka! Usuzenze zonke izinyathelo zokwenza ibhajethi yomndeni.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to make a saving plan with your family.",
+    "text": "Kulungile! Zama ukuthola isikhathi sokwenza uhlelo lokulondoloza imali nomndeni wakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to practise self-care yesterday?",
+    "text": "Ukwazile ukwenza izinto zokuzinakekela izolo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for taking the time to be kind to yourself!",
+    "text": "Wenze kahle ngokuzinikeza izikhathi sokuzinakekela!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to practise self-care.",
+    "text": "Kulungile! Zama ukuzinikeza isikhathi sokuzinakekela namhlanje.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about what makes them stressed?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho mayelana nezinto eziyibangela i-stress?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Knowing what stresses your teen can help you and your teen work on reducing these and strengthen their wellbeing.",
+    "text": "Wenze kahle! Ukwazi ngezinto ezibangela ingane yakho i-stress kungasiza ekutheni wena nengane yakho nisebenzisane ekunciphiseni lezi zinto nasekuqiniseni inhlalakahle yayo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to talk to your teen about what stresses them. This is important information so that you can help.",
+    "text": "Kulungile! Zama ukuxoxa nengane yakho ngezinto eziyibangela i-stress. Kubalulekile ukuba nalolu lwazi ukuze ukwazi ukuyisiza.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to go through the kindness tips together?",
+    "text": "Ingabe wena nengane yakho nikwazile yini ukukhuluma ngamasu aqondene nokulunga?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Showing your teen kindness will keep your relationship strong and positive!",
+    "text": "Wenze kahle! Uma ukhombisa ingane yakho umusa ubudlelwane benu buzohlala buqinile futhi bubuhle!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to go through the kindness tips together.",
+    "text": "Kulungile! Zama ukuthola isikhathi namhlanje sokuthi wena nengane yakho nixoxe ngamasu amaqondana nokulunga.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "You can always access the kindness tips again in the main menu. Type MENU to access the library.",
+    "text": "Uyakwazi ukuwathola futhi lawa masu amaqondana nokulunga kumenyu omkhulu. Thayipha MENYU ukuze ukwazi ukungena e-library.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about the different sources of support in your community?",
+    "text": "Ingabe ukwazile yini ukuxoxa nengane yakho mayelana nezindawo kanye nezinhlelo okuhlukahlukene kokweseka emphakathini wakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! This will be helpful whenever you and your teen need to find support in the community. Well done for doing this important work!",
+    "text": "Kuhle! Lokhu kuzonisiza lapho wena nengane yakho nidinga ukwesekwa emphakathini wakho. Wenze kahle ngokwenza lo msebenzi obalulekile!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to speak to your teen about what support is available in your community. Feeling supported is important when you are going through a difficult time.",
+    "text": "Kulungile! Zama ukuthola isikhathi sokuxoxa nengane yakho mayelana nezinhlelo zokweseka ezikhona emphakathini wakho. Kubalulekile ukuzizwa wesekiwe uma usesikhathini esinzima.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to find time to do an activity that brings you joy?",
+    "text": "Ingabe ukwazile ukuthola isikhathi sokwenza umsebenzi othokozisayo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Doing things that make you happy is a great way to take care of yourself.",
+    "text": "Wenze kahle! Ukwenza izinto ezikwenza uzizwe ujabule kuyindlela yokuzinakekela.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! If you have time today, try and do an activity that brings you joy",
+    "text": "Kulungile! Uma uthola isikhathi namhlanje, zama ukwenza into ekwenza ujabule",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share the four steps of managing your teen's behaviour with a family member?",
+    "text": "Ingabe ukwazile ukuxoxa nelungu lomndeni mayelana nezinyathelo ezine zokulawula indlela yokuziphatha kwengane yakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Sharing these tips is great for everyone’s well-being.",
+    "text": "Kuyancomeka! Ukuxoxa ngalawa masu kuyinto enhle kwinhlalakahle yawo wonke umuntu.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try sharing the four steps with a family member today. It helps when everyone is working together.",
+    "text": "Kulungile! Zama ukuxoxa ngezinyathelo ezine nelungu lomndeni namuhla. Kuyasiza uma nonke nisebenzisana.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share the four steps to problem solving with @fields.child_nickname?",
+    "text": "Ingabe ukwazile yini ukuxoxa ne- @fields.child_nickname? ngezinyathelo ezine zokuxazulula izinkinga?",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "Were you able to share the four steps to problem solving with your teen?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho ngezinyathelo ezine zokuxazulula izinkinga?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! Teaching your teen how to solve problems will set them up for success in life!",
+    "text": "Kuhle! Ukufundisa ingane yakho indlela yokuxazulula izinkinga kuzoyiphumelelisa empilweni!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time today to talk to your teen about the four steps to problem solving: know it, solve it, try it, and test it. This is an important life skill!",
+    "text": "Kulungile! Zama futhi uthole isikhathi namuhla sokukhuluma nengane yakho mayelana nezinyathelo ezine zokuxazulula izinkinga: iyazi, ixazulule, izame, bese uyikuhlola. Leli yikhono elibalulekile empilweni!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to write a list of fair consequences with your teen to use later?",
+    "text": "Ingabe ukwazile yini wena nengane yakho ukubhala uhlu lwemiphumela yokungalandeli imithetho enizolusebenzisa ekuhambeni kwesikhathi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Involving your teen in this activity will make it more likely that they follow family rules and accept consequences when they don’t.",
+    "text": "Wenze kahle! Ukwenza le nto nengane yakho kuzokwenza kube lula kuyo ukuthi ilandele imithetho yomndeni nokufunda emaphutheni ayo uma kwenzeka iphambuka kuyo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time with your teen to write a list of consequences, this will make it more likely that they follow family rules and accept consequences when they don’t.",
+    "text": "Kulungile! Zama futhi uthole isikhathi nengane yakho ukuze nibhale uhlu lwemiphumela yokungayilandeli imithetho, lokhu kuzokwenza kube lula kuyo ukuthi ilandele imithetho yomndeni nokuthi ilamukele iphutha layo uma ingayilandelanga imithetho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to create a community safety map with your teen?",
+    "text": "Ingabe ukwazile yini ukuthi wena nengane yakho nenze ibalazwe elikhombisa izindawo eziphephile nezingaphephile emphakathini?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Remember to revisit the safety map with your teen every now and then to see if things have changed.",
+    "text": "Wenze kahle! Khumbula ukulibheka njalo wena nengane yakho leli balazwe elikhombisa izindawo eziphephile nezingaphephile ukuze nibone uma kukhona okushintshile.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to create a safety map with your teen, this is a great tool to keep them safe.",
+    "text": "Kulungile! Zama futhi uthole isikhathi sokuthi wena nengane yakho nenze ibalazwe elikhombisa izindawo eziphephile nezingaphephile, lokhu kuyindlela enhle kakhulu yokugcina ingane yakho iphephile.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share teach self-defence tips with your teen?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho mayelana namasu okuzivikela?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Self-defence is an important step to keep your teen safe.",
+    "text": "Wenze kahle! Ukuzivikela kuyisinyathelo esibalulekile sokugcina ingane yakho iphephile.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to talk to your teen about the self-defence tips. Self-defence is an important step to keep your teen safe. You can type SAFE at any time to start the lesson over again with your teen.",
+    "text": "Kulungile! Zama futhi uthole isikhathi namuhla sokuxoxa nengane yakho mayelana namasu okuzivikela. Ukuzivikela kuyisinyathelo esibalulekile sokugcina ingane yakho iphephile. Ungathayipha igama elithi PHEPHA nganoma yisiphi isikhathi ukuze ukwazi ukuqala phansi isifundo nengane yakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to go through the sexual violence prevention tips with your teen?",
+    "text": "Ingabe ukwazile ukuxoxa nengane yakho mayelana namasu okuvimbela udlame lwezocansi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you. That was probably not easy. Well done for making the commitment to keep your teen safe from sexual harm.",
+    "text": "Wenze kahle. Siyazi ukuthi bekungelula. Wenze kahle ngokuzibophezela ukugcina ingane yakho iphephile ekulimaleni ngokocansi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to go through the sexual violence prevention tips with your teen. This information can keep your teen safe. You can type PREVENT at any time to start the lesson over again with your teen.",
+    "text": "Kulungile! Zama ukuxoxa nengane yakho mayelana namasu okuvimbela udlame lwezocansi. Lolu lwazi lungagcina ingane yakho iphephile. Ungathayipha igama elithi VIMBELA nganoma yisiphi isikhathi ukuze wena nengane yakho nisiqale phansi isifundo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk with your teen about possible crises that may happen and what to do?",
+    "text": "Ingabe ukwazile yini ukuxoxa nengane yakho mayelana nezinkinga ezingase zenzeke nokuthi yini okufanele uyenze?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! This will help you and @fields.child_nickname be prepared if a crisis ever happens. Good work!",
+    "text": "Wenze kahle! Lokhu kuzokusiza wena kanye ne- @fields.child_ukuba ikwazi ukuzilungiselela uma kuba khona okubi okwenzekayo. Wenze umsebenzi omuhle!",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "Well done! This will help you and your teen be prepared if a crisis ever happens. Good work!",
+    "text": "Wenze kahle! Lokhu kuzosiza wena kanye nengane yakho ukuthi uma kwenzeka kuba nesimo esibi sinithole nisilungele. Wenze umsebenzi omuhle!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time today. As a reminder, for this home activity you should: ",
+    "text": "Kulungile! Zama futhi uthole isikhathi namuhla. Khumbula lokhu, mayelana nalo msebenzi wasekhaya kumele: ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "1️⃣Find a calm time to talk with @fields.child_nickname about possible crises that may happen. ",
+    "text": "1️⃣Uthole isikhathi esithulile sokuxoxa ne- @fields.child_nickname mayelana nesimo esibi esingahle senzeke. ",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "2️⃣Discuss possible actions that you can take with your teen if they happen. ",
+    "text": "2️⃣Xoxa nengane yakho mayelana nezinyathelo ongazithatha uma leso simo esibi senzeka. ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "3️⃣Revisit the Mapping Activity to identify other sources of support in the community. ",
+    "text": "3️⃣Phindela kuloya Msebenzi Wokwenza Ibalazwe ukuze uthole eminye imithombo yosekelo emphakathini. ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "4️⃣Thank your teen for taking the time to chat about this.",
+    "text": "4️⃣Bonga ingane yakho ngokuzinika isikhathi sokuxoxa ngalokhu.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "1️⃣Find a calm time to talk with your teen about possible crises that may happen. ",
+    "text": "1️⃣Thola isikhathi esithulile sokuxoxa nengane yakho mayelana nezimo ezimbi ezingase zenzeke. ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to involve your partner in a decision you made yesterday?",
+    "text": "Ingabe ukwazile ukubandakanya umlingani wakho esinqumweni osenze izolo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for making the effort to do this!!",
+    "text": "Wenze kahle ngokwenza umzamo wokwenza lokhu!!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and involve your partner in a decision you make today! It’s a great feeling to be valued!",
+    "text": "Kulungile! Zama futhi ubandakanye umlingani wakho esinqumweni osenzayo namuhla! Kumnandi ukuzizwa ubalulekile!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to do childcare or housework with your partner?",
+    "text": "Ingabe ukwazile ukunakekela izingane noma ukwenza umsebenzi wasendlini nomlingani wakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Sharing childcare or housework is a great way to support each other.",
+    "text": "Kuyancomeka! Ukusizana ekunakekeleni izingane noma ekwenzeni umsebenzi wasendlini kuyindlela enhle yokwesekana.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and share your childcare or housecare with your partner. It's a great way to support each other.",
+    "text": "Kulungile! Zama futhi usizane nomlingani wakho ekunakekeleni izingane noma ekwenzeni umsebenzi wasendlini. Kuyindlela enhle yokusekelana.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to invite your partner to discuss how you can share family responsibilities?",
+    "text": "Ingabe ukwazile yini ukuxoxa nomlingani wakho mayelana nokusizana ngemisebenzi yasekhaya?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for taking the time to discuss sharing responsibilities with your partner!",
+    "text": "Wenze kahle ngokuzinikeza isikhathi sokuxoxa nomlingani wakho ngokusizana ngemisebenzi!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to share responsibilities with your partner. Sharing responsibilities is an important part of a healthy relationship.",
+    "text": "Kulungile! Zama futhi ukuthola isikhathi sokusizana ngemisebenzi nomlingani wakho. Ukusizana ngemisebenzi kuyingxenye ebalulekile yobudlelwano obuhle.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to practice taking a pause?",
+    "text": "Ingabe ukwazile ukuzijwayeza ukuthatha ikhefu?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Taking a pause is a great skill to use whenever you are stressed!",
+    "text": "Wenze kahle! Ukuhlaba ikhefu kuyikhono elihle ongalisebenzisa noma nini uma uzizwa une-stress!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time today to take a pause, the more you practise the more it will help.",
+    "text": "Kulungile! Zama futhi uthole isikhathi namuhla sokuhlaba ikhefu, kuzokusiza lokhu uma uzijwayeza ukwenza lokhu njalo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to set aside time to talk to your partner about your feelings?",
+    "text": "Ingabe ukwazile yini ukuzinikeza isikhathi sokuxoxa nomlingani wakho mayelana nemizwa yakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Talking to your partner about how you are feeling can be difficult, but it is very important for a healthy relationship.",
+    "text": "Wenze kahle! Ukukhuluma nomlingani wakho ngendlela ozizwa ngayo kungaba nzima, kodwa kubaluleke kakhulu ebudlelwaneni obuhle.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Talking about your feelings can seem scary, but being open and communicating is an important part of a healthy relationship.",
+    "text": "Kulungile! Ukukhuluma ngemizwa yakho kungaba yinto enzima, kodwa ukukhululeka nokuxoxa kuyingxenye ebalulekile yobudlelwano obuhle.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Yes",
+    "text": "Yebo",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "Not yet",
+    "text": "Hhayi okwamanje",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "@(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal])",
+    "text": "@(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal])",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "spend 5 minutes of 1-on-1 time with your teen",
+    "text": "chitha imizuzu emi-5 nengane yakho ninobabili vo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "use the three steps of praise: see it, say it, and repeat it",
+    "text": "ingabe ukwazile ukusebenzisa izinyathelo ezintathu zokuncoma: kubheke, ukusho bese ukuphindaphinda",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about the six steps to coping with their emotions",
+    "text": "xoxa nengane yakho ngezinyathelo eziyisithupha zokubhekana nemizwa yayo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "stretch and move yesterday",
+    "text": "ngizelulile ngahamba izolo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "spend 1-on-1 time with your teen, listen to their experiences, notice their feelings, and thank them for sharing",
+    "text": "chitha isikhathi nengane yakho ninobabili, lalela lokho ehlangabezana nakho, qaphela imizwa yayo, futhi uyibonge ngokuxoxa nawe",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "use 1-on-1 time to talk to your teen about their friends",
+    "text": "sebenzisa isikhathi sakho unengane yakho ninobabili ukuze uxoxe nayo mayelana nezinto ehlangabezana nazo, qaphela imizwa yayo, futhi uyibonge ngokuxoxa nawe",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "complete the development assessment",
+    "text": "qedela ukuhlolwa kokukhula",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "invite your teen to take a break from their homework and do something active",
+    "text": "thana ingane yakho ithathe ikhefu ekwenzeni i-homework yayo bese yenza okuthile okunyakazisa umzimba",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "support your teen with their school work by setting their goals",
+    "text": "yeseka ingane yakho ngomsebenzi wayo wesikole ngokuthi nenze nayo izinjongo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about finding the right study spot",
+    "text": "xoxa nengane yakho mayelana nokuthola indawo ekahle yokufunda",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share a story with your teen about a time you learned from a mistake",
+    "text": "xoxela umntwana wakho indaba mayelana nesikhathi lapho owafunda khona ephutheni owawulenzile",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "chat with your teen and identify a possible study buddy",
+    "text": "xoxa nengane yakho ubonisana nayo ngomuntu engastadisha naye",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "set a routine with your teen",
+    "text": "yenza uhlelo lwanengane yakho uhlelo lwansuku zonke",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "create a family rule with your teen",
+    "text": "yenza umthetho womndeni nengane yakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "ask your teen what they do to stay safe online",
+    "text": "buza ingane yakho ukuthi yini oyenzayo ukuze ihlale iphephile kwi-inthanethi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about their habits to stay safe online",
+    "text": "xoxa nengane yakho mayelana nezindlela zayo zokuhlala iphephile ku-inthanethi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "discuss your wants and needs with your teen",
+    "text": "xoxa nengane yakho mayelana nalokho okufunayo kanye nalokho okudingayo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "discuss your monthly expenses with your teen",
+    "text": "xoxa nengane yakho mayelana nezindleko zakho zanyanga zonke",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "make a monthly budget with your teen",
+    "text": "yenza ibhajethi yanyanga zonke nengane yakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "create a saving plan with your teen",
+    "text": "yenza uhlelo lokonga nengane yakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "practise self-care yesterday",
+    "text": "zijwayeze ukuzinakekela izolo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about what makes them stressed",
+    "text": "xoxa nengane yakho mayelana nezinto eziyibangela i-stress",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "go through the kindness tips together",
+    "text": "bhekani uhlu lwamasu okulunga nindawonye",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about the different sources of support in your community",
+    "text": "xoxa nengane yakho mayelana nezindawo kanye nezinhlelo okuhlukahlukene kokweseka emphakathini wakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "find time to do an activity that brings you joy",
+    "text": "thola isikhathi sokwenza into ekuthokozisayo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share the four steps of managing your teen's behaviour with a family member",
+    "text": "xoxa nelungu lomndeni mayelana nezinyathelo ezine zokukhombisa ingane yakho indlela yokuziphatha",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share the four steps to problem solving with Your Teen",
+    "text": "xoxa Nengane Yakho ngezinyathelo ezine zokuxazulula izinkinga",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "write a list of fair consequences with your teen to use later",
+    "text": "bhala uhlu lwemiphumela efanelekile yokungalandeli imithetho enizolusebenzisa ekuhambeni kwesikhathi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "create a community safety map with your teen",
+    "text": "yenzani imephu yokuphepha emphakathini nengane yakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share teach self-defence tips with your teen",
+    "text": "xoxa nengane yakho mayelana namasu okuzivikela",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "go through the sexual violence prevention tips with your teen",
+    "text": "bhekisanani nengane yakho amasu okuvimbela udlame lwezocansi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk with your teen about possible crises that may happen and what to do",
+    "text": "xoxa nengane yakho mayelana nezinkinga ezingase zenzeke nokuthi yini okufanele yenziwe",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "involve your partner in a decision you made yesterday",
+    "text": "bandakanya umlingani wakho esinqumweni osenze izolo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "do childcare or housework with your partner",
+    "text": "yenza umsebenzi wokunakekela ingane noma umsebenzi wasendlini ngokusizana nomlingani wakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "invite your partner to discuss how you can share family responsibilities",
+    "text": "xoxa nomlingani wakho mayelana nendlela yokusizana ngemisebenzi yasekhaya",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "practice taking a pause",
+    "text": "zijwayeze ukuthatha ikhefu",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "set aside time to talk to your partner about your feelings",
+    "text": "zinikeza isikhathi sokuxoxa nomlingani wakho mayelana nemizwa yakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "yes",
+    "text": "Yebo",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "not yet",
+    "text": "hhayi okwamanje",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  }
+]

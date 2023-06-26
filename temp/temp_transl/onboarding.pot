@@ -1,0 +1,548 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+#. type=text
+msgctxt "text"
+msgid "Before we get started, we need to test your device. What image do you see here: 😀"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, I don't understand what you mean."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "How would you like to receive your messages?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Are you a WOMAN or MAN?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "What is your relationship status?"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "Is @fields.child_nickname a girl or a boy?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Is your child a girl or a boy?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "What is your child's name?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Welcome to ParentText, your partner in parenting. Please select your language: "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Please select your language:"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "ParentText will help you with all of the children in your life, but in this programme, we are focusing on just one child at a time. How many years old is the child you are focused on?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Please reply with a number between 0 and 17."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "This looks too old. ParentText is only for children aged 0-17."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, I don't understand what you mean. Please reply with a number between 0 and 17."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "How many years old is the child you are focused on?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "This programme works! Did you know that over 200 million parents around the world have used our resources developed by Parenting for Lifelong Health, WHO, and UNICEF?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅Participating in ParentText is optional. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅Your personal information is safe and private. Your name and information will not be public, but your responses will be kept and used by researchers to learn how to support families like yours.  They plan to publish the results. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "❌You can stop when you want. Just type “STOP”"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "❓If you have questions, ask Dr. Jamie Lachman at jamie.lachman@spi.ox.ac.uk; +44(7)840825892"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Click here for more information:"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "https://covid19parenting.com/assets/consents/eng.pdf"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Press YES if you agree with this. Type \"EXIT\" if you do not want to participate. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That is wonderful, thank you so much! "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "I am sorry I did not understand. Press YES if you agree with this. Type \"EXIT\" if you do not want to participate."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Can you please confirm that you are 18 years old or older?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Great! Let's begin."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Are you sure you do not want to get these messages? If you do not want to receive any more messages, please type \"STOP.\" If you made a mistake, please press BACK and choose another option."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "If you ever return to participate in the programme, type \"START_MESSAGES\". "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "We hope to see you again soon, and we wish you a happy and peaceful day! "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, ParentText is only for people over the age of 18. Do you confirm that you are under the age of 18?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "If you want to experience ParentText, you can always share it with your parents or caregivers."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Here is a video that shows how to use ParentText."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "When was @fields.child_nickname born? Enter their date of birth in the following format: DD/MM/YYYY. For example, if your child was born on May 19, 2010, enter 19/05/2010."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "When was your child born? Enter their date of birth in the following format: DD/MM/YYYY. For example, if your child was born on May 19, 2010, enter 19/05/2010."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, this date is invalid. Please provide your child's date of birth in the following format: DD/MM/YYYY. For example, if your child was born on May 19, 2010, enter 19/05/2010."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "The date you entered is in the future. Please provide your child's date of birth in the following format: DD/MM/YYYY. For example, if your child was born on May 19, 2010, enter 19/05/2010."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Let's try again. Please provide your child's date of birth in the following format: DD/MM/YYYY. For example, if your child was born on May 19, 2010, enter 19/05/2010."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "@fields.child_nickname is @(datetime_diff(results.date,now(),\"M\")) month old. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Is that correct?"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "your baby is @(datetime_diff(results.date,now(),\"M\")) month old. "
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "@fields.child_nickname is @(round_down(datetime_diff(results.date,now(),\"M\")/12)) years old. Is that correct?"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "your child is @(round_down(datetime_diff(results.date,now(),\"M\")/12)) years old. Is that correct?"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "@fields.child_nickname is @(round_down(datetime_diff(results.date,now(),\"M\")/12)) years old.  Is that correct?"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "your child is @(round_down(datetime_diff(results.date,now(),\"M\")/12)) years old.  Is that correct?"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "According to the date you provided, @fields.child_nickname would be @(round_down(datetime_diff(results.date,now(),\"M\")/12)) years old. ParentText is only for children aged 0-17. Please enter a valid date for your child's birth in the following format: DD/MM/YYYY. For example, if your child was born on May 19, 2010, enter 19/05/2010."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "According to the date you provided, your child would be @(round_down(datetime_diff(results.date,now(),\"M\")/12)) years old. ParentText is only for children aged 0-17. Please enter a valid date for your child's birth in the following format: DD/MM/YYYY. For example, if your child was born on May 19, 2010, enter 19/05/2010."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "ParentText will help you with all of the children in your life, but in this programme, we are focusing on just one child at a time."
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "A happy face"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "A square"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Something else"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Star (text, images, audio, video)"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Boosted (text, images, audio)"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Core (text and images)"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Woman"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Man"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Prefet not to say"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Single (not in a relationship)"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Married"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Partnered but not married"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Divorced or separated"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Widowed"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Girl"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Boy"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "English"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "YES"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Yes, I am over 18"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "No, I am under 18"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "BACK"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Yes"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "No"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "a happy face"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "a square"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "something else"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "star (text, images, audio, video)"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "boosted (text, images, audio)"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "core (text and images)"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "woman"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "man"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "prefet not to say"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "single (not in a relationship)"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "married"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "partnered but not married"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "divorced or separated"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "widowed"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "girl"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "boy"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "english"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "yes y"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "exit"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "yes y over"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "no n under"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "stop messages"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "back"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "no n"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "yes y yeah yep"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "no n nope"
+msgstr ""

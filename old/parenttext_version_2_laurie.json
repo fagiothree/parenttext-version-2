@@ -1,0 +1,3607 @@
+{
+    "campaigns": [],
+    "fields": [],
+    "flows": [
+        {
+            "uuid": "9390f7bf-e03c-4413-8fdc-89b742c15216",
+            "name": "module - take_a_pause",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "cb46f8cb-8165-4030-8110-5986451989be",
+                    "exits": [
+                        {
+                            "destination_uuid": "c58e68a8-5ec1-48c1-9f72-6da9a9ea8509",
+                            "uuid": "d71e8278-12ea-4e7e-a33c-ecf800d78de0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "4c3804b2-4e03-4803-8a05-e8e9373dc6d0",
+                            "type": "send_msg",
+                            "text": "Today's skill is about Managing Stress \ud83d\udc9a Take a Pause whenever you are feeling angry, overwhelmed, stressed or worried.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c58e68a8-5ec1-48c1-9f72-6da9a9ea8509",
+                    "exits": [
+                        {
+                            "destination_uuid": "3ec0c104-1c06-474a-b806-63a57f61edf5",
+                            "uuid": "78dc357c-113d-4ee1-8e1c-d2cac222593b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ce52d51f-0dcd-474b-9a9f-0b682c33f9d2",
+                            "type": "send_msg",
+                            "text": "This can help when you are upset with your teen or when they have done something wrong. \ud83d\ude23 Staying calm makes you feel better, and lets you build positive relationships and take care of others\ud83c\udf31",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3ec0c104-1c06-474a-b806-63a57f61edf5",
+                    "exits": [
+                        {
+                            "destination_uuid": "05073c3b-4071-4e1a-a67d-5da0fbeb72fd",
+                            "uuid": "38d71891-7079-4f5b-bbc5-a0e48df252a7"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "65ac6a09-2775-4d3a-99d4-e45585bd5568",
+                            "type": "set_contact_field",
+                            "field": {
+                                "key": "bugfix",
+                                "name": "bugfix"
+                            },
+                            "value": "x"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "05073c3b-4071-4e1a-a67d-5da0fbeb72fd",
+                    "exits": [
+                        {
+                            "destination_uuid": "f0bbc367-a252-4217-a8d8-6c0b6a01cc5f",
+                            "uuid": "3dd60543-7048-4d24-b7ff-1e66053edb66"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8efc8962-c095-4ce0-8248-5768e8866cdd",
+                            "type": "send_msg",
+                            "text": "Here is a comic to remind you of Taking a Pause!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f0bbc367-a252-4217-a8d8-6c0b6a01cc5f",
+                    "exits": [
+                        {
+                            "destination_uuid": "0d05c4bb-919f-4916-b0ac-9b372e3e777d",
+                            "uuid": "da7662ae-c49f-456a-86d5-82de1660bf52"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "90ffe139-ec55-4d9e-a862-0d4f83cde529",
+                            "type": "send_msg",
+                            "text": "\u201cHow am I going to get through this?\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"managing_stress_comic_1.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0d05c4bb-919f-4916-b0ac-9b372e3e777d",
+                    "exits": [
+                        {
+                            "destination_uuid": "ea14b0e5-8ef9-4a7e-a4f5-995398eddf73",
+                            "uuid": "62d98eac-c1cc-4009-b30f-d5823641ae16"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "51ba551a-b7ff-4770-9aee-794ef5441752",
+                                "name": "Other",
+                                "exit_uuid": "62d98eac-c1cc-4009-b30f-d5823641ae16"
+                            }
+                        ],
+                        "default_category_uuid": "51ba551a-b7ff-4770-9aee-794ef5441752",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "ea14b0e5-8ef9-4a7e-a4f5-995398eddf73",
+                    "exits": [
+                        {
+                            "destination_uuid": "4f06c0f4-0983-4570-b9b0-68df7778b6d1",
+                            "uuid": "33dca84f-bfd7-4826-9808-e29a67a6dba7"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b729be91-8343-41f9-b8b4-988693998168",
+                            "type": "send_msg",
+                            "text": "\u201cWhatever it is, I am OK.\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"managing_stress_comic_2.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4f06c0f4-0983-4570-b9b0-68df7778b6d1",
+                    "exits": [
+                        {
+                            "destination_uuid": "22cde159-8e1b-4d65-bb63-3e744b4a2026",
+                            "uuid": "a7be95db-c07e-46f9-842d-7e67721d02b6"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "4837c847-e048-4beb-b019-ade7db9a83e2",
+                                "name": "Other",
+                                "exit_uuid": "a7be95db-c07e-46f9-842d-7e67721d02b6"
+                            }
+                        ],
+                        "default_category_uuid": "4837c847-e048-4beb-b019-ade7db9a83e2",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "22cde159-8e1b-4d65-bb63-3e744b4a2026",
+                    "exits": [
+                        {
+                            "destination_uuid": "4615c3ae-2416-4f90-8060-a9ede9a3cfdb",
+                            "uuid": "d1202436-5c0a-4229-8758-0bfe51019178"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3312df87-b5a8-4b22-a422-344cc66ceb6f",
+                            "type": "send_msg",
+                            "text": "\u201cBreathe in. Breathe out.\"",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"managing_stress_comic_3.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4615c3ae-2416-4f90-8060-a9ede9a3cfdb",
+                    "exits": [
+                        {
+                            "destination_uuid": "2a7c3f19-a344-44ad-bc36-ed0a7237ec07",
+                            "uuid": "84014bb7-7e1d-49ac-bd7a-6440b462097f"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "15d24f22-8a2b-49dc-9097-76971a6bbd5b",
+                                "name": "Other",
+                                "exit_uuid": "84014bb7-7e1d-49ac-bd7a-6440b462097f"
+                            }
+                        ],
+                        "default_category_uuid": "15d24f22-8a2b-49dc-9097-76971a6bbd5b",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "2a7c3f19-a344-44ad-bc36-ed0a7237ec07",
+                    "exits": [
+                        {
+                            "destination_uuid": "11c84f17-94e3-4c33-b091-a06a816421dc",
+                            "uuid": "c2be09b8-2170-45cc-9f5c-548a0b20bf65"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "0bfab913-5e97-481e-8edd-8b5bcefaea70",
+                            "type": "send_msg",
+                            "text": "\u201cI can do this. We will get through it together.\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"managing_stress_comic_4.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "11c84f17-94e3-4c33-b091-a06a816421dc",
+                    "exits": [
+                        {
+                            "destination_uuid": "03571b64-75f1-4de8-8769-ca42f2826d85",
+                            "uuid": "f1ed8321-0ba2-497d-8b85-dea37ae2ba66"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "1b5fe079-6b3a-4a25-981f-9201b3ce159a",
+                                "name": "Other",
+                                "exit_uuid": "f1ed8321-0ba2-497d-8b85-dea37ae2ba66"
+                            }
+                        ],
+                        "default_category_uuid": "1b5fe079-6b3a-4a25-981f-9201b3ce159a",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "03571b64-75f1-4de8-8769-ca42f2826d85",
+                    "exits": [
+                        {
+                            "destination_uuid": "d629003d-6cf5-426b-9e63-af33b5f790c4",
+                            "uuid": "335fc937-858b-4cde-9d4f-868fb2b1f7e8"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "45514585-2ea9-4b45-a1fd-3eb47a661c69",
+                            "type": "send_msg",
+                            "text": "\u2705\u2b1c\ufe0f\u2b1c\ufe0f\n\nYou\u2019ve completed 33% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_1_3.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d629003d-6cf5-426b-9e63-af33b5f790c4",
+                    "exits": [
+                        {
+                            "destination_uuid": "d5fbebc9-efa1-4c15-a390-790062e8f317",
+                            "uuid": "d103f630-e0c7-4ef0-ba41-aff649eea5c9"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "7182ffde-18f8-4720-9d09-dbe4f4bb6ece",
+                                "name": "Other",
+                                "exit_uuid": "d103f630-e0c7-4ef0-ba41-aff649eea5c9"
+                            }
+                        ],
+                        "default_category_uuid": "7182ffde-18f8-4720-9d09-dbe4f4bb6ece",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "d5fbebc9-efa1-4c15-a390-790062e8f317",
+                    "exits": [
+                        {
+                            "destination_uuid": "993e29b4-3ce5-4ff6-a60a-9d42bbdb6b4f",
+                            "uuid": "290bdb98-e1fe-450b-add5-1cc5e13d76fa"
+                        },
+                        {
+                            "destination_uuid": "158fc952-ebb8-477c-89f9-df7ad4ed87ad",
+                            "uuid": "35c137ac-1ead-4a92-a34f-1f7001c73255"
+                        },
+                        {
+                            "destination_uuid": "0fa091af-ab57-4d57-a2fa-30fcaf77c3ae",
+                            "uuid": "ce2f64a7-8ef5-4246-93e3-30a7544ee194"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.type_of_media",
+                        "cases": [
+                            {
+                                "uuid": "c04bf1a5-9ffa-4c1f-a76a-702c09868409",
+                                "type": "has_any_word",
+                                "category_uuid": "31988465-c5ab-4522-9990-7861f06643f3",
+                                "arguments": [
+                                    "high"
+                                ]
+                            },
+                            {
+                                "uuid": "0f7e3781-8a68-4dcd-8d12-9ba4a57735e4",
+                                "type": "has_any_word",
+                                "category_uuid": "9bbe2788-ed0d-4af9-91bd-766a28848cb4",
+                                "arguments": [
+                                    "medium"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "31988465-c5ab-4522-9990-7861f06643f3",
+                                "name": "High",
+                                "exit_uuid": "290bdb98-e1fe-450b-add5-1cc5e13d76fa"
+                            },
+                            {
+                                "uuid": "9bbe2788-ed0d-4af9-91bd-766a28848cb4",
+                                "name": "Medium",
+                                "exit_uuid": "35c137ac-1ead-4a92-a34f-1f7001c73255"
+                            },
+                            {
+                                "uuid": "593ed793-b089-4b88-b066-ac477f1696da",
+                                "name": "Other",
+                                "exit_uuid": "ce2f64a7-8ef5-4246-93e3-30a7544ee194"
+                            }
+                        ],
+                        "default_category_uuid": "593ed793-b089-4b88-b066-ac477f1696da",
+                        "result_name": "media"
+                    }
+                },
+                {
+                    "uuid": "993e29b4-3ce5-4ff6-a60a-9d42bbdb6b4f",
+                    "exits": [
+                        {
+                            "destination_uuid": "b5ab0912-8883-497d-9a0d-2a2d13ecb38e",
+                            "uuid": "1165f071-c217-4151-ba27-48cac301a800"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8b0738d2-f720-42c3-af68-91f06bfd5ce1",
+                            "type": "send_msg",
+                            "text": "Here is a video to help you through Taking a Pause!",
+                            "attachments": [
+                                "video:@(fields.voiceover_video_path & \"Keep_Calm_And_Manage_Stress_Including_Take_A_Pause.m4v\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "b5ab0912-8883-497d-9a0d-2a2d13ecb38e",
+                    "exits": [
+                        {
+                            "destination_uuid": "154abc9b-e4c4-4d57-897c-748f0ca37023",
+                            "uuid": "c49b4eba-d975-4956-8a1b-50d8489107bd"
+                        },
+                        {
+                            "destination_uuid": "154abc9b-e4c4-4d57-897c-748f0ca37023",
+                            "uuid": "6bc98652-b6ac-477c-9863-8e321ebffb8a"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "db1f84b1-cba3-4643-b59d-4e92f3155494",
+                                "name": "Other",
+                                "exit_uuid": "c49b4eba-d975-4956-8a1b-50d8489107bd"
+                            },
+                            {
+                                "uuid": "e2ca3067-2ea1-4778-8007-59aa81f01d09",
+                                "name": "No Response",
+                                "exit_uuid": "6bc98652-b6ac-477c-9863-8e321ebffb8a"
+                            }
+                        ],
+                        "default_category_uuid": "db1f84b1-cba3-4643-b59d-4e92f3155494",
+                        "wait": {
+                            "type": "msg",
+                            "timeout": {
+                                "seconds": 2,
+                                "category_uuid": "e2ca3067-2ea1-4778-8007-59aa81f01d09"
+                            }
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "158fc952-ebb8-477c-89f9-df7ad4ed87ad",
+                    "exits": [
+                        {
+                            "destination_uuid": "a76a8b7a-24c1-4a58-acea-11ceeda42ab8",
+                            "uuid": "b52c3026-23fe-4d0a-beca-9f47e56e7569"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b10a45d7-5d14-49fc-b603-df648b1f493f",
+                            "type": "send_msg",
+                            "text": "Here's an audio message to help you through Taking a Pause! \ud83c\udf37",
+                            "attachments": [
+                                "audio:@(fields.voiceover_audio_path & \"take_a_pause.mp3\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "a76a8b7a-24c1-4a58-acea-11ceeda42ab8",
+                    "exits": [
+                        {
+                            "destination_uuid": "0fa091af-ab57-4d57-a2fa-30fcaf77c3ae",
+                            "uuid": "de6befba-e270-4f18-ba46-f5faadd5ce72"
+                        },
+                        {
+                            "destination_uuid": "0fa091af-ab57-4d57-a2fa-30fcaf77c3ae",
+                            "uuid": "cc8afa19-49af-454f-9745-4cda0cd0ad6a"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "52972f0a-7796-402a-b28f-69853cad6648",
+                                "name": "Other",
+                                "exit_uuid": "de6befba-e270-4f18-ba46-f5faadd5ce72"
+                            },
+                            {
+                                "uuid": "c798704d-5e68-48ec-8828-6f3386528bdd",
+                                "name": "No Response",
+                                "exit_uuid": "cc8afa19-49af-454f-9745-4cda0cd0ad6a"
+                            }
+                        ],
+                        "default_category_uuid": "52972f0a-7796-402a-b28f-69853cad6648",
+                        "wait": {
+                            "type": "msg",
+                            "timeout": {
+                                "seconds": 2,
+                                "category_uuid": "c798704d-5e68-48ec-8828-6f3386528bdd"
+                            }
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "0fa091af-ab57-4d57-a2fa-30fcaf77c3ae",
+                    "exits": [
+                        {
+                            "destination_uuid": "51cd159a-504c-418f-9911-93d2ee4e6001",
+                            "uuid": "e8fcdcec-25ad-443a-8670-0a72f21c1e58"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b1a5af71-32d7-462c-a05f-6e902bf072de",
+                            "type": "send_msg",
+                            "text": "Does this skill sound helpful? Let\u2019s practise Taking a Pause together!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "51cd159a-504c-418f-9911-93d2ee4e6001",
+                    "exits": [
+                        {
+                            "destination_uuid": "8ac0b5dd-1c79-4782-8ee4-c32fd1f043a7",
+                            "uuid": "40d21789-e050-4784-841f-4aab68f590b0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "798e6f30-344c-41a7-b5f5-83692ea97d1f",
+                            "type": "send_msg",
+                            "text": "1\ufe0f\u20e3 **SIT DOWN**\n\u23f8 Find somewhere to sit.\n\n\u2b50 You can close your eyes if you\u2019d like.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "8ac0b5dd-1c79-4782-8ee4-c32fd1f043a7",
+                    "exits": [
+                        {
+                            "destination_uuid": "d97ebac8-532d-4b71-aaea-cfc995b6c468",
+                            "uuid": "adc5d3a9-7cc7-429c-b69b-587b812feac3"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "f421b6f5-4352-4f08-9b97-1d483df93c5e",
+                                "name": "Other",
+                                "exit_uuid": "adc5d3a9-7cc7-429c-b69b-587b812feac3"
+                            }
+                        ],
+                        "default_category_uuid": "f421b6f5-4352-4f08-9b97-1d483df93c5e",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "d97ebac8-532d-4b71-aaea-cfc995b6c468",
+                    "exits": [
+                        {
+                            "destination_uuid": "d792fd78-0224-423c-809d-6660b4eb80f7",
+                            "uuid": "b1087c1f-23b1-4660-8a34-ea3dc1a590f1"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "34cc5044-5396-4f90-b20f-807d4e43b2ce",
+                            "type": "send_msg",
+                            "text": "2\ufe0f\u20e3 **LISTEN**\n\ud83c\udf31 Take a deep breath.\n\ud83d\udc42 Listen to the air flowing in and out.\n\ud83d\udd04 Repeat this 5 times.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d792fd78-0224-423c-809d-6660b4eb80f7",
+                    "exits": [
+                        {
+                            "destination_uuid": "439db0b8-d7e8-43ed-996f-0f8c58332b9e",
+                            "uuid": "0edfe9e7-ccf2-4881-b924-ce1b897bfe8b"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "6fe4c42c-3e41-4b10-8e66-4f7475b6a3a9",
+                                "name": "Other",
+                                "exit_uuid": "0edfe9e7-ccf2-4881-b924-ce1b897bfe8b"
+                            }
+                        ],
+                        "default_category_uuid": "6fe4c42c-3e41-4b10-8e66-4f7475b6a3a9",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "439db0b8-d7e8-43ed-996f-0f8c58332b9e",
+                    "exits": [
+                        {
+                            "destination_uuid": "0b1afd93-d5e5-4977-b0f2-c73de1e97b0e",
+                            "uuid": "c3b495b2-c2b0-4105-a3df-57981f8e85ba"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9a0b6651-017d-4cee-8a90-0f4190cc983d",
+                            "type": "send_msg",
+                            "text": "3\ufe0f\u20e3 **NOTICE**\n\u2728 Notice how your body feels while you breathe.\n\ud83d\udd35 Notice if you feel calmer.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0b1afd93-d5e5-4977-b0f2-c73de1e97b0e",
+                    "exits": [
+                        {
+                            "destination_uuid": "1b8c269b-2172-471e-8258-548f2965ac1e",
+                            "uuid": "1658d6ec-0ab4-4386-8a55-57abc9a7230c"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "faa3a3db-a8a1-4a48-a58c-1adc7b05195c",
+                                "name": "Other",
+                                "exit_uuid": "1658d6ec-0ab4-4386-8a55-57abc9a7230c"
+                            }
+                        ],
+                        "default_category_uuid": "faa3a3db-a8a1-4a48-a58c-1adc7b05195c",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "1b8c269b-2172-471e-8258-548f2965ac1e",
+                    "exits": [
+                        {
+                            "destination_uuid": "835cdf13-b554-4748-90bd-8b648966d45a",
+                            "uuid": "efef1c75-efd2-4cd0-9e0d-228cda0f241a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9acc67f9-d52e-4c5f-8575-350370e7765d",
+                            "type": "send_msg",
+                            "text": "4\ufe0f\u20e3 **OPEN YOUR EYES**\n\n\ud83d\udc40 When you are ready, open your eyes.\n\n\ud83d\udd11 Now you can handle stressful moments more calmly.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "835cdf13-b554-4748-90bd-8b648966d45a",
+                    "exits": [
+                        {
+                            "destination_uuid": "154abc9b-e4c4-4d57-897c-748f0ca37023",
+                            "uuid": "38c28a5e-f302-42be-bc87-95cdaf997528"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "4be862bd-994b-4dc7-b914-960a39078692",
+                                "name": "Other",
+                                "exit_uuid": "38c28a5e-f302-42be-bc87-95cdaf997528"
+                            }
+                        ],
+                        "default_category_uuid": "4be862bd-994b-4dc7-b914-960a39078692",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "154abc9b-e4c4-4d57-897c-748f0ca37023",
+                    "exits": [
+                        {
+                            "destination_uuid": "a99506f7-c21b-4817-bb49-93a843ef57d5",
+                            "uuid": "5f82278e-4935-460b-bb51-a4691532d82a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ede2b790-1a0b-49f4-b383-e3a3f7afe661",
+                            "type": "send_msg",
+                            "text": "\u2705\u2705\u2b1c\ufe0f\n\nYou\u2019ve completed 66% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_2_3.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "a99506f7-c21b-4817-bb49-93a843ef57d5",
+                    "exits": [
+                        {
+                            "destination_uuid": "1ce62265-47d1-49b3-b4f2-9253d1d4024d",
+                            "uuid": "b36e281a-a6d1-4e9a-bb4c-acbdc17c2530"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "113a9bf0-57fe-4336-bf67-3433c0385416",
+                                "name": "Other",
+                                "exit_uuid": "b36e281a-a6d1-4e9a-bb4c-acbdc17c2530"
+                            }
+                        ],
+                        "default_category_uuid": "113a9bf0-57fe-4336-bf67-3433c0385416",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "1ce62265-47d1-49b3-b4f2-9253d1d4024d",
+                    "exits": [
+                        {
+                            "destination_uuid": "966a15fc-9028-426c-b88f-98c22a4035bb",
+                            "uuid": "0a426078-8a48-414c-a53b-3451d626a559"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ad03aa02-8a33-4b52-9983-31b4536be994",
+                            "type": "send_msg",
+                            "text": "Try Taking a Pause whenever you feel stressed. \u23f0 It gives you a chance calm down. A few deep breaths or connecting with the ground beneath you can make a difference. You can also Take a Pause with your teen!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "966a15fc-9028-426c-b88f-98c22a4035bb",
+                    "exits": [
+                        {
+                            "destination_uuid": "f77e21b4-ee30-4fea-80b7-18ccc5838ffd",
+                            "uuid": "57dad223-247c-4985-9e79-7a7e5007748a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2577660f-db94-4675-97c4-3e5c078438c0",
+                            "type": "send_msg",
+                            "text": "Well done! You have learnt how to Take a Pause and have earned yourself a badge!",
+                            "attachments": [
+                                "image:\n@(fields.reward_path & \"badge.png\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f77e21b4-ee30-4fea-80b7-18ccc5838ffd",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "73d7aa4d-0275-4b4e-b00e-86bc9db37e2d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "68d5dfdb-de03-4609-b665-24af61bd1f77",
+                            "type": "send_msg",
+                            "text": "You have completed this skill. \u2b50 Well done for taking this step to learn new parenting skills!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        },
+        {
+            "uuid": "f4bd7cd6-c356-4f1a-bb92-3a532a2828da",
+            "name": "module - one_on_one_time_teen",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "1bccbf65-5739-474b-bfce-9d7a99d1dcf1",
+                    "exits": [
+                        {
+                            "destination_uuid": "54bfb5fd-c4d5-4cc9-8027-c5d82fb5e271",
+                            "uuid": "26154428-bc6c-4cf1-8341-57cd36bf6ad8"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "f5aff02a-8c47-4aa0-9924-409f3e602e70",
+                            "type": "send_msg",
+                            "text": "Today's skill is about spending time with Your Teen \ud83d\ude03",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "54bfb5fd-c4d5-4cc9-8027-c5d82fb5e271",
+                    "exits": [
+                        {
+                            "destination_uuid": "0f83f4ec-1f7d-4954-969f-9f004ce4b09b",
+                            "uuid": "d8c46289-f3b3-4a4f-918c-08990c0bf452"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ad00fd91-b095-4d05-8be0-f09bf6ce32e1",
+                            "type": "send_msg",
+                            "text": "Spending time with Your Teen will help you form a happy relationship. \ud83d\udc99",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0f83f4ec-1f7d-4954-969f-9f004ce4b09b",
+                    "exits": [
+                        {
+                            "destination_uuid": "c936c8c3-2929-469e-acf3-f7715628abf3",
+                            "uuid": "685d6ddc-62ef-499e-9ec2-710cf45bf902"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "bc3d2d31-feb8-4cd5-9a2d-38c5b2b9b8e2",
+                            "type": "set_contact_field",
+                            "field": {
+                                "key": "bugfix",
+                                "name": "bugfix"
+                            },
+                            "value": "x"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c936c8c3-2929-469e-acf3-f7715628abf3",
+                    "exits": [
+                        {
+                            "destination_uuid": "a14283a0-0098-4078-898c-5261cb045a56",
+                            "uuid": "c15d7d72-18d5-4faa-9b97-2f860c3d4e61"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "37557051-8dad-4512-baba-c630e7a5bf6c",
+                            "type": "send_msg",
+                            "text": "Parent: \u201cHow are you doing, Andy?\u201d\n\nTeen (looking sad): \u201cI wish I could hang out with my friends.\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"giving_your_teen_attention_comic_1.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "a14283a0-0098-4078-898c-5261cb045a56",
+                    "exits": [
+                        {
+                            "destination_uuid": "3d110577-16a6-4f5e-b57c-6ea933041927",
+                            "uuid": "af88dfe2-dfe0-4a16-974a-81f855192f51"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "1428a2bf-4c53-4b9d-a7b6-b679956f7546",
+                                "name": "Other",
+                                "exit_uuid": "af88dfe2-dfe0-4a16-974a-81f855192f51"
+                            }
+                        ],
+                        "default_category_uuid": "1428a2bf-4c53-4b9d-a7b6-b679956f7546",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "3d110577-16a6-4f5e-b57c-6ea933041927",
+                    "exits": [
+                        {
+                            "destination_uuid": "942474ac-43cd-485c-8e20-788abbad17e7",
+                            "uuid": "0e3002cd-3577-450b-9898-3d47b244a0ab"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9eee2c4c-5ea4-41ec-88c9-7c0e96eb5643",
+                            "type": "send_msg",
+                            "text": "Parent (thinking): \"Hmmm\u2026that can wait\u2026\"",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"giving_your_teen_attention_comic_2.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "942474ac-43cd-485c-8e20-788abbad17e7",
+                    "exits": [
+                        {
+                            "destination_uuid": "33e358f4-4e6e-4932-bcfb-9b45809a9f38",
+                            "uuid": "832113e1-5fb8-4a81-9c87-42f3eb9ac21f"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "557b763e-cc5b-40a2-b2bc-a0ed7145361b",
+                                "name": "Other",
+                                "exit_uuid": "832113e1-5fb8-4a81-9c87-42f3eb9ac21f"
+                            }
+                        ],
+                        "default_category_uuid": "557b763e-cc5b-40a2-b2bc-a0ed7145361b",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "33e358f4-4e6e-4932-bcfb-9b45809a9f38",
+                    "exits": [
+                        {
+                            "destination_uuid": "a364444e-51f9-4bb7-b2eb-47e9f4886765",
+                            "uuid": "6dd4ce31-a0e9-4396-b228-c54974f4adc4"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e52332d0-0a3c-47b1-825f-6803c6ae6d8d",
+                            "type": "send_msg",
+                            "text": "Parent (looks back to teen): \u201cI understand it is hard to be separate from your friends. Especially since I am sure they are missing you, too. Let\u2019s think of some ways that you could reach out to them.\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"giving_your_teen_attention_comic_3.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "a364444e-51f9-4bb7-b2eb-47e9f4886765",
+                    "exits": [
+                        {
+                            "destination_uuid": "8929d48e-38c7-459f-a7a9-aadee532086d",
+                            "uuid": "8fec4a1a-3587-4d40-ace8-30a3f6b722cf"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "2e28b2d8-f72d-4c62-8a3b-3c69e64d6805",
+                                "name": "Other",
+                                "exit_uuid": "8fec4a1a-3587-4d40-ace8-30a3f6b722cf"
+                            }
+                        ],
+                        "default_category_uuid": "2e28b2d8-f72d-4c62-8a3b-3c69e64d6805",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "8929d48e-38c7-459f-a7a9-aadee532086d",
+                    "exits": [
+                        {
+                            "destination_uuid": "045024f1-3b0e-430d-94b4-74df21c4d073",
+                            "uuid": "f2adaad7-0145-48d0-a7e8-a961c861473d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "163b6fd4-4805-4e04-a776-9fd7853a018e",
+                            "type": "send_msg",
+                            "text": "Teen: \"Maybe I can make a TikTok video to share with them. But I am not sure how\u2026can you help me?\u201d\n\nParent: \u201cI would be happy to help and would like to know more about TikTok, too!\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"giving_your_teen_attention_comic_4.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "045024f1-3b0e-430d-94b4-74df21c4d073",
+                    "exits": [
+                        {
+                            "destination_uuid": "9483c861-9f81-4b25-af9c-2dfb0b45142a",
+                            "uuid": "3c7fd201-97ed-49ff-8ab5-c023a940b5b1"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "06e16ebf-b387-4af3-921e-af169ce0622f",
+                                "name": "Other",
+                                "exit_uuid": "3c7fd201-97ed-49ff-8ab5-c023a940b5b1"
+                            }
+                        ],
+                        "default_category_uuid": "06e16ebf-b387-4af3-921e-af169ce0622f",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "9483c861-9f81-4b25-af9c-2dfb0b45142a",
+                    "exits": [
+                        {
+                            "destination_uuid": "1ac3b853-3c47-4d6b-9537-f8bf07a41ed8",
+                            "uuid": "7bc23188-30fc-4a15-b626-f10f1b15d61c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9b0d5048-e7c3-4453-a7ff-8bbf3dfcc3f1",
+                            "type": "send_msg",
+                            "text": "\u2705\u2b1c\ufe0f\u2b1c\ufe0f\n\nYou\u2019ve completed 33% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_1_3.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1ac3b853-3c47-4d6b-9537-f8bf07a41ed8",
+                    "exits": [
+                        {
+                            "destination_uuid": "6356d1f0-d60f-4579-b116-57ae18cb3254",
+                            "uuid": "c585ffeb-3300-4082-a20c-6bdc2b1a8604"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "0db16298-897f-48b1-8829-64daa99b47c0",
+                                "name": "Other",
+                                "exit_uuid": "c585ffeb-3300-4082-a20c-6bdc2b1a8604"
+                            }
+                        ],
+                        "default_category_uuid": "0db16298-897f-48b1-8829-64daa99b47c0",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "6356d1f0-d60f-4579-b116-57ae18cb3254",
+                    "exits": [
+                        {
+                            "destination_uuid": "60e427b0-72c1-4ba5-8056-577595980240",
+                            "uuid": "167e89ac-1500-4c4b-a256-880ee4587bc5"
+                        },
+                        {
+                            "destination_uuid": "d95678b1-42fc-4559-bc93-1f37ec9a2505",
+                            "uuid": "8e128730-8326-46cb-af24-03f16d2907a7"
+                        },
+                        {
+                            "destination_uuid": "73c71727-dc80-4ff5-b3e9-8f72a7d6be01",
+                            "uuid": "f84d7e90-3c96-43f7-a6be-6eb760f24c6f"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.type_of_media",
+                        "cases": [
+                            {
+                                "uuid": "2c59f938-fe83-42c0-b404-95f2da449174",
+                                "type": "has_any_word",
+                                "category_uuid": "efb5c208-8ba9-4c0a-9b5c-a96a5a3e9401",
+                                "arguments": [
+                                    "high"
+                                ]
+                            },
+                            {
+                                "uuid": "7b57c88c-ef1f-4b1b-b20c-605154a8fca2",
+                                "type": "has_any_word",
+                                "category_uuid": "cafbcb25-c14d-48a9-8c3f-0678897f056f",
+                                "arguments": [
+                                    "medium"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "efb5c208-8ba9-4c0a-9b5c-a96a5a3e9401",
+                                "name": "High",
+                                "exit_uuid": "167e89ac-1500-4c4b-a256-880ee4587bc5"
+                            },
+                            {
+                                "uuid": "cafbcb25-c14d-48a9-8c3f-0678897f056f",
+                                "name": "Medium",
+                                "exit_uuid": "8e128730-8326-46cb-af24-03f16d2907a7"
+                            },
+                            {
+                                "uuid": "5b7b8487-2757-437a-9058-043b53c665bd",
+                                "name": "Other",
+                                "exit_uuid": "f84d7e90-3c96-43f7-a6be-6eb760f24c6f"
+                            }
+                        ],
+                        "default_category_uuid": "5b7b8487-2757-437a-9058-043b53c665bd",
+                        "result_name": "media"
+                    }
+                },
+                {
+                    "uuid": "60e427b0-72c1-4ba5-8056-577595980240",
+                    "exits": [
+                        {
+                            "destination_uuid": "16e1c34a-7f4d-4170-b6a1-18cfd0ec09f1",
+                            "uuid": "25f00920-ad34-4acb-807c-e617e80458cc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "638812f9-6bb6-40c0-98fb-fa4ca276b512",
+                            "type": "send_msg",
+                            "text": "Here\u2019s a video on spending time with your teen.",
+                            "attachments": [
+                                "video:@(fields.voiceover_video_path & \"One_On_One_Time_Teens.m4v\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "16e1c34a-7f4d-4170-b6a1-18cfd0ec09f1",
+                    "exits": [
+                        {
+                            "destination_uuid": "f9be99c0-f46b-439a-9896-825cdd2e7cdd",
+                            "uuid": "2cb725d6-afe1-4648-9393-d945d1c0d426"
+                        },
+                        {
+                            "destination_uuid": "f9be99c0-f46b-439a-9896-825cdd2e7cdd",
+                            "uuid": "6b0401eb-5ce7-45ca-9c09-0292d9afb02a"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "903a53a4-3f2f-4ce4-b572-84df6944787f",
+                                "name": "Other",
+                                "exit_uuid": "2cb725d6-afe1-4648-9393-d945d1c0d426"
+                            },
+                            {
+                                "uuid": "88b21bd2-21fd-4b3d-b120-35a24c8a3396",
+                                "name": "No Response",
+                                "exit_uuid": "6b0401eb-5ce7-45ca-9c09-0292d9afb02a"
+                            }
+                        ],
+                        "default_category_uuid": "903a53a4-3f2f-4ce4-b572-84df6944787f",
+                        "wait": {
+                            "type": "msg",
+                            "timeout": {
+                                "seconds": 2,
+                                "category_uuid": "88b21bd2-21fd-4b3d-b120-35a24c8a3396"
+                            }
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "d95678b1-42fc-4559-bc93-1f37ec9a2505",
+                    "exits": [
+                        {
+                            "destination_uuid": "4dbe871b-0bc0-4934-b56a-f677af67706b",
+                            "uuid": "2f8511cb-9d68-4793-bf6e-361362d936cd"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8ee64b4b-9933-4340-b2e6-77ff4fe5ca6b",
+                            "type": "send_msg",
+                            "text": "Here\u2019s a audio message on spending time with your teen.",
+                            "attachments": [
+                                "audio:@(fields.voiceover_audio_path & \"One_On_One_Time_Teens.mp3\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4dbe871b-0bc0-4934-b56a-f677af67706b",
+                    "exits": [
+                        {
+                            "destination_uuid": "73c71727-dc80-4ff5-b3e9-8f72a7d6be01",
+                            "uuid": "629a0441-6960-44b6-9cf8-a29821ba6f09"
+                        },
+                        {
+                            "destination_uuid": "73c71727-dc80-4ff5-b3e9-8f72a7d6be01",
+                            "uuid": "1cf79c67-22f8-4014-af3b-c9d11f35c9e9"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "b7258053-f47f-49d0-90b6-41dfc9e9ce65",
+                                "name": "Other",
+                                "exit_uuid": "629a0441-6960-44b6-9cf8-a29821ba6f09"
+                            },
+                            {
+                                "uuid": "3f222f1b-b6e0-4f5c-a65f-209ef3fb608e",
+                                "name": "No Response",
+                                "exit_uuid": "1cf79c67-22f8-4014-af3b-c9d11f35c9e9"
+                            }
+                        ],
+                        "default_category_uuid": "b7258053-f47f-49d0-90b6-41dfc9e9ce65",
+                        "wait": {
+                            "type": "msg",
+                            "timeout": {
+                                "seconds": 2,
+                                "category_uuid": "3f222f1b-b6e0-4f5c-a65f-209ef3fb608e"
+                            }
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "73c71727-dc80-4ff5-b3e9-8f72a7d6be01",
+                    "exits": [
+                        {
+                            "destination_uuid": "1480dd6d-bf6c-44bc-922c-2caf16f4367f",
+                            "uuid": "cd31970e-0d0c-4b47-9fcb-d1d0b76cffb8"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3b7d09a2-7e0f-49cc-b0f8-f9055bf5a21e",
+                            "type": "send_msg",
+                            "text": "Here are three tips to remember to help you make the most of spending time with your teen: DAY, PLAY, and STAY.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1480dd6d-bf6c-44bc-922c-2caf16f4367f",
+                    "exits": [
+                        {
+                            "destination_uuid": "f0fb059e-9f47-4fe7-b5b2-96af8b003c07",
+                            "uuid": "b7f808d1-9426-4f43-be5e-aadc98416d46"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "35904e6b-bdc1-4391-8fa7-2d04778eab5f",
+                            "type": "send_msg",
+                            "text": "1\ufe0f\u20e3 **\u201cDAY\u2019\u2019- Try to do it every day**\n\u23f0 Spend 5 minutes (or more!) with your teen each day.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f0fb059e-9f47-4fe7-b5b2-96af8b003c07",
+                    "exits": [
+                        {
+                            "destination_uuid": "426f0faf-87a6-4944-9f66-880af2e60154",
+                            "uuid": "d3f6b515-1b3a-44e2-8978-a4783f97b544"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "28169004-6e69-450a-88df-ff576bed4868",
+                                "name": "Other",
+                                "exit_uuid": "d3f6b515-1b3a-44e2-8978-a4783f97b544"
+                            }
+                        ],
+                        "default_category_uuid": "28169004-6e69-450a-88df-ff576bed4868",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "426f0faf-87a6-4944-9f66-880af2e60154",
+                    "exits": [
+                        {
+                            "destination_uuid": "603f0761-7cd9-407a-ac4c-836d4f8b08a0",
+                            "uuid": "925966ed-55da-4cd7-ba54-8857687e77a0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9f3264f1-7a70-4a57-8fa1-340350537ec8",
+                            "type": "send_msg",
+                            "text": "2\ufe0f\u20e3 **\u2018\u2019PLAY\u2019\u2019 - Let them choose the activity**\n\u23f0 Ask to spend time with your Teen.\n\u26bd Let them choose what to do or talk about.\n\ud83c\udf88Try different activities together.\n\ud83d\ude03 Have fun.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "603f0761-7cd9-407a-ac4c-836d4f8b08a0",
+                    "exits": [
+                        {
+                            "destination_uuid": "72326263-30c5-4738-937b-c32703ee5127",
+                            "uuid": "99e37752-e796-47b5-a0d3-14eac85d60df"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "b75a01fc-376f-40cd-a9b8-455a352c59e3",
+                                "name": "Other",
+                                "exit_uuid": "99e37752-e796-47b5-a0d3-14eac85d60df"
+                            }
+                        ],
+                        "default_category_uuid": "b75a01fc-376f-40cd-a9b8-455a352c59e3",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "72326263-30c5-4738-937b-c32703ee5127",
+                    "exits": [
+                        {
+                            "destination_uuid": "07bf8c51-2132-49f8-9ee3-d667f79d5211",
+                            "uuid": "18cfb88f-fc75-4b96-80ca-41b1494a48ff"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "43298a39-0cab-4a93-84c8-3517e5129d5c",
+                            "type": "send_msg",
+                            "text": "3\ufe0f\u20e3 **\u2018\u2019STAY\u2019' - Focus on your teen**\n\ud83d\udcfa Switch off the TV and put aside phones.\n\ud83d\udc40 Look at your teen. Nod or say \u201cI see\u201d to show you are really paying attention. \n\ud83d\udc9b Do not judge your teen. \n\ud83d\udc42 Rephrase back what your teen says. It shows you are really listening to them.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "07bf8c51-2132-49f8-9ee3-d667f79d5211",
+                    "exits": [
+                        {
+                            "destination_uuid": "f9be99c0-f46b-439a-9896-825cdd2e7cdd",
+                            "uuid": "c57047f1-08ed-4e01-93ec-409f7c17867d"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "86a84518-80d5-4f34-9ece-6f36a2aac402",
+                                "name": "Other",
+                                "exit_uuid": "c57047f1-08ed-4e01-93ec-409f7c17867d"
+                            }
+                        ],
+                        "default_category_uuid": "86a84518-80d5-4f34-9ece-6f36a2aac402",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "f9be99c0-f46b-439a-9896-825cdd2e7cdd",
+                    "exits": [
+                        {
+                            "destination_uuid": "ba6a9607-89d8-4d6f-bd49-02f67ec9bab9",
+                            "uuid": "784dbbd8-1779-48f2-b991-78be92dad044"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ef6014a5-a830-4a9c-b73d-42ea49a771e6",
+                            "type": "send_msg",
+                            "text": "\u2705\u2705\u2b1c\ufe0f\n\nYou\u2019ve completed 66% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_2_3.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ba6a9607-89d8-4d6f-bd49-02f67ec9bab9",
+                    "exits": [
+                        {
+                            "destination_uuid": "0a7080ca-7bc5-447a-9f08-30adb6eb7a30",
+                            "uuid": "3b497778-abd1-4b50-8beb-81b45b72e154"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "7feadc93-d5b8-4bd7-877f-40ecadd6addb",
+                                "name": "Other",
+                                "exit_uuid": "3b497778-abd1-4b50-8beb-81b45b72e154"
+                            }
+                        ],
+                        "default_category_uuid": "7feadc93-d5b8-4bd7-877f-40ecadd6addb",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "0a7080ca-7bc5-447a-9f08-30adb6eb7a30",
+                    "exits": [
+                        {
+                            "destination_uuid": "c6f8f247-7b22-4d81-b82c-d8b4d17c3eb3",
+                            "uuid": "9c6fd82f-aa74-466c-87d8-d682e207d124"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "98540363-08ec-4003-8d2d-bdd358b05659",
+                            "type": "send_msg",
+                            "text": "Home task! \u2b50 This week, try to spend at least 5 minutes of time with Your Teen every day. It will make such a difference! Do you have time to do it today? \u23f0",
+                            "attachments": [],
+                            "quick_replies": [
+                                "Yes",
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c6f8f247-7b22-4d81-b82c-d8b4d17c3eb3",
+                    "exits": [
+                        {
+                            "destination_uuid": "39e7cef5-25bd-4987-b0b1-5e4ec2bd9a28",
+                            "uuid": "aae9312b-af00-45a3-b32b-30614fd080fa"
+                        },
+                        {
+                            "destination_uuid": "2bc635e9-2e5d-462d-84e1-e2db908aaabf",
+                            "uuid": "d5910359-e5fc-4a70-ba9b-73ded6c7bcbb"
+                        },
+                        {
+                            "destination_uuid": "2984431a-5889-4985-a66f-9ff5f28b640d",
+                            "uuid": "2422ba5b-b3e6-460d-94ac-97f92ce011c9"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "0c1e108a-fa63-4fc3-87b3-00a2318058db",
+                                "type": "has_any_word",
+                                "category_uuid": "7eebc1ad-5b02-45f1-979b-393842de5be1",
+                                "arguments": [
+                                    "yes y yeah yep"
+                                ]
+                            },
+                            {
+                                "uuid": "8600ab77-aaec-4b13-a0cc-5bb1f18513c9",
+                                "type": "has_any_word",
+                                "category_uuid": "9dcc7a8e-4efc-4563-a8f6-a5d1568520a4",
+                                "arguments": [
+                                    "no nope n"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "7eebc1ad-5b02-45f1-979b-393842de5be1",
+                                "name": "Yes Y Yeah Yep",
+                                "exit_uuid": "aae9312b-af00-45a3-b32b-30614fd080fa"
+                            },
+                            {
+                                "uuid": "9dcc7a8e-4efc-4563-a8f6-a5d1568520a4",
+                                "name": "No Nope N",
+                                "exit_uuid": "d5910359-e5fc-4a70-ba9b-73ded6c7bcbb"
+                            },
+                            {
+                                "uuid": "c5aa4885-5a2c-4a6c-8762-e47dfd1d2ade",
+                                "name": "Other",
+                                "exit_uuid": "2422ba5b-b3e6-460d-94ac-97f92ce011c9"
+                            }
+                        ],
+                        "default_category_uuid": "c5aa4885-5a2c-4a6c-8762-e47dfd1d2ade",
+                        "wait": {
+                            "type": "msg"
+                        }
+                    }
+                },
+                {
+                    "uuid": "39e7cef5-25bd-4987-b0b1-5e4ec2bd9a28",
+                    "exits": [
+                        {
+                            "destination_uuid": "ccef9a5d-e82a-470d-8eb0-937c4c27058b",
+                            "uuid": "984e7a7b-0391-4b8d-8438-6de28745c85d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "758db4ac-dd7c-4e6f-8a31-32e5b0517a8d",
+                            "type": "send_msg",
+                            "text": "Great! Use the tips you have learnt today and have fun! Spending time with your teen is a great way to form a positive relationship with them. \ud83d\udc99",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "2bc635e9-2e5d-462d-84e1-e2db908aaabf",
+                    "exits": [
+                        {
+                            "destination_uuid": "ccef9a5d-e82a-470d-8eb0-937c4c27058b",
+                            "uuid": "597b5331-840a-400e-a7e6-b1915e1377af"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "29d670c7-10d6-4b4d-9e08-8ff4e04341c0",
+                            "type": "send_msg",
+                            "text": "That's OK! If you don't have time today, set some time aside tomorrow. You and your teen will gain a lot from this. \ud83d\udc99",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "2984431a-5889-4985-a66f-9ff5f28b640d",
+                    "exits": [
+                        {
+                            "destination_uuid": "0a7080ca-7bc5-447a-9f08-30adb6eb7a30",
+                            "uuid": "de5f2f3d-d696-47e9-aeb8-e2142871da50"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "280e9bc7-58f4-4258-a1f4-e05bce4b8868",
+                            "type": "send_msg",
+                            "text": "Sorry, I don't understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ccef9a5d-e82a-470d-8eb0-937c4c27058b",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "3107f100-5e88-4a83-a382-296f7303ec86"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "5b326abd-6ee9-4b59-b9a4-7c8c44c91567",
+                            "type": "send_msg",
+                            "text": "Nice, you get a badge for completing the One on One Time skill! \ud83c\udf08 You have now completed @(fields.c_n_mod_compl +1) out of @fields.c_n_mod skills towards your goal, Improve my relationship with my Teen. Well done, this is great progress! \ud83d\udc51",
+                            "attachments": [
+                                "image:\n@(fields.reward_path & \"badge.png\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        },
+        {
+            "uuid": "f6544605-c4a3-4cbb-abde-c11f4af3ebba",
+            "name": "module - praise",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "48d22be6-37c5-47da-bb4b-b1a08e50cf33",
+                    "exits": [
+                        {
+                            "destination_uuid": "fcefb53e-65dc-4af8-a405-476e1e6cb91f",
+                            "uuid": "adf88f2d-c50c-462c-938c-187aa1d36c5e"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "daf86ef3-f057-40b7-aa32-dc87059421b8",
+                            "type": "send_msg",
+                            "text": "Well done for committing to help your teen live a good life. It shows you really care! \ud83d\udc99",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "fcefb53e-65dc-4af8-a405-476e1e6cb91f",
+                    "exits": [
+                        {
+                            "destination_uuid": "2d34720e-16c3-441b-8358-25424d84b87e",
+                            "uuid": "a91f3a3d-a114-4777-9ca0-57540627c4e0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "66dc97cb-783f-4fc9-a3c0-f319459af860",
+                            "type": "send_msg",
+                            "text": "Today\u2019s skill is about Praise. \ud83c\udf89 How did the message above make you feel? We all feel better when others notice the good things we do. It\u2019s even better when it is by someone we love!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "2d34720e-16c3-441b-8358-25424d84b87e",
+                    "exits": [
+                        {
+                            "destination_uuid": "ac8d4dde-73b3-46bb-9985-3aed7560103c",
+                            "uuid": "9d10a9b5-298e-4a36-8c9d-796df27ff55c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "759ca536-208c-48fa-86d0-fc14fd8c6446",
+                            "type": "send_msg",
+                            "text": "Praise your teen when they are behaving well! \u2b50 This creates a positive and loving relationship with them.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ac8d4dde-73b3-46bb-9985-3aed7560103c",
+                    "exits": [
+                        {
+                            "destination_uuid": "535d98ce-cf15-4898-b0a5-b73cb5d281e2",
+                            "uuid": "1fd87835-1ba3-499d-8d5c-5eab67f439b2"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "44f0dca5-d99a-493d-86e3-ff13c512330b",
+                            "type": "set_contact_field",
+                            "field": {
+                                "key": "bugfix",
+                                "name": "bugfix"
+                            },
+                            "value": "x"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "535d98ce-cf15-4898-b0a5-b73cb5d281e2",
+                    "exits": [
+                        {
+                            "destination_uuid": "e1d960b8-f5ef-4462-9faf-942beb398b56",
+                            "uuid": "24a3df1d-9cd5-4d7e-99aa-a51b6c610eb8"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b5b36f18-81e2-47f5-9013-ed280d1f3d9a",
+                            "type": "send_msg",
+                            "text": "Here is a comic which uses all steps on praising your teen.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e1d960b8-f5ef-4462-9faf-942beb398b56",
+                    "exits": [
+                        {
+                            "destination_uuid": "19dc247c-069c-4011-ab50-88d99e585776",
+                            "uuid": "cdab996d-c7a9-45e4-aca6-3f2b74e99ed4"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "d6175752-b389-4594-9931-e07b7c36f4f5",
+                            "type": "send_msg",
+                            "text": "Parent: \u201cThank you for being quiet while I talked to my boss. I appreciate it! Here, you can use my phone to WhatsApp your friends\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"praise_teens_comic_1.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "19dc247c-069c-4011-ab50-88d99e585776",
+                    "exits": [
+                        {
+                            "destination_uuid": "095d3f67-b9a8-4f4e-a576-cf0e4fe8e67f",
+                            "uuid": "bcac2152-da47-4f03-a90d-02a4640e47ff"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "4b78f5c1-d8f5-4f74-b18c-b1e915490ae4",
+                                "name": "Other",
+                                "exit_uuid": "bcac2152-da47-4f03-a90d-02a4640e47ff"
+                            }
+                        ],
+                        "default_category_uuid": "4b78f5c1-d8f5-4f74-b18c-b1e915490ae4",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "095d3f67-b9a8-4f4e-a576-cf0e4fe8e67f",
+                    "exits": [
+                        {
+                            "destination_uuid": "82712019-48ac-4293-8dd3-8f59aed119f5",
+                            "uuid": "042c5bfb-37ac-4c51-ba29-597c21fd3392"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e5135738-49e0-47e7-b6c5-28c213b18a1d",
+                            "type": "send_msg",
+                            "text": "Teen: \u201cThanks! I really want to see how they are doing.\u201d",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"praise_teens_comic_2.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "82712019-48ac-4293-8dd3-8f59aed119f5",
+                    "exits": [
+                        {
+                            "destination_uuid": "7c760fc2-af39-46c3-9c08-f352c3eff35a",
+                            "uuid": "75ab736a-9cc0-42b8-9bf2-fd0be5028fbb"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "5d668549-6dbe-4cf0-808b-bb43eea237f4",
+                                "name": "Other",
+                                "exit_uuid": "75ab736a-9cc0-42b8-9bf2-fd0be5028fbb"
+                            }
+                        ],
+                        "default_category_uuid": "5d668549-6dbe-4cf0-808b-bb43eea237f4",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "7c760fc2-af39-46c3-9c08-f352c3eff35a",
+                    "exits": [
+                        {
+                            "destination_uuid": "ec52afe3-c621-4fac-a629-e569e571e937",
+                            "uuid": "5fee8635-f6f4-449a-b55e-18057922beaa"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6b7a7e66-cd20-47fc-b820-1f8c7685a41f",
+                            "type": "send_msg",
+                            "text": "\u2705\u2b1c\ufe0f\u2b1c\ufe0f\n\nYou\u2019ve completed 33% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_1_3.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ec52afe3-c621-4fac-a629-e569e571e937",
+                    "exits": [
+                        {
+                            "destination_uuid": "109487d1-4448-4b9c-8b17-7809f65a8f30",
+                            "uuid": "7ab463f6-c4d9-4a96-a76a-54424c27fc30"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "a57720f9-ac38-4e97-abc1-0eb537fff80f",
+                                "name": "Other",
+                                "exit_uuid": "7ab463f6-c4d9-4a96-a76a-54424c27fc30"
+                            }
+                        ],
+                        "default_category_uuid": "a57720f9-ac38-4e97-abc1-0eb537fff80f",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "109487d1-4448-4b9c-8b17-7809f65a8f30",
+                    "exits": [
+                        {
+                            "destination_uuid": "ef824f13-4a16-435a-b676-1cbfe9048d42",
+                            "uuid": "a67d8e6f-6350-41c7-8a9c-5babf2d5713e"
+                        },
+                        {
+                            "destination_uuid": "aa512dab-cbbd-4f3a-b034-a8ed12f30b8a",
+                            "uuid": "f9361370-67de-453c-9b7a-1de222862207"
+                        },
+                        {
+                            "destination_uuid": "278a2c7e-658e-4364-8d7f-998275a322f6",
+                            "uuid": "4a0b73fb-995c-490e-85ca-cd5998b95bcc"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.type_of_media",
+                        "cases": [
+                            {
+                                "uuid": "0e21683a-2ad5-40d5-b522-ef3594aab948",
+                                "type": "has_any_word",
+                                "category_uuid": "cc3ee9e3-2c7b-4654-9656-04196fd0a8c0",
+                                "arguments": [
+                                    "high"
+                                ]
+                            },
+                            {
+                                "uuid": "006ae4a2-8c83-4309-bb22-fc054c937450",
+                                "type": "has_any_word",
+                                "category_uuid": "e2e1459b-cf82-4e94-8efa-f6f30f97c615",
+                                "arguments": [
+                                    "medium"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "cc3ee9e3-2c7b-4654-9656-04196fd0a8c0",
+                                "name": "High",
+                                "exit_uuid": "a67d8e6f-6350-41c7-8a9c-5babf2d5713e"
+                            },
+                            {
+                                "uuid": "e2e1459b-cf82-4e94-8efa-f6f30f97c615",
+                                "name": "Medium",
+                                "exit_uuid": "f9361370-67de-453c-9b7a-1de222862207"
+                            },
+                            {
+                                "uuid": "295541e1-3cf1-4a57-a110-5c4b5b6b91cd",
+                                "name": "Other",
+                                "exit_uuid": "4a0b73fb-995c-490e-85ca-cd5998b95bcc"
+                            }
+                        ],
+                        "default_category_uuid": "295541e1-3cf1-4a57-a110-5c4b5b6b91cd",
+                        "result_name": "media"
+                    }
+                },
+                {
+                    "uuid": "ef824f13-4a16-435a-b676-1cbfe9048d42",
+                    "exits": [
+                        {
+                            "destination_uuid": "688b3e06-f928-47a5-8aed-6b8c5e33588e",
+                            "uuid": "f1d5814f-3825-4f09-904c-89cde7193e50"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b9408949-d5f9-49ef-9b1e-c93496b4029d",
+                            "type": "send_msg",
+                            "text": "Here's a video on the importance of praise. When you focus on positive behaviour, your teen is likely to do it more often and feel good about themselves! \ud83c\udf08",
+                            "attachments": [
+                                "video:@(fields.voiceover_video_path & \"Praise.m4v\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "688b3e06-f928-47a5-8aed-6b8c5e33588e",
+                    "exits": [
+                        {
+                            "destination_uuid": "018d6c76-97ce-42f3-b6be-8021f1a3eef3",
+                            "uuid": "ec93a873-9a65-4a41-9c4f-0a7fedd04a65"
+                        },
+                        {
+                            "destination_uuid": "018d6c76-97ce-42f3-b6be-8021f1a3eef3",
+                            "uuid": "9c06dd68-e3e3-4363-bdcf-c5b29b48d761"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "b506c622-cb0c-46e3-a0b8-3a5727a7804b",
+                                "name": "Other",
+                                "exit_uuid": "ec93a873-9a65-4a41-9c4f-0a7fedd04a65"
+                            },
+                            {
+                                "uuid": "8838f7e1-8045-4a14-a4e7-0af7b44cfe0d",
+                                "name": "No Response",
+                                "exit_uuid": "9c06dd68-e3e3-4363-bdcf-c5b29b48d761"
+                            }
+                        ],
+                        "default_category_uuid": "b506c622-cb0c-46e3-a0b8-3a5727a7804b",
+                        "wait": {
+                            "type": "msg",
+                            "timeout": {
+                                "seconds": 2,
+                                "category_uuid": "8838f7e1-8045-4a14-a4e7-0af7b44cfe0d"
+                            }
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "aa512dab-cbbd-4f3a-b034-a8ed12f30b8a",
+                    "exits": [
+                        {
+                            "destination_uuid": "b0e114f8-e213-4584-9b9d-70429e568c70",
+                            "uuid": "014957b5-7071-4e92-ac9e-c83eea2dac9f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b2ae202e-1696-42d5-b138-5cf4e34e216e",
+                            "type": "send_msg",
+                            "text": "Here's an audio message on how you can focus on positive behaviour by praising your teen! \ud83d\udc42",
+                            "attachments": [
+                                "audio:@(fields.voiceover_audio_path & \"Praise.mp3\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "b0e114f8-e213-4584-9b9d-70429e568c70",
+                    "exits": [
+                        {
+                            "destination_uuid": "278a2c7e-658e-4364-8d7f-998275a322f6",
+                            "uuid": "df61caf7-c8da-4944-9116-ce90a55e60cb"
+                        },
+                        {
+                            "destination_uuid": "278a2c7e-658e-4364-8d7f-998275a322f6",
+                            "uuid": "9dc81d65-3f9f-410c-bce9-71a8aef446db"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "c9a6226f-c925-4eab-a1de-fbdad2cc17f4",
+                                "name": "Other",
+                                "exit_uuid": "df61caf7-c8da-4944-9116-ce90a55e60cb"
+                            },
+                            {
+                                "uuid": "7fe0779b-bfd2-4b5b-abfd-8a8324b7a985",
+                                "name": "No Response",
+                                "exit_uuid": "9dc81d65-3f9f-410c-bce9-71a8aef446db"
+                            }
+                        ],
+                        "default_category_uuid": "c9a6226f-c925-4eab-a1de-fbdad2cc17f4",
+                        "wait": {
+                            "type": "msg",
+                            "timeout": {
+                                "seconds": 2,
+                                "category_uuid": "7fe0779b-bfd2-4b5b-abfd-8a8324b7a985"
+                            }
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "278a2c7e-658e-4364-8d7f-998275a322f6",
+                    "exits": [
+                        {
+                            "destination_uuid": "9ae45d65-d95a-4507-a06b-5837bdef8cc0",
+                            "uuid": "bf84b506-3a7e-4c44-8a13-95a85769ab45"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6de47c07-667b-4e65-a86c-2d332cd88ace",
+                            "type": "send_msg",
+                            "text": "When you focus on positive behaviour, your teen is likely to do it more often and feel good about themselves!\n\nHere are 4 simple tips for praising your teen:",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "9ae45d65-d95a-4507-a06b-5837bdef8cc0",
+                    "exits": [
+                        {
+                            "destination_uuid": "83d74420-215e-4fe9-8873-47e2456c3ee8",
+                            "uuid": "2911ccc4-91cc-4f19-95d7-7618c2dbff3c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9cce0a78-585d-44a2-8964-f48c914e5c90",
+                            "type": "send_msg",
+                            "text": "1\ufe0f\u20e3 **SEE IT**\n\n\ud83d\udc40 Look for anything good or helpful your teen does.\n\n\u23f8 Take a moment to notice that they are doing it.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "83d74420-215e-4fe9-8873-47e2456c3ee8",
+                    "exits": [
+                        {
+                            "destination_uuid": "fd917f71-7c9b-4e3e-bcb8-ce5f84cb44eb",
+                            "uuid": "99a295d6-956d-424e-97f5-4d4b84b15ca9"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "e0f55a01-dfb0-4f68-ba70-ad53662835e4",
+                                "name": "Other",
+                                "exit_uuid": "99a295d6-956d-424e-97f5-4d4b84b15ca9"
+                            }
+                        ],
+                        "default_category_uuid": "e0f55a01-dfb0-4f68-ba70-ad53662835e4",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "fd917f71-7c9b-4e3e-bcb8-ce5f84cb44eb",
+                    "exits": [
+                        {
+                            "destination_uuid": "84488e9c-8086-4351-bb2a-28cd6ab415ca",
+                            "uuid": "f7647ca4-b23e-4c2c-a37c-77f3f3080583"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "0ffac954-98c1-4562-ab23-321f9ceb9b63",
+                            "type": "send_msg",
+                            "text": "2\ufe0f\u20e3 **SAY IT**\n\n\ud83c\udfc6 Praise them when you see them do it.\n\n\u2705 Tell them specifically what they have done well.\n\n\ud83c\udf89 Be enthusiastic and really mean it!\n\n\ud83d\udd04 This means they are more likely to do it again.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "84488e9c-8086-4351-bb2a-28cd6ab415ca",
+                    "exits": [
+                        {
+                            "destination_uuid": "7a200282-3577-4a7d-a310-6d7eea5a6db9",
+                            "uuid": "e14c7894-1df9-4d8b-84d3-9452521d2b36"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "1654e21c-d9c3-4f60-a491-18dd2cb6a062",
+                                "name": "Other",
+                                "exit_uuid": "e14c7894-1df9-4d8b-84d3-9452521d2b36"
+                            }
+                        ],
+                        "default_category_uuid": "1654e21c-d9c3-4f60-a491-18dd2cb6a062",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "7a200282-3577-4a7d-a310-6d7eea5a6db9",
+                    "exits": [
+                        {
+                            "destination_uuid": "e8833dd1-2739-48bc-a49a-1157d502d1f9",
+                            "uuid": "269bccf7-0d0a-498b-91c3-d09f1d66f080"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e73c8ceb-1cbb-4b88-b54b-d23610593c78",
+                            "type": "send_msg",
+                            "text": "3\ufe0f\u20e3 **REPEAT IT**\n\n\ud83c\udf37 Look for something to praise your teen for every day.\n\n\ud83d\udd36 Even if it is something really small, keep doing it.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e8833dd1-2739-48bc-a49a-1157d502d1f9",
+                    "exits": [
+                        {
+                            "destination_uuid": "7a766dd0-3d5f-4016-80f7-ce68f65c5d90",
+                            "uuid": "34bf5610-47b6-4f43-8d88-b016aa4f0775"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "64687200-8fe7-473e-92ba-90eabcb2bb18",
+                                "name": "Other",
+                                "exit_uuid": "34bf5610-47b6-4f43-8d88-b016aa4f0775"
+                            }
+                        ],
+                        "default_category_uuid": "64687200-8fe7-473e-92ba-90eabcb2bb18",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "7a766dd0-3d5f-4016-80f7-ce68f65c5d90",
+                    "exits": [
+                        {
+                            "destination_uuid": "07069db3-4268-413b-81ea-0936cb13a4d2",
+                            "uuid": "7f9089f4-388f-428b-bf9a-397b3f904205"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "d430eaae-1363-4b13-b362-6f652d9c4f5a",
+                            "type": "send_msg",
+                            "text": "4\ufe0f\u20e3 **KEEP IT POSITIVE**\n\n\ud83d\udca1 Make sure you focus on something your teen has done well.\n\n\ud83c\udf08 Keeping it positive reminds your teen that you notice them and care.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "07069db3-4268-413b-81ea-0936cb13a4d2",
+                    "exits": [
+                        {
+                            "destination_uuid": "018d6c76-97ce-42f3-b6be-8021f1a3eef3",
+                            "uuid": "8fa2b9b4-4ea2-4851-8022-6794fcd22555"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "a3651989-48f8-436c-ad0f-c654e1ea3532",
+                                "name": "Other",
+                                "exit_uuid": "8fa2b9b4-4ea2-4851-8022-6794fcd22555"
+                            }
+                        ],
+                        "default_category_uuid": "a3651989-48f8-436c-ad0f-c654e1ea3532",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "018d6c76-97ce-42f3-b6be-8021f1a3eef3",
+                    "exits": [
+                        {
+                            "destination_uuid": "c4413643-4591-4835-bdf9-728f7ae8a0b7",
+                            "uuid": "2baf716d-450b-4a72-a8ce-539a7e51294e"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3b103b1e-0810-4997-ac40-22c8461ce2f4",
+                            "type": "send_msg",
+                            "text": "\u2705\u2705\u2b1c\ufe0f\n\nYou\u2019ve completed 66% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_2_3.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c4413643-4591-4835-bdf9-728f7ae8a0b7",
+                    "exits": [
+                        {
+                            "destination_uuid": "f9e0dd5e-0a48-40de-a704-29d83b25a031",
+                            "uuid": "52626b35-bfc1-45df-ab2f-77e1baed02cc"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "e7606cfe-1821-4380-8ffc-64d48793610b",
+                                "name": "Other",
+                                "exit_uuid": "52626b35-bfc1-45df-ab2f-77e1baed02cc"
+                            }
+                        ],
+                        "default_category_uuid": "e7606cfe-1821-4380-8ffc-64d48793610b",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "f9e0dd5e-0a48-40de-a704-29d83b25a031",
+                    "exits": [
+                        {
+                            "destination_uuid": "59c7bf08-9dab-4982-bca9-c6e64b555a6a",
+                            "uuid": "711492a7-e417-475c-bf75-455146e428de"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "0ee0093e-1ab1-40f3-abf7-015f810485a5",
+                            "type": "send_msg",
+                            "text": "Do you feel confident using what you\u2019ve learnt about praise with your own family?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "Yes",
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "59c7bf08-9dab-4982-bca9-c6e64b555a6a",
+                    "exits": [
+                        {
+                            "destination_uuid": "f1c1cd3b-91a0-4bc4-8d77-a1bf69b9a72e",
+                            "uuid": "f43205b0-83e7-452f-ae73-81bec02c7acd"
+                        },
+                        {
+                            "destination_uuid": "9fa2bdea-ee99-42d5-a4f7-04d83a069049",
+                            "uuid": "ae9436a0-309a-49f4-9e16-46da8aae7434"
+                        },
+                        {
+                            "destination_uuid": "5de16616-824e-4b9d-a349-5a8db72e74bc",
+                            "uuid": "9bf24d7a-3ec1-4ca5-a677-9085d3ccf6cc"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "b4204b33-d57e-4381-b822-90e538be4624",
+                                "type": "has_any_word",
+                                "category_uuid": "206dd06a-e7a5-4e63-9b10-e5714dfc4695",
+                                "arguments": [
+                                    "yes y yeah yep"
+                                ]
+                            },
+                            {
+                                "uuid": "b2254f73-1ed0-49e8-8958-1baa00cdcfe2",
+                                "type": "has_any_word",
+                                "category_uuid": "ced5acca-97a2-43d0-8248-04f5dff0673f",
+                                "arguments": [
+                                    "no nope n"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "206dd06a-e7a5-4e63-9b10-e5714dfc4695",
+                                "name": "Yes Y Yeah Yep",
+                                "exit_uuid": "f43205b0-83e7-452f-ae73-81bec02c7acd"
+                            },
+                            {
+                                "uuid": "ced5acca-97a2-43d0-8248-04f5dff0673f",
+                                "name": "No Nope N",
+                                "exit_uuid": "ae9436a0-309a-49f4-9e16-46da8aae7434"
+                            },
+                            {
+                                "uuid": "59fc338e-5d18-48d0-98cd-288c4f15cf22",
+                                "name": "Other",
+                                "exit_uuid": "9bf24d7a-3ec1-4ca5-a677-9085d3ccf6cc"
+                            }
+                        ],
+                        "default_category_uuid": "59fc338e-5d18-48d0-98cd-288c4f15cf22",
+                        "wait": {
+                            "type": "msg"
+                        }
+                    }
+                },
+                {
+                    "uuid": "f1c1cd3b-91a0-4bc4-8d77-a1bf69b9a72e",
+                    "exits": [
+                        {
+                            "destination_uuid": "21833b41-f612-4781-ba07-616490fc882a",
+                            "uuid": "fe2b845c-3212-4f50-9c06-769d394a4999"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8d62c414-6b91-4d05-9e40-355988d06874",
+                            "type": "send_msg",
+                            "text": "Amazing! \ud83c\udf89 We love to see it! Look for three things that you can praise your teen for every day. You can praise other adults in your household, too. \ud83d\udc9b Notice how they respond!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "9fa2bdea-ee99-42d5-a4f7-04d83a069049",
+                    "exits": [
+                        {
+                            "destination_uuid": "21833b41-f612-4781-ba07-616490fc882a",
+                            "uuid": "75810107-b74e-46d6-acc2-97f23a7a57ef"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "68320ad3-4480-45e7-a8c8-d8890267780d",
+                            "type": "send_msg",
+                            "text": "That's OK! Sometimes things take time! \ud83d\udc99 You can review this skill in the Main Menu any time. At the end of the day, think of all of the positive things that happened - this makes it easier to point them out. \u2600\ufe0f With time, praise will come easily to you.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "5de16616-824e-4b9d-a349-5a8db72e74bc",
+                    "exits": [
+                        {
+                            "destination_uuid": "f9e0dd5e-0a48-40de-a704-29d83b25a031",
+                            "uuid": "787a4260-d33e-4833-8c5a-afa7c3cc7818"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "cc0ccc36-f414-456c-baf2-6cd80f8c684d",
+                            "type": "send_msg",
+                            "text": "Sorry, I don't understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "21833b41-f612-4781-ba07-616490fc882a",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "326c734d-6232-46dc-b382-39bc6a6941fd"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e45b5206-97bb-413a-8db3-e2f270236552",
+                            "type": "send_msg",
+                            "text": "Well done, you have gained another badge! \u2b50 You have now learnt the four steps to Praise. You have completed @(fields.c_n_mod_compl +1)  out of @fields.c_n_mod skills in the goal \u201cImprove my relationship with my teen.\u201d",
+                            "attachments": [
+                                "image:\n@(fields.reward_path & \"badge.png\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        },
+        {
+            "uuid": "86997a81-f067-45db-8d39-a476fb8a542b",
+            "name": "module - help_my_teen_with_stress",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "d5d3122a-08f8-4a8f-a3b1-14b4613c94cb",
+                    "exits": [
+                        {
+                            "destination_uuid": "9ba0e49e-6a40-4aac-8b47-65e1dcdd2040",
+                            "uuid": "5918bcfd-a2e9-4727-9861-81ebce06b0af"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "60ed1779-744d-4ecf-ab64-d10a2490c175",
+                            "type": "send_msg",
+                            "text": "Today\u2019s skill is about helping our teens with stress. \nCan you remember something you stressed about as a teen? \ud83d\ude23 A break-up, stress in your home, being bullied, exams? \ud83d\udcdd\n\nIf you could give a message to your teenage self, what would you say? \u25b6\ufe0f",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "9ba0e49e-6a40-4aac-8b47-65e1dcdd2040",
+                    "exits": [
+                        {
+                            "destination_uuid": "c66f7c4a-6507-4b63-94b5-b78d2d7c1405",
+                            "uuid": "57806c4f-6ac4-4c61-bc91-d93a6a9e1acc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6f7566d7-258f-420e-9b5e-d82fef9d13a8",
+                            "type": "send_msg",
+                            "text": "Teens\u2019 brains are still growing. They don\u2019t always have good skills for dealing with stress. \ud83d\udd34\n\nSome teens feel a lot of stress.\u2757In response, they might feel anxious, withdraw themselves from others, or even feel sick! Some teens may respond with violence, self-harm, having suicidal thoughts, or by using drugs or alcohol to cope. \ud83d\ude14\n\nYou can help your teen cope with their stress by supporting them through it. \ud83d\udc99",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c66f7c4a-6507-4b63-94b5-b78d2d7c1405",
+                    "exits": [
+                        {
+                            "destination_uuid": "38cc2a98-d8a4-4734-ac38-4570e6f78d3a",
+                            "uuid": "b8a0e3ee-a14f-41e9-849e-da1dc8f23561"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9e987621-6ab1-4117-a87d-77ed13e8d738",
+                            "type": "send_msg",
+                            "text": "Quiz!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "38cc2a98-d8a4-4734-ac38-4570e6f78d3a",
+                    "exits": [
+                        {
+                            "destination_uuid": "bd5e3c9a-216b-4d75-bfd9-02ac20eab4df",
+                            "uuid": "d6aa91d0-693e-46c0-a894-d3d432b53c2d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ff696f47-dbb9-44de-b90c-490319996eb6",
+                            "type": "send_msg",
+                            "text": "Which of the following is NOT a symptom of stress?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "Trouble sleeping",
+                                "Angry Outbursts",
+                                "Low Energy",
+                                "Playfulness"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "bd5e3c9a-216b-4d75-bfd9-02ac20eab4df",
+                    "exits": [
+                        {
+                            "destination_uuid": "6304b452-20e5-4e4f-b603-5a377d037826",
+                            "uuid": "8b69ce7b-3fbb-4ccc-a523-5e126e6731b8"
+                        },
+                        {
+                            "destination_uuid": "f485378a-2e99-4eb7-be94-38f94f1b00b0",
+                            "uuid": "80fd82a6-f6fe-4423-89e4-37a0204d8b6a"
+                        },
+                        {
+                            "destination_uuid": "c5fd0c2c-e3c3-4288-b344-85a9fdda6fed",
+                            "uuid": "1ab05b3a-d970-4b5b-9c13-259a305b53f3"
+                        },
+                        {
+                            "destination_uuid": "b03b207c-3e51-4098-9d1d-7d659d7b8f90",
+                            "uuid": "a841db68-e456-4d6d-9a33-b8f9fa36e9ff"
+                        },
+                        {
+                            "destination_uuid": "6d772db8-5467-4390-8254-f11b167af5ed",
+                            "uuid": "3f31fa8e-b686-43ec-899a-63c68fb68ee1"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "99441753-4a98-4b9b-b21d-6099b075e74c",
+                                "type": "has_only_phrase",
+                                "category_uuid": "bf5a0ba1-b580-4fea-b15c-f12cde582742",
+                                "arguments": [
+                                    "Trouble sleeping"
+                                ]
+                            },
+                            {
+                                "uuid": "28e3b801-8b71-48d0-9588-0d3b23749cc1",
+                                "type": "has_only_phrase",
+                                "category_uuid": "0a0e8adc-224f-42fb-ad3f-525e9e172bd2",
+                                "arguments": [
+                                    "Angry Outbursts"
+                                ]
+                            },
+                            {
+                                "uuid": "d406ca0d-e227-4181-b230-8a4dd27daed0",
+                                "type": "has_only_phrase",
+                                "category_uuid": "a0a8b16f-f9cf-4729-8afd-fd6ce36afbae",
+                                "arguments": [
+                                    "Low Energy"
+                                ]
+                            },
+                            {
+                                "uuid": "ead3828e-c37f-42d2-a21e-ff7f5dcddce6",
+                                "type": "has_only_phrase",
+                                "category_uuid": "173d0126-b2ab-494b-a4d6-851b474f3ffe",
+                                "arguments": [
+                                    "Playfulness"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "bf5a0ba1-b580-4fea-b15c-f12cde582742",
+                                "name": "Trouble Sleeping",
+                                "exit_uuid": "8b69ce7b-3fbb-4ccc-a523-5e126e6731b8"
+                            },
+                            {
+                                "uuid": "0a0e8adc-224f-42fb-ad3f-525e9e172bd2",
+                                "name": "Angry Outbursts",
+                                "exit_uuid": "80fd82a6-f6fe-4423-89e4-37a0204d8b6a"
+                            },
+                            {
+                                "uuid": "a0a8b16f-f9cf-4729-8afd-fd6ce36afbae",
+                                "name": "Low Energy",
+                                "exit_uuid": "1ab05b3a-d970-4b5b-9c13-259a305b53f3"
+                            },
+                            {
+                                "uuid": "173d0126-b2ab-494b-a4d6-851b474f3ffe",
+                                "name": "Playfulness",
+                                "exit_uuid": "a841db68-e456-4d6d-9a33-b8f9fa36e9ff"
+                            },
+                            {
+                                "uuid": "ac810f9a-0779-4e93-a934-68fbbdc51f95",
+                                "name": "Other",
+                                "exit_uuid": "3f31fa8e-b686-43ec-899a-63c68fb68ee1"
+                            }
+                        ],
+                        "default_category_uuid": "ac810f9a-0779-4e93-a934-68fbbdc51f95",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "quiz_answer_0"
+                    }
+                },
+                {
+                    "uuid": "6304b452-20e5-4e4f-b603-5a377d037826",
+                    "exits": [
+                        {
+                            "destination_uuid": "8246f383-69e2-4573-b2a6-31d9e1670a2a",
+                            "uuid": "bcb0d679-e295-4f33-8f39-95db838e42a3"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7e427799-3414-43be-8c0e-e264d57a1c31",
+                            "type": "send_msg",
+                            "text": "That\u2019s wrong [...]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f485378a-2e99-4eb7-be94-38f94f1b00b0",
+                    "exits": [
+                        {
+                            "destination_uuid": "8246f383-69e2-4573-b2a6-31d9e1670a2a",
+                            "uuid": "017c4610-ef14-4a56-8df4-a5802d54236c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "a98472d3-8283-433d-b0cb-2ec13e0c35eb",
+                            "type": "send_msg",
+                            "text": "That\u2019s wrong [...]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c5fd0c2c-e3c3-4288-b344-85a9fdda6fed",
+                    "exits": [
+                        {
+                            "destination_uuid": "8246f383-69e2-4573-b2a6-31d9e1670a2a",
+                            "uuid": "08ecda3f-0e10-43d2-8ad0-b7c28f06b0ad"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6b86f671-455a-4ee6-a49a-94d0c351ab16",
+                            "type": "send_msg",
+                            "text": "That\u2019s wrong [...]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "b03b207c-3e51-4098-9d1d-7d659d7b8f90",
+                    "exits": [
+                        {
+                            "destination_uuid": "8246f383-69e2-4573-b2a6-31d9e1670a2a",
+                            "uuid": "cc013ffd-31cc-46fd-93e4-6de394530c6d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3e5cf544-e55e-4b3a-a2a1-ed991068c63d",
+                            "type": "send_msg",
+                            "text": "That\u2019s right. Teens who are stressed experience many symptoms",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6d772db8-5467-4390-8254-f11b167af5ed",
+                    "exits": [
+                        {
+                            "destination_uuid": "38cc2a98-d8a4-4734-ac38-4570e6f78d3a",
+                            "uuid": "5ea4420c-7580-4c6d-aba4-3b87acfd7d78"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "99dc9df8-41c8-4536-9818-71b2f693f376",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "8246f383-69e2-4573-b2a6-31d9e1670a2a",
+                    "exits": [
+                        {
+                            "destination_uuid": "12136025-d875-437c-9d08-87824985812f",
+                            "uuid": "75aaa67d-bb82-4e59-99fb-2bc72e77d48c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "75e8ccd1-8447-4a4f-affa-f577ec31cc78",
+                            "type": "send_msg",
+                            "text": "\u2705\u2b1c\ufe0f\u2b1c\ufe0f\u2b1c\ufe0f\n\nYou\u2019ve completed 25% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_1_4.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "12136025-d875-437c-9d08-87824985812f",
+                    "exits": [
+                        {
+                            "destination_uuid": "57a2415f-f1d2-428c-8b9e-cae4a227c5e2",
+                            "uuid": "2391ac63-fb3c-4fb0-b95b-d0cd6d4256a6"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "f4a4d949-e2f4-4a4b-be46-206c9de95147",
+                                "name": "Other",
+                                "exit_uuid": "2391ac63-fb3c-4fb0-b95b-d0cd6d4256a6"
+                            }
+                        ],
+                        "default_category_uuid": "f4a4d949-e2f4-4a4b-be46-206c9de95147",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "57a2415f-f1d2-428c-8b9e-cae4a227c5e2",
+                    "exits": [
+                        {
+                            "destination_uuid": "8854af3b-63a0-40bb-a341-4959bf074c5f",
+                            "uuid": "cda2398c-0615-460d-bf51-3cc15d496a5b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "5feb1c5b-2c4b-4e0b-868e-c8a9d8a4332d",
+                            "type": "set_contact_field",
+                            "field": {
+                                "key": "bugfix",
+                                "name": "bugfix"
+                            },
+                            "value": "x"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "8854af3b-63a0-40bb-a341-4959bf074c5f",
+                    "exits": [
+                        {
+                            "destination_uuid": "05afe093-32a3-4214-bd82-c88ea3bc72fb",
+                            "uuid": "a83375fa-6009-4955-97ba-940535115c69"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "80959d95-93c5-4a4f-a4c6-f378a414e46b",
+                            "type": "send_msg",
+                            "text": "Here is a comic [...]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "05afe093-32a3-4214-bd82-c88ea3bc72fb",
+                    "exits": [
+                        {
+                            "destination_uuid": "eb3ae673-d752-4c5a-a34b-808d1ccdfb6c",
+                            "uuid": "c59513ff-6589-4aa1-b6c9-1ec0ef7d4316"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "bb111ed0-219b-4863-807b-d337549fc337",
+                            "type": "send_msg",
+                            "text": "I\u2019m trying my best.\nTrying to make ends meet and raise three children alone is very difficult.",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"praise_kids_comic_1.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "eb3ae673-d752-4c5a-a34b-808d1ccdfb6c",
+                    "exits": [
+                        {
+                            "destination_uuid": "f8837049-0d13-47d6-b7f0-1f526952a139",
+                            "uuid": "dda2cb17-a7b5-4312-ab12-e909cefd0816"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "8c7b57e9-d989-4fac-b49e-7418bb703e6a",
+                                "name": "Other",
+                                "exit_uuid": "dda2cb17-a7b5-4312-ab12-e909cefd0816"
+                            }
+                        ],
+                        "default_category_uuid": "8c7b57e9-d989-4fac-b49e-7418bb703e6a",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "f8837049-0d13-47d6-b7f0-1f526952a139",
+                    "exits": [
+                        {
+                            "destination_uuid": "0a2ed7d6-f9a9-49a3-ac76-ebd5716c77a7",
+                            "uuid": "d1380a69-1168-45b3-83e3-46b80a43cb01"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e2fe6cec-066e-43cf-80c4-1692b3d3ad35",
+                            "type": "send_msg",
+                            "text": " Other parents find this hard; too. I\u2019m not alone.\n\u2014 This is not the last test that my child will take. There will be other\nopportunities to help her/him.",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"praise_kids_comic_2.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0a2ed7d6-f9a9-49a3-ac76-ebd5716c77a7",
+                    "exits": [
+                        {
+                            "destination_uuid": "97980d5c-0d4a-43bf-a8fa-6aae62ae79ad",
+                            "uuid": "807aef7d-8048-48c8-9653-e060a5331459"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "3ebaa361-f4b3-40b0-b124-2edfd27209b3",
+                                "name": "Other",
+                                "exit_uuid": "807aef7d-8048-48c8-9653-e060a5331459"
+                            }
+                        ],
+                        "default_category_uuid": "3ebaa361-f4b3-40b0-b124-2edfd27209b3",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "97980d5c-0d4a-43bf-a8fa-6aae62ae79ad",
+                    "exits": [
+                        {
+                            "destination_uuid": "54f138c6-a469-427a-9348-973b1097732e",
+                            "uuid": "d8062660-be89-4d15-be89-e7179807f3bc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "52ce60b7-decb-45ad-bffc-06f908feec8c",
+                            "type": "send_msg",
+                            "text": "Things have been very difficult lately, and I need to take some time out\nto look after myself.",
+                            "attachments": [
+                                "image:@(fields.comic_path & \"praise_kids_comic_3.jpg\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "54f138c6-a469-427a-9348-973b1097732e",
+                    "exits": [
+                        {
+                            "destination_uuid": "d2c5a302-91d3-4582-a06d-c71cb1bbb517",
+                            "uuid": "8528d804-a1f8-41ea-818d-f52cee039e16"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "b3269af6-b2ee-4df9-8297-3c9039862f86",
+                                "name": "Other",
+                                "exit_uuid": "8528d804-a1f8-41ea-818d-f52cee039e16"
+                            }
+                        ],
+                        "default_category_uuid": "b3269af6-b2ee-4df9-8297-3c9039862f86",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "d2c5a302-91d3-4582-a06d-c71cb1bbb517",
+                    "exits": [
+                        {
+                            "destination_uuid": "7ba9f922-8110-460f-9235-8738e18e7a8b",
+                            "uuid": "86a87897-775e-4b1c-b907-d9e157b35778"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "bc1f495c-b832-4bee-9002-a37317a6e7f4",
+                            "type": "send_msg",
+                            "text": "\u2705\u2705\u2b1c\ufe0f\u2b1c\ufe0f\n\nYou\u2019ve completed 50% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_2_4.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7ba9f922-8110-460f-9235-8738e18e7a8b",
+                    "exits": [
+                        {
+                            "destination_uuid": "a7336341-ce5f-432e-8743-b41376f0b21a",
+                            "uuid": "cfd589a2-c2b6-484e-a7b7-3f8514084600"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "f146a425-a332-45e1-b0c2-fa989571d2ec",
+                                "name": "Other",
+                                "exit_uuid": "cfd589a2-c2b6-484e-a7b7-3f8514084600"
+                            }
+                        ],
+                        "default_category_uuid": "f146a425-a332-45e1-b0c2-fa989571d2ec",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "a7336341-ce5f-432e-8743-b41376f0b21a",
+                    "exits": [
+                        {
+                            "destination_uuid": "9eb64607-823d-434c-be2e-33466483fccd",
+                            "uuid": "b74ba3ae-62d1-4cf4-a6c5-ee634e205951"
+                        },
+                        {
+                            "destination_uuid": "29980b5e-854d-4396-81f6-18107bae82b4",
+                            "uuid": "603515e4-19c9-46e2-ac04-5a0a3e63cc4a"
+                        },
+                        {
+                            "destination_uuid": "04f80def-f62a-4c57-9a13-264f76de2065",
+                            "uuid": "100a6f9a-ad6d-4de7-9a5d-8b85c66c6db3"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.type_of_media",
+                        "cases": [
+                            {
+                                "uuid": "29438f1f-1bd2-4bd6-9218-ef5775b9fed3",
+                                "type": "has_any_word",
+                                "category_uuid": "8c4b5d0b-7887-404d-a4db-fe80df2f4609",
+                                "arguments": [
+                                    "high"
+                                ]
+                            },
+                            {
+                                "uuid": "4f2745f7-5858-4358-ac1b-3aa4d5253f61",
+                                "type": "has_any_word",
+                                "category_uuid": "c5aabcbe-ae8a-42ca-9d2e-165e07e746d9",
+                                "arguments": [
+                                    "medium"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "8c4b5d0b-7887-404d-a4db-fe80df2f4609",
+                                "name": "High",
+                                "exit_uuid": "b74ba3ae-62d1-4cf4-a6c5-ee634e205951"
+                            },
+                            {
+                                "uuid": "c5aabcbe-ae8a-42ca-9d2e-165e07e746d9",
+                                "name": "Medium",
+                                "exit_uuid": "603515e4-19c9-46e2-ac04-5a0a3e63cc4a"
+                            },
+                            {
+                                "uuid": "084eb65c-97fd-451d-9fe5-9e456850eac6",
+                                "name": "Other",
+                                "exit_uuid": "100a6f9a-ad6d-4de7-9a5d-8b85c66c6db3"
+                            }
+                        ],
+                        "default_category_uuid": "084eb65c-97fd-451d-9fe5-9e456850eac6",
+                        "result_name": "media"
+                    }
+                },
+                {
+                    "uuid": "9eb64607-823d-434c-be2e-33466483fccd",
+                    "exits": [
+                        {
+                            "destination_uuid": "32d121ec-82be-4fe3-9804-02978f7a147f",
+                            "uuid": "346ec446-78ed-46aa-a20f-4a1f79d54dcf"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "4c042264-2021-4ad3-b253-2265137985a7",
+                            "type": "send_msg",
+                            "text": "Here\u2019s a video to give you some tips on how to support your teen when they are feeling stressed. \ud83d\udc9b",
+                            "attachments": [
+                                "video:@(fields.voiceover_video_path & \"Praise.m4v\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "32d121ec-82be-4fe3-9804-02978f7a147f",
+                    "exits": [
+                        {
+                            "destination_uuid": "11313c97-cfcc-4775-9d6b-2bf2cea8b055",
+                            "uuid": "48c53484-a213-474c-aadb-eae4206bc8c5"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "ad84fefe-0ae1-4613-890c-2cd77c31752a",
+                                "name": "Other",
+                                "exit_uuid": "48c53484-a213-474c-aadb-eae4206bc8c5"
+                            }
+                        ],
+                        "default_category_uuid": "ad84fefe-0ae1-4613-890c-2cd77c31752a",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "29980b5e-854d-4396-81f6-18107bae82b4",
+                    "exits": [
+                        {
+                            "destination_uuid": "984c60c6-a2f3-4053-baf1-dde8a1130536",
+                            "uuid": "ded8c75c-b21a-4386-a864-3c6dcaa04c61"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "4c47210b-f6cf-4e5b-a611-372893b58f1e",
+                            "type": "send_msg",
+                            "text": "Here\u2019s an audio message to give you some tips on how to support your teen when they are feeling stressed. \ud83d\udc9b",
+                            "attachments": [
+                                "audio:@(fields.voiceover_audio_path & \"Praise.mp3\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "984c60c6-a2f3-4053-baf1-dde8a1130536",
+                    "exits": [
+                        {
+                            "destination_uuid": "04f80def-f62a-4c57-9a13-264f76de2065",
+                            "uuid": "e06e6c2f-c408-4d59-afc2-54237fc1bf34"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "fe753f38-1627-42c0-9d68-20860af8caea",
+                                "name": "Other",
+                                "exit_uuid": "e06e6c2f-c408-4d59-afc2-54237fc1bf34"
+                            }
+                        ],
+                        "default_category_uuid": "fe753f38-1627-42c0-9d68-20860af8caea",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "wait_media"
+                    }
+                },
+                {
+                    "uuid": "04f80def-f62a-4c57-9a13-264f76de2065",
+                    "exits": [
+                        {
+                            "destination_uuid": "2adcbda6-72b9-43f0-9046-e498fb3841ed",
+                            "uuid": "0063d366-db75-4c4f-af6e-a18744682444"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7830ecea-5cc7-4f9d-9db5-62a40b959ff5",
+                            "type": "send_msg",
+                            "text": "Here are some tips to help you support your teen when they are feeling stressed:",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "2adcbda6-72b9-43f0-9046-e498fb3841ed",
+                    "exits": [
+                        {
+                            "destination_uuid": "5ee05651-3dd9-4511-84cc-16257a7e933e",
+                            "uuid": "47eb485e-0648-496b-b251-9ae0de4a4537"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "f027a09b-8831-4497-9901-28cc0311d2c5",
+                            "type": "send_msg",
+                            "text": "1\ufe0f\u20e3 **NOTICE**\n\ud83d\udc40 Look for signs that your teen is feeling stressed. \n\ud83d\udea9 They might get angry a lot, want to be alone all the time, be unable to focus, feel tired often, or not feel like doing any work.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "5ee05651-3dd9-4511-84cc-16257a7e933e",
+                    "exits": [
+                        {
+                            "destination_uuid": "ffa05473-35a5-41e2-a2f3-ea027a454e00",
+                            "uuid": "0bc67580-6d37-4a3b-a400-4c141dee538b"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "e8d324c1-d1f8-4c4a-9555-f72bc2c3b514",
+                                "name": "Other",
+                                "exit_uuid": "0bc67580-6d37-4a3b-a400-4c141dee538b"
+                            }
+                        ],
+                        "default_category_uuid": "e8d324c1-d1f8-4c4a-9555-f72bc2c3b514",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "ffa05473-35a5-41e2-a2f3-ea027a454e00",
+                    "exits": [
+                        {
+                            "destination_uuid": "e88df1d3-fcb8-45b3-9a8c-3fd314c4294e",
+                            "uuid": "c9d03da9-bc80-46b1-9026-3c419e7d80c7"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "5f659e9b-0830-4a27-a692-e11c870a1b88",
+                            "type": "send_msg",
+                            "text": "2\ufe0f\u20e3 **TALK**\n\u2753 Talk to your teen about what makes them stressed. \n\ud83d\ude23 They might feel a lot of stress about something that feels small to us. To them, it might feel huge!\n\ud83d\udc9b Let them tell you about what gives them stress without judging them.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e88df1d3-fcb8-45b3-9a8c-3fd314c4294e",
+                    "exits": [
+                        {
+                            "destination_uuid": "c7e31ba9-b44a-4c79-8a23-aad56a6b92b8",
+                            "uuid": "bd9dac96-d77b-4fc0-a78f-968e25e6663c"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "8d31cf6d-2002-473d-8bcc-33bb8ea6974a",
+                                "name": "Other",
+                                "exit_uuid": "bd9dac96-d77b-4fc0-a78f-968e25e6663c"
+                            }
+                        ],
+                        "default_category_uuid": "8d31cf6d-2002-473d-8bcc-33bb8ea6974a",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "c7e31ba9-b44a-4c79-8a23-aad56a6b92b8",
+                    "exits": [
+                        {
+                            "destination_uuid": "72f16379-ac6b-434b-85be-e7a464fc8deb",
+                            "uuid": "2db74eb2-aa70-4474-a34a-f2ce76701b70"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8bdf52d4-a682-44fc-b55d-616aca2ec212",
+                            "type": "send_msg",
+                            "text": "3\ufe0f\u20e3 **BE THERE**\n\ud83d\udc42 Listen to what they say, even if you can\u2019t do anything about it.\n\ud83d\udc9a Tell them it is okay to feel stressed\n\ud83d\udca1 Help them decide which things are more important to worry about.\n\ud83d\udd11 Help them take steps to change what is causing their stress where they can.\n\ud83d\udcd6 Help them prepare for what they are stressing about.",
+                            "attachments": [],
+                            "quick_replies": [
+                                "{@tips.next_button@}"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "72f16379-ac6b-434b-85be-e7a464fc8deb",
+                    "exits": [
+                        {
+                            "destination_uuid": "11313c97-cfcc-4775-9d6b-2bf2cea8b055",
+                            "uuid": "8129952b-3e05-44ca-927c-e8d0732a04b1"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "13563eca-ac3b-454e-832d-1dc2040801b2",
+                                "name": "Other",
+                                "exit_uuid": "8129952b-3e05-44ca-927c-e8d0732a04b1"
+                            }
+                        ],
+                        "default_category_uuid": "13563eca-ac3b-454e-832d-1dc2040801b2",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "11313c97-cfcc-4775-9d6b-2bf2cea8b055",
+                    "exits": [
+                        {
+                            "destination_uuid": "03d74b17-ea63-4250-93b5-030475aa1475",
+                            "uuid": "22ff13d0-2b02-49eb-b549-3174d59fde68"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "1a534861-f78b-402b-bc3f-5c81525f5a53",
+                            "type": "send_msg",
+                            "text": "\u2705\u2705\u2705\u2b1c\ufe0f\n\nYou\u2019ve completed 75% of this skill! Press NEXT to continue.",
+                            "attachments": [
+                                "image:@(fields.tracker_path & \"tracker_3_4.PNG\")"
+                            ],
+                            "quick_replies": [
+                                "NEXT"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "03d74b17-ea63-4250-93b5-030475aa1475",
+                    "exits": [
+                        {
+                            "destination_uuid": "e517740c-cfa8-4173-99b7-f84f1cb33552",
+                            "uuid": "3f5c500a-85ef-4233-9edb-50e98260a101"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [],
+                        "categories": [
+                            {
+                                "uuid": "ee380aaf-52eb-4e38-a4ba-720b4e78d52c",
+                                "name": "Other",
+                                "exit_uuid": "3f5c500a-85ef-4233-9edb-50e98260a101"
+                            }
+                        ],
+                        "default_category_uuid": "ee380aaf-52eb-4e38-a4ba-720b4e78d52c",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "e517740c-cfa8-4173-99b7-f84f1cb33552",
+                    "exits": [
+                        {
+                            "destination_uuid": "5bad0c44-2ca2-4c59-824c-ab03d76dd9b5",
+                            "uuid": "2c40d290-7003-4e27-9058-98b488b7ccb9"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "60dbe051-2ae8-494b-a39c-946483ba7be6",
+                            "type": "send_msg",
+                            "text": "Home Activity! With your teen, make a list of some things they stress about often, and what they could do when they need to cope with them. Talk about how you can help when they are stressed, too. You can come back to this list next time you notice your teen might feel stressed. \n\nCan you make a list about coping with stress with your teen sometime this week?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "Yes",
+                                "No"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "5bad0c44-2ca2-4c59-824c-ab03d76dd9b5",
+                    "exits": [
+                        {
+                            "destination_uuid": "afaeaee8-6f64-4f2e-bbf2-3639c2417928",
+                            "uuid": "bb2c1833-8482-4642-8069-3bbb8149dcc2"
+                        },
+                        {
+                            "destination_uuid": "39525918-6e4f-4036-8586-ee5bb7c0f4a7",
+                            "uuid": "7c4093c5-76b0-4d59-b045-82c92881d863"
+                        },
+                        {
+                            "destination_uuid": "e50b0371-118a-4f1e-ba17-e4cb9a1cb4d2",
+                            "uuid": "8940228f-ca3f-4a31-b4e0-368889510b9c"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "04a8e345-d7de-4429-a2ab-61fb04ffcaac",
+                                "type": "has_any_word",
+                                "category_uuid": "94dabd84-8d38-4c17-ab66-575bed7325cf",
+                                "arguments": [
+                                    "yes y yeah yep"
+                                ]
+                            },
+                            {
+                                "uuid": "6a6ebfbb-ee76-4e5a-843b-6b3b2f9a1f4d",
+                                "type": "has_any_word",
+                                "category_uuid": "5cd9b494-31c6-4741-bc79-ebad177dbaf2",
+                                "arguments": [
+                                    "no nope n"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "94dabd84-8d38-4c17-ab66-575bed7325cf",
+                                "name": "Yes Y Yeah Yep",
+                                "exit_uuid": "bb2c1833-8482-4642-8069-3bbb8149dcc2"
+                            },
+                            {
+                                "uuid": "5cd9b494-31c6-4741-bc79-ebad177dbaf2",
+                                "name": "No Nope N",
+                                "exit_uuid": "7c4093c5-76b0-4d59-b045-82c92881d863"
+                            },
+                            {
+                                "uuid": "e668a1aa-1e6c-44d3-a8f5-617955c00031",
+                                "name": "Other",
+                                "exit_uuid": "8940228f-ca3f-4a31-b4e0-368889510b9c"
+                            }
+                        ],
+                        "default_category_uuid": "e668a1aa-1e6c-44d3-a8f5-617955c00031",
+                        "wait": {
+                            "type": "msg"
+                        }
+                    }
+                },
+                {
+                    "uuid": "afaeaee8-6f64-4f2e-bbf2-3639c2417928",
+                    "exits": [
+                        {
+                            "destination_uuid": "be777ed3-389f-4cc6-bdb8-9e90ff3d63be",
+                            "uuid": "19a06b61-cd8a-4f73-a3cf-4387b295fb1f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9ac622cd-7430-4782-92d2-19b39ca6e4a5",
+                            "type": "send_msg",
+                            "text": "Great! This is such a good way to help our teens cope with their stress. \ud83d\udc9a Supporting your teen when they are stressed helps them deal with it better, and will help them feel more safe and secure. Well done, keep at it! \ud83c\udfc6",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "39525918-6e4f-4036-8586-ee5bb7c0f4a7",
+                    "exits": [
+                        {
+                            "destination_uuid": "be777ed3-389f-4cc6-bdb8-9e90ff3d63be",
+                            "uuid": "a4248963-a421-4e1f-b9e0-24d8da30c2e0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6e8d78b7-cb38-4d2a-8047-3807516d222f",
+                            "type": "send_msg",
+                            "text": "That\u2019s OK. It can be hard to talk about these things! Next time your teen is acting outside of what you expect from them, think about if it might be because of stress. \ud83d\udea9 You can use the Main Menu to come back to this skill for tips to support them. \ud83d\udc9a",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e50b0371-118a-4f1e-ba17-e4cb9a1cb4d2",
+                    "exits": [
+                        {
+                            "destination_uuid": "e517740c-cfa8-4173-99b7-f84f1cb33552",
+                            "uuid": "82b34419-4664-40ad-86a4-bf6a257f3629"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6158ce1e-1f93-49d9-b722-77c4e0f30774",
+                            "type": "send_msg",
+                            "text": "Sorry, I don't understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "be777ed3-389f-4cc6-bdb8-9e90ff3d63be",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "441d3b40-6d9f-4ab9-a39c-87dcedc9e4a8"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "c1f12282-3d19-4100-bd6f-98405c88a464",
+                            "type": "send_msg",
+                            "text": "Congratulations on completing the skill, helping our Teens with stress.. You\u2019ve completed X out of X skills towards the goal, Caring for My Teen\u2019s Wellbeing.",
+                            "attachments": [
+                                "image:\n@(fields.reward_path & \"badge.png\")"
+                            ],
+                            "quick_replies": []
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        }
+    ],
+    "groups": [],
+    "site": "https://rapidpro.idems.international",
+    "triggers": [],
+    "version": "13"
+}

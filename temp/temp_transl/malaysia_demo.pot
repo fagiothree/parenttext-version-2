@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "Well done for committing to helping @fields.child_nickname live a good life. It shows you really care! 💙"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done for committing to helping your child live a good life. It shows you really care! 💙"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "This skill is about praise. 🎉 How did the message above make you feel? We all feel better when others notice the good things we do. It’s even better when it is by someone we love."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Let’s check in on Jenny and her son, Alex, to see how giving praise can work at home. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You found a striped sock and one with dots. Let’s find the socks that match those two. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Another sock! This one is white. It isn’t easy finding a matching pair. It can be frustrating."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You are being very patient and looking very hard, Alex. Good for trying. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You found matching socks of the same pattern! Well done for looking, Alex!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅⬜️⬜️⬜️"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You’ve completed 25% of this skill! Press NEXT to continue."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Let’s do a True/False quiz!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Incorrect. How you praise your child is important. Praise should be specific, immediate, and genuine. You can begin by praising your child for the smallest things, such as playing by themselves quietly for 2 minutes."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You are right! How you praise your child is important. Praise should be specific, immediate, and genuine. You can begin by praising your child for the smallest things, such as playing by themselves quietly for 2 minutes."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, I dont' understand what you mean."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅✅⬜️⬜️"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You’ve completed 50% of this skill! Press NEXT to continue."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Press PLAY ▶️ for a video message on giving your child praise."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Press PLAY ▶️ for an audio message on giving your child praise."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "2️⃣ *SAY IT*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🏆 Praise them when you see them do something you like."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅ Tell them specifically what they have done well."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎉 Be enthusiastic and really mean it!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 This means they are more likely to do it again."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅✅✅⬜️"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You’ve completed 75% of this skill! Press NEXT to continue."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Your Home Activity today is to praise your child. Can you try it today?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That's OK! Sometimes things take time. You can review this skill in the Main Menu any time. At the end of the day, think of all of the positive things that happened - this makes it easier to point them out. ☀️ With time, praise will come easily to you."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, I don't understand what you mean."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. @results.n_skills_week and results.n_skills are numbers
+msgctxt "text"
+msgid "Well done, you have now learnt the four steps to Praise! ⭐ You have completed @(fields.c_n_mod_compl +1) out of @fields.c_n_mod  skills in the goal, Improve my Relationship with My Child."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "Praising @fields.child_nickname when they behave in a good way will make them want to behave that way more often. It also creates a positive and loving relationship between you and @fields.child_nickname ⭐"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Praising your child when they behave in a good way will make them want to behave that way more often. It also creates a positive and loving relationship between you and your child ⭐"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "The way in which you give praise to @fields.child_nickname does not matter because any kind of praise is effective."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "The way in which you give praise to your child does not matter because any kind of praise is effective."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "When we praise our children, and point out the good things they do, it encourages them to repeat that behaviour. Giving praise also helps build confidence and a positive relationship with you. "
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "Here are 4 simple tips for praising @fields.child_nickname:"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Here are 4 simple tips for praising your child:"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "1️⃣ *SEE IT*"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "👀 Look for anything good or helpful @fields.child_nickname does."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👀 Look for anything good or helpful your child does."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "3️⃣ *REPEAT IT*"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "🌷 Look for something to praise @fields.child_nickname for every day."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔶 Even if it is something really small, keep doing it."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🌷 Look for something to praise your child for every day."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "4️⃣ *KEEP IT POSITIVE*"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "💡 Make sure you focus on something @fields.child_nickname has done well."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "🌈 Keeping it positive reminds @fields.child_nickname that you notice them and care."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 Make sure you focus on something your child has done well."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🌈 Keeping it positive reminds your child that you notice them and care."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "Amazing! 🎉 Look for three things that you can praise @fields.child_nickname for every day. You can praise other adults in your household, too. Notice how they respond."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! 🎉 Look for three things that you can praise your child for every day. You can praise other adults in your household, too. Notice how they respond."
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "NEXT"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Yes"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "No"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "True"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "False"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "true"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "false"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "yes y yeah yep"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "no nope n"
+msgstr ""

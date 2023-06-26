@@ -1,0 +1,383 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+#. type=text
+msgctxt "text"
+msgid "Each child grows and learns in their own way. This tool can help you learn what activities your child can do."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your child have difficulty seeing or hearing sounds like peoples’ voices or music, even with glasses or hearing aids?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about your child's eyesight or hearing, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, I dont' understand what you mean."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Compared with children of the same age, does your child have difficulty walking?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about your child's ability to move around, and they might need assistance from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your child have difficulty with self-care such as feeding or dressing him/herself?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you are concerned about your child's ability to take care of themselves, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your child have difficulty being understood by others?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about how your child communicates, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your child have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about how your child is able to think or understand things, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Compared with children of the same age, does your child have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you are concerned about your child's behaviour, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your child have difficulty making friends?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems that you're worried about your child's ability to interact with others, and they might need assistance from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "How often does your child seem very anxious, nervous, worried, sad, or depressed?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about how your child is feeling, and they might need assistance from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Thank you for taking the child ability test. If you have any concerns, talk to a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Remember, if you ever need support type HELP."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It looks like your child is developing well. That's great!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Each teen grows and learns in their own way. This tool can help you learn what activities your teen can do."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your teen have difficulty seeing or hearing sounds like peoples’ voices or music, even with glasses or hearing aids?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about your teenager's eyesight or hearing, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Compared with children of the same age, does your teen have difficulty walking?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about your teen's ability to move around, and they might need assistance from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your teen have difficulty with self-care such as feeding or dressing him/herself?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you are concerned about your teen's ability to take care of themselves, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your teen have difficulty being understood by others?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about how your teen communicates, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your teen have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about how your teen is able to think or understand things, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Compared with teens of the same age, does your teen have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you are concerned about your teen's behaviour, and they might need help from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Does your teen have difficulty making friends?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems that you're worried about your teen's ability to interact with others, and they might need assistance from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "How often does your teen seem very anxious, nervous, worried, sad, or depressed?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It seems like you're worried about how your teen is feeling, and they might need assistance from a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Thank you for taking the teen ability test. If you have any concerns, talk to a professional."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "It looks like your teen is developing well. That's great!"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "No Difficulty"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Some Difficulty"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "A Lot of Difficulty"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "He or She Cannot See and/or Hear"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "He or She Cannot Walk"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "He or She Cannot Take Care of Themselves"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "He or She Cannot Be Understood by Others"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "He or She Cannot Learn, Remember or Focus"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "He or She Cannot Control Their Behaviour"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "He or She Cannot Make Friends"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Every Day"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Once A Week"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "About Once a Month"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "A Few Times Each Year"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Never"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "no difficulty"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "some difficulty"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "a lot of difficulty"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "he or she cannot see and/or hear"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "he or she cannot walk"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "he or she cannot take care of themselves"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "he or she cannot be understood by others"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "he or she cannot learn, remember or focus"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "he or she cannot control their behaviour"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "he or she cannot make friends"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "every day"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "once a week"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "about once a month"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "a few times each year"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "never"
+msgstr ""

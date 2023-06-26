@@ -1,0 +1,83 @@
+{
+    "campaigns": [],
+    "fields": [],
+    "flows": [
+        {
+            "uuid": "4240b8e6-f72a-43c9-82f7-65b386308891",
+            "name": "set_up_comic_names",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "648401ed-3a21-46cb-8c1c-e3088ae92170",
+                    "exits": [
+                        {
+                            "destination_uuid": "66b23848-f70d-411b-a3be-5f732803adeb",
+                            "uuid": "5fce8a56-cdae-4150-9615-16c975467395"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "d5668258-da6d-4138-ac8f-6e32c9e4766f",
+                            "type": "set_contact_field",
+                            "field": {
+                                "key": "names_dict",
+                                "name": "names dict"
+                            },
+                            "value": "@(json(object(\"male\",object(\"eng\", \"Tom Bob John \"  ,\"ita\", \"Tommaso Roberto Giovanni \"  ),\"female\",object(\"eng\", \"Mary Lisa Sarah \"  ,\"ita\", \"Maria Lisa Sara \"  ))))"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "66b23848-f70d-411b-a3be-5f732803adeb",
+                    "exits": [
+                        {
+                            "destination_uuid": "f6413e28-f63a-41ff-afb2-5018e8db9435",
+                            "uuid": "043fe0a6-b6d1-4b4c-babf-7a58abda328f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "0814dcee-e22d-4242-8f96-9e585e1ec270",
+                            "type": "set_contact_field",
+                            "field": {
+                                "key": "male_names_dict",
+                                "name": "male names dict"
+                            },
+                            "value": "@(json(object(\"code\",object(\"eng\", \"eng\"  ,\"ita\", \"ita\"  )  ,\"Tom\",object(\"eng\", \"Tom\"  ,\"ita\", \"Tommaso\"  )  ,\"Bob\",object(\"eng\", \"Bob\"  ,\"ita\", \"Roberto\"  )  ,\"John\",object(\"eng\", \"John\"  ,\"ita\", \"Giovanni\"  )  )))"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f6413e28-f63a-41ff-afb2-5018e8db9435",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "738dd437-b038-4c9e-8352-f2537cef2930"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6353be30-4e40-4f6e-ae73-07a451e3e2b4",
+                            "type": "set_contact_field",
+                            "field": {
+                                "key": "female_names_dict",
+                                "name": "female names dict"
+                            },
+                            "value": "@(json(object(\"code\",object(\"eng\", \"eng\"  ,\"ita\", \"ita\"  )  ,\"Mary\",object(\"eng\", \"Mary\"  ,\"ita\", \"Maria\"  )  ,\"Lisa\",object(\"eng\", \"Lisa\"  ,\"ita\", \"Lisa\"  )  ,\"Sarah\",object(\"eng\", \"Sarah\"  ,\"ita\", \"Sara\"  )  )))"
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        }
+    ],
+    "groups": [],
+    "site": "https://rapidpro.idems.international",
+    "triggers": [],
+    "version": "13"
+}

@@ -1,0 +1,3578 @@
+{
+    "campaigns": [],
+    "fields": [],
+    "flows": [
+        {
+            "uuid": "5f172a97-1e41-4cfa-8e8d-59448fd92d87",
+            "name": "wg_unicef_survey - child",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "34bb1fda-7228-48aa-8ff9-00ed281c4ff2",
+                    "exits": [
+                        {
+                            "destination_uuid": "492cfbb4-618a-45f5-acfb-c16e2e0f71dd",
+                            "uuid": "d7b15e9c-1cce-4a1e-9125-7e79dff1b569"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7bf7597b-21e7-4be2-9b94-ae7abb399d6e",
+                            "type": "send_msg",
+                            "text": "Each child grows and learns in their own way. This tool can help you learn what activities your child can do.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "492cfbb4-618a-45f5-acfb-c16e2e0f71dd",
+                    "exits": [
+                        {
+                            "destination_uuid": "0aa670a2-2aaf-4c9a-9738-5e81c461b24a",
+                            "uuid": "318ae438-758d-408c-a829-5a23f142f8ef"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "55a01062-84e8-497e-9fb1-958c22a05323",
+                            "type": "send_msg",
+                            "text": "Does your child have difficulty seeing or hearing sounds like peoples\u2019 voices or music, even with glasses or hearing aids?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot See and/or Hear"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0aa670a2-2aaf-4c9a-9738-5e81c461b24a",
+                    "exits": [
+                        {
+                            "destination_uuid": "eb01e157-0299-45cf-b416-de2f51c3937e",
+                            "uuid": "9039cde2-ba11-4350-94d0-c185d7e1d1fa"
+                        },
+                        {
+                            "destination_uuid": "eb01e157-0299-45cf-b416-de2f51c3937e",
+                            "uuid": "983efdde-4c91-467a-b039-ed0c0b24ec32"
+                        },
+                        {
+                            "destination_uuid": "c0feaff0-1c8f-46ad-a759-f93390a022ae",
+                            "uuid": "0898c63a-2ba1-47f6-b413-fc82caca4f1e"
+                        },
+                        {
+                            "destination_uuid": "30198b5a-3787-4f87-aa94-f8290f223e20",
+                            "uuid": "56f7fea9-2596-475f-9258-53b2ee84806c"
+                        },
+                        {
+                            "destination_uuid": "0d150397-5903-45ac-b247-b4f9b7284b42",
+                            "uuid": "2e3f396b-d380-42ae-85a7-3bda2457fd7d"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "706c52c1-8b75-4155-a2e1-e748017748bf",
+                                "type": "has_only_phrase",
+                                "category_uuid": "76baaaeb-a3ff-461a-9bca-e68d0b43d25e",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "27a7e71c-d044-4210-9db0-a78abb1b7036",
+                                "type": "has_only_phrase",
+                                "category_uuid": "6b707f99-f06c-42fd-a36a-cc2105566f65",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "a3ca06d7-1e8a-4265-97e2-013936656231",
+                                "type": "has_only_phrase",
+                                "category_uuid": "53042fc1-2bde-495c-bd65-286071fb91e3",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "e1400f27-7d49-49bf-adbb-6c26cf1cc606",
+                                "type": "has_only_phrase",
+                                "category_uuid": "4342e2c2-46f0-4474-b3ef-7a59d9356e19",
+                                "arguments": [
+                                    "He or She Cannot See and/or Hear"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "76baaaeb-a3ff-461a-9bca-e68d0b43d25e",
+                                "name": "No Difficulty",
+                                "exit_uuid": "9039cde2-ba11-4350-94d0-c185d7e1d1fa"
+                            },
+                            {
+                                "uuid": "6b707f99-f06c-42fd-a36a-cc2105566f65",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "983efdde-4c91-467a-b039-ed0c0b24ec32"
+                            },
+                            {
+                                "uuid": "53042fc1-2bde-495c-bd65-286071fb91e3",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "0898c63a-2ba1-47f6-b413-fc82caca4f1e"
+                            },
+                            {
+                                "uuid": "4342e2c2-46f0-4474-b3ef-7a59d9356e19",
+                                "name": "He or She Cannot See and/or Hear",
+                                "exit_uuid": "56f7fea9-2596-475f-9258-53b2ee84806c"
+                            },
+                            {
+                                "uuid": "b24fa98e-60c6-4dc9-a260-12e13822e7c3",
+                                "name": "Other",
+                                "exit_uuid": "2e3f396b-d380-42ae-85a7-3bda2457fd7d"
+                            }
+                        ],
+                        "default_category_uuid": "b24fa98e-60c6-4dc9-a260-12e13822e7c3",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_0"
+                    }
+                },
+                {
+                    "uuid": "c0feaff0-1c8f-46ad-a759-f93390a022ae",
+                    "exits": [
+                        {
+                            "destination_uuid": "19d5818c-0be6-4a2b-8d51-7b80d9010093",
+                            "uuid": "57360f19-f154-4b11-a3f5-ab7f698d9d03"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2e41f0ff-0d8b-461c-9405-2e49d656ce2d",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your child's eyesight or hearing, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "19d5818c-0be6-4a2b-8d51-7b80d9010093",
+                    "exits": [
+                        {
+                            "destination_uuid": "eb01e157-0299-45cf-b416-de2f51c3937e",
+                            "uuid": "642935e9-869f-4d07-93f4-b8d293658e27"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "2f0a2acd-ab08-47d3-b588-336e228cd6a0"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "30198b5a-3787-4f87-aa94-f8290f223e20",
+                    "exits": [
+                        {
+                            "destination_uuid": "7986d5d5-5653-43e2-98d9-22577a48b1f7",
+                            "uuid": "85f38a11-3a3f-4fa4-9aa0-2a4a77ce2116"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3bd0ed13-02ce-455e-865f-72b1e8239203",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your child's eyesight or hearing, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7986d5d5-5653-43e2-98d9-22577a48b1f7",
+                    "exits": [
+                        {
+                            "destination_uuid": "eb01e157-0299-45cf-b416-de2f51c3937e",
+                            "uuid": "49b46d17-9491-4210-b6e1-ccb71e624bb6"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "da2090f5-5cb4-4d1d-8ada-fe0a23e6bc5b"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0d150397-5903-45ac-b247-b4f9b7284b42",
+                    "exits": [
+                        {
+                            "destination_uuid": "492cfbb4-618a-45f5-acfb-c16e2e0f71dd",
+                            "uuid": "eb0bb888-9310-44dc-9fdd-560dcd314f0d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8f047f01-fab9-49d9-bd86-cdc17b85e338",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "eb01e157-0299-45cf-b416-de2f51c3937e",
+                    "exits": [
+                        {
+                            "destination_uuid": "3e11b121-168d-4887-8cb1-d68368dbd70c",
+                            "uuid": "57ad6ae4-0250-46b7-b2d6-fcaf5a82c5f4"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7f477ce2-63d0-4d91-b166-92e928596860",
+                            "type": "send_msg",
+                            "text": "Compared with children of the same age, does your child have difficulty walking?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Walk"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3e11b121-168d-4887-8cb1-d68368dbd70c",
+                    "exits": [
+                        {
+                            "destination_uuid": "3150a2e0-f6f2-4bf0-b661-687442be3ddc",
+                            "uuid": "208c9724-1f83-4d6c-b92e-5b358ad5aa97"
+                        },
+                        {
+                            "destination_uuid": "3150a2e0-f6f2-4bf0-b661-687442be3ddc",
+                            "uuid": "9ce192c0-0d9d-42a1-b792-3df0e1b2b3c3"
+                        },
+                        {
+                            "destination_uuid": "2b21cc2f-6df0-484c-9b4c-2b8c46ad55f4",
+                            "uuid": "cc8ff014-9db6-407b-9ae7-4f97c175cdf0"
+                        },
+                        {
+                            "destination_uuid": "7887be2d-5ff8-4508-b0ce-c4afeca6835f",
+                            "uuid": "2ef5258a-1901-4202-896b-939a5f196452"
+                        },
+                        {
+                            "destination_uuid": "a0cf4e53-9396-4d7c-9a59-fa2f521ab85c",
+                            "uuid": "c9bd202f-aace-4e45-bb2c-37e5541ec649"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "4be25e60-5ac8-4651-930f-614fbc16a48c",
+                                "type": "has_only_phrase",
+                                "category_uuid": "aa6cc60b-8f28-41aa-b462-6bb7e9eed6d6",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "ca646fa2-6f93-495e-bb38-9b39b0f03cdf",
+                                "type": "has_only_phrase",
+                                "category_uuid": "f030ca51-1923-4e3f-9535-5f558b142fca",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "86cc09a6-17b7-4630-a9d9-e50bd3a11bf7",
+                                "type": "has_only_phrase",
+                                "category_uuid": "eb0507f7-278b-4d15-a8b8-77a5a2c948a3",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "68e716d5-74f0-4719-9077-6ac03c186372",
+                                "type": "has_only_phrase",
+                                "category_uuid": "08afea42-63f7-4afe-940e-eb42e5330a7b",
+                                "arguments": [
+                                    "He or She Cannot Walk"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "aa6cc60b-8f28-41aa-b462-6bb7e9eed6d6",
+                                "name": "No Difficulty",
+                                "exit_uuid": "208c9724-1f83-4d6c-b92e-5b358ad5aa97"
+                            },
+                            {
+                                "uuid": "f030ca51-1923-4e3f-9535-5f558b142fca",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "9ce192c0-0d9d-42a1-b792-3df0e1b2b3c3"
+                            },
+                            {
+                                "uuid": "eb0507f7-278b-4d15-a8b8-77a5a2c948a3",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "cc8ff014-9db6-407b-9ae7-4f97c175cdf0"
+                            },
+                            {
+                                "uuid": "08afea42-63f7-4afe-940e-eb42e5330a7b",
+                                "name": "He or She Cannot Walk",
+                                "exit_uuid": "2ef5258a-1901-4202-896b-939a5f196452"
+                            },
+                            {
+                                "uuid": "d4d7e8bb-f1c9-49e6-bfea-01cca8fff6b2",
+                                "name": "Other",
+                                "exit_uuid": "c9bd202f-aace-4e45-bb2c-37e5541ec649"
+                            }
+                        ],
+                        "default_category_uuid": "d4d7e8bb-f1c9-49e6-bfea-01cca8fff6b2",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_1"
+                    }
+                },
+                {
+                    "uuid": "2b21cc2f-6df0-484c-9b4c-2b8c46ad55f4",
+                    "exits": [
+                        {
+                            "destination_uuid": "bb2b66a3-ba9d-4201-98a8-91befce2d3c1",
+                            "uuid": "9f628f4a-55e1-49be-b05c-e8f15bef74f8"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "34198842-3159-41d5-9b70-eb3163698e40",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your child's ability to move around, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "bb2b66a3-ba9d-4201-98a8-91befce2d3c1",
+                    "exits": [
+                        {
+                            "destination_uuid": "3150a2e0-f6f2-4bf0-b661-687442be3ddc",
+                            "uuid": "4aba5065-f845-49e1-894c-27a7125248cf"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "7b55f8c4-aacd-48c2-8b27-3089b23be1f3"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7887be2d-5ff8-4508-b0ce-c4afeca6835f",
+                    "exits": [
+                        {
+                            "destination_uuid": "6e2fd3b6-2ac9-4249-8d59-ddfff50c9d66",
+                            "uuid": "c4d156fa-64e1-42d9-bd3b-3e4d847bad6a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6740ff71-f4db-481b-9ff5-6a50050b37a9",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your child's ability to move around, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6e2fd3b6-2ac9-4249-8d59-ddfff50c9d66",
+                    "exits": [
+                        {
+                            "destination_uuid": "3150a2e0-f6f2-4bf0-b661-687442be3ddc",
+                            "uuid": "519ecd4f-408f-4307-8d95-02dafab4e098"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "27d1c3bd-80a7-4e94-b503-d8a72cba1d11"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "a0cf4e53-9396-4d7c-9a59-fa2f521ab85c",
+                    "exits": [
+                        {
+                            "destination_uuid": "eb01e157-0299-45cf-b416-de2f51c3937e",
+                            "uuid": "807a0728-e49a-41ed-a006-2f23dcb7ece4"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e7e7fd0e-8207-4353-abe5-c74788930e02",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3150a2e0-f6f2-4bf0-b661-687442be3ddc",
+                    "exits": [
+                        {
+                            "destination_uuid": "a36583ee-053c-4ae8-908f-65ad8ffa9451",
+                            "uuid": "5e305012-4c90-4a09-92ea-fa73771c4691"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "4e1b488c-414c-4851-812a-b9fc3dd3a9af",
+                            "type": "send_msg",
+                            "text": "Does your child have difficulty with self-care such as feeding or dressing him/herself?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Take Care of Themselves"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "a36583ee-053c-4ae8-908f-65ad8ffa9451",
+                    "exits": [
+                        {
+                            "destination_uuid": "3faf60ac-b773-4104-90d2-74a64e158088",
+                            "uuid": "63f24d77-8993-4fe8-b9ef-89d069a9568e"
+                        },
+                        {
+                            "destination_uuid": "3faf60ac-b773-4104-90d2-74a64e158088",
+                            "uuid": "1e6003be-4a5a-4812-9dff-cc757ac84b24"
+                        },
+                        {
+                            "destination_uuid": "93e092d2-fa9a-4d2d-b22c-4ab40380682d",
+                            "uuid": "e791f514-ab02-4316-8ba4-7d4a7fa2d805"
+                        },
+                        {
+                            "destination_uuid": "d24261e3-a5d9-47fc-853b-f0355f1705ab",
+                            "uuid": "dc02a63f-25e5-4472-95d8-c4d92d8e8dfe"
+                        },
+                        {
+                            "destination_uuid": "dcf7e2eb-48ab-47d9-8325-6dbda3b68f25",
+                            "uuid": "51106f1c-d82c-42a6-9882-78762e5d3b86"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "001a02cb-cde6-467d-9eed-82f6315e59b9",
+                                "type": "has_only_phrase",
+                                "category_uuid": "c3082bf0-e30a-437f-83a6-61b605682e2f",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "29eb92bc-d7a4-44d4-956c-00da7a8365dc",
+                                "type": "has_only_phrase",
+                                "category_uuid": "2e01b3ce-963f-44a0-a1c4-65757e9ecd65",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "4747ad35-7826-4938-aa43-e2a73c2d4ba5",
+                                "type": "has_only_phrase",
+                                "category_uuid": "283d5353-380d-4b81-8c3b-7daeee6a5083",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "7f27578b-c882-497f-820f-d2ef71398f18",
+                                "type": "has_only_phrase",
+                                "category_uuid": "97b1da00-e5cb-4195-bb07-315a6b43ebd5",
+                                "arguments": [
+                                    "He or She Cannot Take Care of Themselves"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "c3082bf0-e30a-437f-83a6-61b605682e2f",
+                                "name": "No Difficulty",
+                                "exit_uuid": "63f24d77-8993-4fe8-b9ef-89d069a9568e"
+                            },
+                            {
+                                "uuid": "2e01b3ce-963f-44a0-a1c4-65757e9ecd65",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "1e6003be-4a5a-4812-9dff-cc757ac84b24"
+                            },
+                            {
+                                "uuid": "283d5353-380d-4b81-8c3b-7daeee6a5083",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "e791f514-ab02-4316-8ba4-7d4a7fa2d805"
+                            },
+                            {
+                                "uuid": "97b1da00-e5cb-4195-bb07-315a6b43ebd5",
+                                "name": "He or She Cannot Take Care of Themselves",
+                                "exit_uuid": "dc02a63f-25e5-4472-95d8-c4d92d8e8dfe"
+                            },
+                            {
+                                "uuid": "27a1fe0c-37fd-45b7-a839-f0253f951d41",
+                                "name": "Other",
+                                "exit_uuid": "51106f1c-d82c-42a6-9882-78762e5d3b86"
+                            }
+                        ],
+                        "default_category_uuid": "27a1fe0c-37fd-45b7-a839-f0253f951d41",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_2"
+                    }
+                },
+                {
+                    "uuid": "93e092d2-fa9a-4d2d-b22c-4ab40380682d",
+                    "exits": [
+                        {
+                            "destination_uuid": "eba862dc-58f3-402d-a020-b9cb59baad1c",
+                            "uuid": "7e98727e-7ceb-44cb-8562-204fe285be80"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8ebbcde4-a831-464f-a6f2-46daea976e7d",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your child's ability to take care of themselves, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "eba862dc-58f3-402d-a020-b9cb59baad1c",
+                    "exits": [
+                        {
+                            "destination_uuid": "3faf60ac-b773-4104-90d2-74a64e158088",
+                            "uuid": "14a0d70d-8edd-49d4-be0c-ada42750240b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "f1a84867-aaf7-47de-a987-41dbffe6d544"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d24261e3-a5d9-47fc-853b-f0355f1705ab",
+                    "exits": [
+                        {
+                            "destination_uuid": "1feee7ca-a315-44db-97f6-90cdb132ab20",
+                            "uuid": "d349a4c7-007e-45d4-b589-1273576bf2b2"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2a9b3bea-1a4f-48ed-aefd-4c3a2d8c09a5",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your child's ability to take care of themselves, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1feee7ca-a315-44db-97f6-90cdb132ab20",
+                    "exits": [
+                        {
+                            "destination_uuid": "3faf60ac-b773-4104-90d2-74a64e158088",
+                            "uuid": "0ef1fdb9-2f5d-43fd-baa8-46d911b48932"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "f4a69354-5111-4eb3-a56f-a1c2b2be16b2"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "dcf7e2eb-48ab-47d9-8325-6dbda3b68f25",
+                    "exits": [
+                        {
+                            "destination_uuid": "3150a2e0-f6f2-4bf0-b661-687442be3ddc",
+                            "uuid": "610e42ac-ecf0-4c30-97e9-1c0aacabc925"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9b1ff49e-57f1-418e-9001-271fde1bba71",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3faf60ac-b773-4104-90d2-74a64e158088",
+                    "exits": [
+                        {
+                            "destination_uuid": "0e717883-1770-4a3d-932d-d448995efad4",
+                            "uuid": "7a03e3c3-691f-49dd-a2fc-59c0f8421d0a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "66af11f4-d344-4584-86cf-b17ef6b156b3",
+                            "type": "send_msg",
+                            "text": "Does your child have difficulty being understood by others?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Be Understood by Others"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0e717883-1770-4a3d-932d-d448995efad4",
+                    "exits": [
+                        {
+                            "destination_uuid": "4219ac35-1ac3-459f-b2ef-f49f94279aeb",
+                            "uuid": "30c12a2a-d120-450e-80e1-be312cb39bd9"
+                        },
+                        {
+                            "destination_uuid": "4219ac35-1ac3-459f-b2ef-f49f94279aeb",
+                            "uuid": "ef9fe209-2da2-4c69-b245-7a24dfc0fbe2"
+                        },
+                        {
+                            "destination_uuid": "ca55bb99-2b30-413b-8f29-26883d71ab79",
+                            "uuid": "478d6d72-a742-4568-817d-00ab8516c888"
+                        },
+                        {
+                            "destination_uuid": "b07204ab-a6e5-4d0d-958c-588158563dc0",
+                            "uuid": "e379e2ac-8dca-41eb-a068-50f0a0dce857"
+                        },
+                        {
+                            "destination_uuid": "83931d36-383c-4ca8-9f44-4027e9b224aa",
+                            "uuid": "4d52d95e-1d2f-4f00-8af7-36fed2a5e657"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "61f5b371-060c-4e1e-9fab-6d6e6a2bf217",
+                                "type": "has_only_phrase",
+                                "category_uuid": "99c4d52e-1e08-44a7-999d-3a9717cd9664",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "4959f83a-a3e5-4027-bf8d-04d9ed73887c",
+                                "type": "has_only_phrase",
+                                "category_uuid": "cc4d3172-187e-4de2-8de9-e89b1c448a19",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "3ee571a1-eb7c-4006-af0c-1dbd2fd4d2f5",
+                                "type": "has_only_phrase",
+                                "category_uuid": "ccccbb94-ec80-4734-bc69-cd6ca659de52",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "7f952e2a-4ebb-44ec-8cd1-8a594294a5c3",
+                                "type": "has_only_phrase",
+                                "category_uuid": "14094952-8e72-4cc4-bae2-d05eb419822c",
+                                "arguments": [
+                                    "He or She Cannot Be Understood by Others"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "99c4d52e-1e08-44a7-999d-3a9717cd9664",
+                                "name": "No Difficulty",
+                                "exit_uuid": "30c12a2a-d120-450e-80e1-be312cb39bd9"
+                            },
+                            {
+                                "uuid": "cc4d3172-187e-4de2-8de9-e89b1c448a19",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "ef9fe209-2da2-4c69-b245-7a24dfc0fbe2"
+                            },
+                            {
+                                "uuid": "ccccbb94-ec80-4734-bc69-cd6ca659de52",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "478d6d72-a742-4568-817d-00ab8516c888"
+                            },
+                            {
+                                "uuid": "14094952-8e72-4cc4-bae2-d05eb419822c",
+                                "name": "He or She Cannot Be Understood by Others",
+                                "exit_uuid": "e379e2ac-8dca-41eb-a068-50f0a0dce857"
+                            },
+                            {
+                                "uuid": "26dfbdee-4e7c-45fe-a406-ce2afdddb407",
+                                "name": "Other",
+                                "exit_uuid": "4d52d95e-1d2f-4f00-8af7-36fed2a5e657"
+                            }
+                        ],
+                        "default_category_uuid": "26dfbdee-4e7c-45fe-a406-ce2afdddb407",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_3"
+                    }
+                },
+                {
+                    "uuid": "ca55bb99-2b30-413b-8f29-26883d71ab79",
+                    "exits": [
+                        {
+                            "destination_uuid": "4bd17cd2-bb0c-44cc-837b-966f64ed62b0",
+                            "uuid": "ff877471-eb09-4dd5-be33-a4d7474c2cfc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "fcdc6dde-71e0-49b3-b07e-7f0902bdfe95",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your child communicates, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4bd17cd2-bb0c-44cc-837b-966f64ed62b0",
+                    "exits": [
+                        {
+                            "destination_uuid": "4219ac35-1ac3-459f-b2ef-f49f94279aeb",
+                            "uuid": "5222bba7-3c5d-4212-bf9f-d1ff60ffca51"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "487c4497-fb47-4992-800f-e88aca09ef4a"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "b07204ab-a6e5-4d0d-958c-588158563dc0",
+                    "exits": [
+                        {
+                            "destination_uuid": "10844eaf-0273-40e4-8978-d79a8d02c693",
+                            "uuid": "08ba7e8c-04ac-4ca0-9d9f-4590544e0818"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3571d6e3-d4fa-482a-95c3-a6825dcf78a7",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your child communicates, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "10844eaf-0273-40e4-8978-d79a8d02c693",
+                    "exits": [
+                        {
+                            "destination_uuid": "4219ac35-1ac3-459f-b2ef-f49f94279aeb",
+                            "uuid": "a6994a0c-8c60-4634-ab11-6666bf4816d7"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "9c6f7190-5399-4e94-9701-4d0dc7ac8897"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "83931d36-383c-4ca8-9f44-4027e9b224aa",
+                    "exits": [
+                        {
+                            "destination_uuid": "3faf60ac-b773-4104-90d2-74a64e158088",
+                            "uuid": "d6194ab8-7bdb-4e23-96a7-f1195cc4e64b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "80a27d3a-fcf6-4710-aa2b-aae91f2f8db6",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4219ac35-1ac3-459f-b2ef-f49f94279aeb",
+                    "exits": [
+                        {
+                            "destination_uuid": "0c129241-c68a-41e1-a7ca-db2a8332c7df",
+                            "uuid": "df06b8fe-4967-453c-b274-5e10999aca74"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "413b0831-de9a-4b40-a2ca-956c27c1d64c",
+                            "type": "send_msg",
+                            "text": "Does your child have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Learn, Remember or Focus"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0c129241-c68a-41e1-a7ca-db2a8332c7df",
+                    "exits": [
+                        {
+                            "destination_uuid": "3775857b-9886-4cf5-a6f7-d5df2f580072",
+                            "uuid": "033dc34b-e179-45a6-ac1c-1505af99fd23"
+                        },
+                        {
+                            "destination_uuid": "3775857b-9886-4cf5-a6f7-d5df2f580072",
+                            "uuid": "4077c0a1-bb07-4f96-b9a0-778bf35588f8"
+                        },
+                        {
+                            "destination_uuid": "2b2996a6-0840-4757-a677-e5dbaaee2b35",
+                            "uuid": "58cf3b21-62b0-4570-9db7-abd2dd7bccf2"
+                        },
+                        {
+                            "destination_uuid": "97405c39-c2be-4611-a500-39f5d7891d19",
+                            "uuid": "f93cade6-cb39-4d89-a1a8-ceedbc73ad95"
+                        },
+                        {
+                            "destination_uuid": "dfa95aad-d346-4480-883b-211604923c2b",
+                            "uuid": "0ef853d7-ae03-4415-b37d-794e29a61cd7"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "7073538d-372c-480a-9ec6-282cce6eec80",
+                                "type": "has_only_phrase",
+                                "category_uuid": "d0d51387-f997-4ab5-869f-86e77a78477a",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "35336c39-3ac1-4435-b232-5f922fb282a2",
+                                "type": "has_only_phrase",
+                                "category_uuid": "300ceaa1-c680-45bc-a367-aabdc24ba3b2",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "91c91186-3017-48ef-a544-c9e3856b93fe",
+                                "type": "has_only_phrase",
+                                "category_uuid": "26f2c12e-8a33-4071-b760-93d25f6497a8",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "0377d793-8f52-4707-83f8-053d37f0f9c3",
+                                "type": "has_only_phrase",
+                                "category_uuid": "5b4de56c-683c-44d4-94e5-021cce2be4ee",
+                                "arguments": [
+                                    "He or She Cannot Learn, Remember or Focus"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "d0d51387-f997-4ab5-869f-86e77a78477a",
+                                "name": "No Difficulty",
+                                "exit_uuid": "033dc34b-e179-45a6-ac1c-1505af99fd23"
+                            },
+                            {
+                                "uuid": "300ceaa1-c680-45bc-a367-aabdc24ba3b2",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "4077c0a1-bb07-4f96-b9a0-778bf35588f8"
+                            },
+                            {
+                                "uuid": "26f2c12e-8a33-4071-b760-93d25f6497a8",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "58cf3b21-62b0-4570-9db7-abd2dd7bccf2"
+                            },
+                            {
+                                "uuid": "5b4de56c-683c-44d4-94e5-021cce2be4ee",
+                                "name": "He or She Cannot Learn, Remember or Focus",
+                                "exit_uuid": "f93cade6-cb39-4d89-a1a8-ceedbc73ad95"
+                            },
+                            {
+                                "uuid": "a9d7f97c-9292-4733-b567-a13386c0b1f2",
+                                "name": "Other",
+                                "exit_uuid": "0ef853d7-ae03-4415-b37d-794e29a61cd7"
+                            }
+                        ],
+                        "default_category_uuid": "a9d7f97c-9292-4733-b567-a13386c0b1f2",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_4"
+                    }
+                },
+                {
+                    "uuid": "2b2996a6-0840-4757-a677-e5dbaaee2b35",
+                    "exits": [
+                        {
+                            "destination_uuid": "89c0193a-ad27-4864-978c-3fc026489252",
+                            "uuid": "ab04dfc3-100e-4828-9a9e-ddcbc4ad8d9c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7fa683b9-216c-4e7a-ba03-0f4a5ff0877d",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your child is able to think or understand things, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "89c0193a-ad27-4864-978c-3fc026489252",
+                    "exits": [
+                        {
+                            "destination_uuid": "3775857b-9886-4cf5-a6f7-d5df2f580072",
+                            "uuid": "73210b79-f61c-4a34-b91a-51b7fe73ccec"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "7227e1f4-7807-4667-b2e2-544cad8bbf89"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "97405c39-c2be-4611-a500-39f5d7891d19",
+                    "exits": [
+                        {
+                            "destination_uuid": "4d0a6a99-838b-4b8e-b9fe-a4a2a9af9733",
+                            "uuid": "05a17c91-889d-428e-998a-f64cd826b6ac"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "16a3e0b3-1f42-42a6-84f9-a190871ca9b0",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your child is able to think or understand things, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4d0a6a99-838b-4b8e-b9fe-a4a2a9af9733",
+                    "exits": [
+                        {
+                            "destination_uuid": "3775857b-9886-4cf5-a6f7-d5df2f580072",
+                            "uuid": "1c07ccf8-5978-4144-bf28-ff4959b50782"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "7905ec54-0403-4156-b886-11d7b5e88234"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "dfa95aad-d346-4480-883b-211604923c2b",
+                    "exits": [
+                        {
+                            "destination_uuid": "4219ac35-1ac3-459f-b2ef-f49f94279aeb",
+                            "uuid": "e2eab076-beee-4248-bc8b-db5ad0c5cf9f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "07b29228-8eab-4d36-9e5e-48e5106c2fcc",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3775857b-9886-4cf5-a6f7-d5df2f580072",
+                    "exits": [
+                        {
+                            "destination_uuid": "56fc62ef-3654-4878-8dcd-db3f60f50d38",
+                            "uuid": "83712d89-3be5-47cc-a7ac-9c77b5e40163"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "c72789c8-cb06-4f77-b2ed-a7ff23772bd7",
+                            "type": "send_msg",
+                            "text": "Compared with children of the same age, does your child have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Control Their Behaviour"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "56fc62ef-3654-4878-8dcd-db3f60f50d38",
+                    "exits": [
+                        {
+                            "destination_uuid": "0aadf756-06c8-49b0-8f2a-3a25eb5a70c0",
+                            "uuid": "bc69f38e-18a5-44fa-87ab-5687d2c69b4a"
+                        },
+                        {
+                            "destination_uuid": "0aadf756-06c8-49b0-8f2a-3a25eb5a70c0",
+                            "uuid": "98b5b384-b087-4a47-922a-8ae9e4d40fb0"
+                        },
+                        {
+                            "destination_uuid": "05a85ff4-ea40-451e-b469-f49f9aedb22c",
+                            "uuid": "2bb8f3cc-c47a-408f-abfc-3e6af00743ad"
+                        },
+                        {
+                            "destination_uuid": "4b13a062-3f7a-4d32-a86b-f323f4785682",
+                            "uuid": "d9c63e51-e824-49bf-b7c5-6995c1400539"
+                        },
+                        {
+                            "destination_uuid": "14629184-7841-4d7a-8bce-4ba9f1108d67",
+                            "uuid": "d1c9f79e-8369-4de9-8e0d-8474f6ce35d8"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "6812d42a-5de3-42a8-a0dd-144875a8bf9d",
+                                "type": "has_only_phrase",
+                                "category_uuid": "6dfaf44c-b00f-46da-89d9-ba300352a2c2",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "d45b27d6-9764-48b0-9746-52cf45d90eff",
+                                "type": "has_only_phrase",
+                                "category_uuid": "6ece1a7a-1eeb-4f70-94fb-cf4d31e5584a",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "e39f1cb9-12c5-4d5e-b392-d4c0ea9219d7",
+                                "type": "has_only_phrase",
+                                "category_uuid": "c90ae23b-526e-4302-970d-bf601a4e02f0",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "a8ec5828-2e06-4b4c-ab1d-c04271ab91a9",
+                                "type": "has_only_phrase",
+                                "category_uuid": "a00515d7-dffc-458d-bc0d-d9fb16fd38ef",
+                                "arguments": [
+                                    "He or She Cannot Control Their Behaviour"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "6dfaf44c-b00f-46da-89d9-ba300352a2c2",
+                                "name": "No Difficulty",
+                                "exit_uuid": "bc69f38e-18a5-44fa-87ab-5687d2c69b4a"
+                            },
+                            {
+                                "uuid": "6ece1a7a-1eeb-4f70-94fb-cf4d31e5584a",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "98b5b384-b087-4a47-922a-8ae9e4d40fb0"
+                            },
+                            {
+                                "uuid": "c90ae23b-526e-4302-970d-bf601a4e02f0",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "2bb8f3cc-c47a-408f-abfc-3e6af00743ad"
+                            },
+                            {
+                                "uuid": "a00515d7-dffc-458d-bc0d-d9fb16fd38ef",
+                                "name": "He or She Cannot Control Their Behaviour",
+                                "exit_uuid": "d9c63e51-e824-49bf-b7c5-6995c1400539"
+                            },
+                            {
+                                "uuid": "9d785598-ea13-45d0-8094-36a083e959f5",
+                                "name": "Other",
+                                "exit_uuid": "d1c9f79e-8369-4de9-8e0d-8474f6ce35d8"
+                            }
+                        ],
+                        "default_category_uuid": "9d785598-ea13-45d0-8094-36a083e959f5",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_5"
+                    }
+                },
+                {
+                    "uuid": "05a85ff4-ea40-451e-b469-f49f9aedb22c",
+                    "exits": [
+                        {
+                            "destination_uuid": "04a60dea-baa8-4bf5-a225-b4b9639237cf",
+                            "uuid": "ccd39f14-d6fd-4272-97c5-9ec2451d3abc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "a54e96d0-65e8-4192-9450-2a94a56ed2cd",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your child's behaviour, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "04a60dea-baa8-4bf5-a225-b4b9639237cf",
+                    "exits": [
+                        {
+                            "destination_uuid": "0aadf756-06c8-49b0-8f2a-3a25eb5a70c0",
+                            "uuid": "b3abff55-6716-4057-9b1d-b98beef985bd"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "bc1ab071-6fb7-4c21-9a18-d8e14110306f"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "4b13a062-3f7a-4d32-a86b-f323f4785682",
+                    "exits": [
+                        {
+                            "destination_uuid": "c929432f-47d2-4303-86d0-e4c8fd0fa067",
+                            "uuid": "03cf2d40-3c4f-4b3c-9eb8-6ad2f46b74ff"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "d19a7216-63b9-45e1-9b7a-6a5e2fa82ff4",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your child's behaviour, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c929432f-47d2-4303-86d0-e4c8fd0fa067",
+                    "exits": [
+                        {
+                            "destination_uuid": "0aadf756-06c8-49b0-8f2a-3a25eb5a70c0",
+                            "uuid": "8ce9bcd9-f275-4cdc-8e00-0d3bdc947684"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "33fe2284-9b00-4f9f-8b42-f562787c27ef"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "14629184-7841-4d7a-8bce-4ba9f1108d67",
+                    "exits": [
+                        {
+                            "destination_uuid": "3775857b-9886-4cf5-a6f7-d5df2f580072",
+                            "uuid": "5068d1f4-7c19-408b-9c11-ecdd603648cc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8608e1f4-f3ea-4032-8de1-8670f92afcbd",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0aadf756-06c8-49b0-8f2a-3a25eb5a70c0",
+                    "exits": [
+                        {
+                            "destination_uuid": "186698d8-6dd7-4de1-bdd7-32e9a216ae07",
+                            "uuid": "942b8e41-c553-47bf-916d-e6dcff89d914"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6fa5a48b-2fda-4688-83ba-c4d91443d265",
+                            "type": "send_msg",
+                            "text": "Does your child have difficulty making friends?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Make Friends"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "186698d8-6dd7-4de1-bdd7-32e9a216ae07",
+                    "exits": [
+                        {
+                            "destination_uuid": "2f36460e-1d36-4cfe-80a1-159f54977d1b",
+                            "uuid": "b0722535-5c06-479c-8496-c01276f68714"
+                        },
+                        {
+                            "destination_uuid": "2f36460e-1d36-4cfe-80a1-159f54977d1b",
+                            "uuid": "0ccf6977-f1ec-49ce-94d6-6da3a67176e4"
+                        },
+                        {
+                            "destination_uuid": "a55f4282-beef-486d-af4e-fcaf2ce6bd53",
+                            "uuid": "2620a328-9825-4c32-be80-5078ce602ba7"
+                        },
+                        {
+                            "destination_uuid": "d125172b-6875-42fc-bc57-4c825467396c",
+                            "uuid": "f36fcb46-821b-4c45-9522-20a14c02bba0"
+                        },
+                        {
+                            "destination_uuid": "91422ad8-e54c-443e-a55c-641eec3fba03",
+                            "uuid": "3e10645d-0e43-4164-a84b-04f062981716"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "d9a2b96c-46f8-4715-825b-9ee3e9d9352a",
+                                "type": "has_only_phrase",
+                                "category_uuid": "1ba10a4b-d59f-42ce-b915-4ebc03de9866",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "febab643-b0b8-4f7d-860f-0592780fcb95",
+                                "type": "has_only_phrase",
+                                "category_uuid": "2ef9d577-0b7a-4ca5-9ddf-aff369f0774b",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "fcc16bef-e393-4640-bc60-6842d78f6126",
+                                "type": "has_only_phrase",
+                                "category_uuid": "e42ab00b-177a-4427-82f1-0b63cd4298b2",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "301c18e6-051d-4ad4-8868-34a5a5120289",
+                                "type": "has_only_phrase",
+                                "category_uuid": "0bf80424-a23f-4685-9e87-119285c45330",
+                                "arguments": [
+                                    "He or She Cannot Make Friends"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "1ba10a4b-d59f-42ce-b915-4ebc03de9866",
+                                "name": "No Difficulty",
+                                "exit_uuid": "b0722535-5c06-479c-8496-c01276f68714"
+                            },
+                            {
+                                "uuid": "2ef9d577-0b7a-4ca5-9ddf-aff369f0774b",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "0ccf6977-f1ec-49ce-94d6-6da3a67176e4"
+                            },
+                            {
+                                "uuid": "e42ab00b-177a-4427-82f1-0b63cd4298b2",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "2620a328-9825-4c32-be80-5078ce602ba7"
+                            },
+                            {
+                                "uuid": "0bf80424-a23f-4685-9e87-119285c45330",
+                                "name": "He or She Cannot Make Friends",
+                                "exit_uuid": "f36fcb46-821b-4c45-9522-20a14c02bba0"
+                            },
+                            {
+                                "uuid": "24e8ff13-adec-4608-8299-d8ed85e95aa8",
+                                "name": "Other",
+                                "exit_uuid": "3e10645d-0e43-4164-a84b-04f062981716"
+                            }
+                        ],
+                        "default_category_uuid": "24e8ff13-adec-4608-8299-d8ed85e95aa8",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_6"
+                    }
+                },
+                {
+                    "uuid": "a55f4282-beef-486d-af4e-fcaf2ce6bd53",
+                    "exits": [
+                        {
+                            "destination_uuid": "6e4032d9-5fd0-48e5-995b-090ea8ec1265",
+                            "uuid": "fe987e9b-0be4-43fa-8337-2c6452bd3d16"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2b7b3daf-1ee3-456c-b0b4-12eab3ca5aa8",
+                            "type": "send_msg",
+                            "text": "It seems that you're worried about your child's ability to interact with others, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6e4032d9-5fd0-48e5-995b-090ea8ec1265",
+                    "exits": [
+                        {
+                            "destination_uuid": "2f36460e-1d36-4cfe-80a1-159f54977d1b",
+                            "uuid": "a0e3bb0f-48f3-4f8e-b5aa-ee97440d2c7d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "7ddfbe59-203d-40a5-a06f-26c0de20c6b0"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d125172b-6875-42fc-bc57-4c825467396c",
+                    "exits": [
+                        {
+                            "destination_uuid": "68f32acd-eab2-4113-b9dc-a4d97fe0813a",
+                            "uuid": "14c0a870-bf92-472f-a24f-cb8b425b0832"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6c250898-562d-4590-a0be-6cb0b5a123fb",
+                            "type": "send_msg",
+                            "text": "It seems that you're worried about your child's ability to interact with others, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "68f32acd-eab2-4113-b9dc-a4d97fe0813a",
+                    "exits": [
+                        {
+                            "destination_uuid": "2f36460e-1d36-4cfe-80a1-159f54977d1b",
+                            "uuid": "5f8b8863-313a-428d-9b65-ac8b2415b7b2"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "69d1a206-d9ee-4b9e-add5-dcf01d38022a"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "91422ad8-e54c-443e-a55c-641eec3fba03",
+                    "exits": [
+                        {
+                            "destination_uuid": "0aadf756-06c8-49b0-8f2a-3a25eb5a70c0",
+                            "uuid": "8f3f4af7-3486-4b47-96d6-9e448cbfcbd5"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "64d60951-34a1-4d3a-ad0c-314165ed0be1",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "2f36460e-1d36-4cfe-80a1-159f54977d1b",
+                    "exits": [
+                        {
+                            "destination_uuid": "e1a33bc6-317a-4884-94bc-156529c0efa0",
+                            "uuid": "6634149a-7091-410e-b0b9-03e3e045c452"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b15f4ba2-1d74-4f97-a439-41397a36df75",
+                            "type": "send_msg",
+                            "text": "How often does your child seem very anxious, nervous, worried, sad, or depressed?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "Every Day",
+                                "Once A Week",
+                                "About Once a Month",
+                                "A Few Times Each Year",
+                                "Never"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e1a33bc6-317a-4884-94bc-156529c0efa0",
+                    "exits": [
+                        {
+                            "destination_uuid": "e6b16ea9-6cfc-4525-8810-7871cea17f90",
+                            "uuid": "6e0121a6-1295-413e-97f8-1d772c001894"
+                        },
+                        {
+                            "destination_uuid": "a1e3dbde-0e76-40cd-bbc7-02718f79b7d1",
+                            "uuid": "bfc166bb-6e6d-4b04-bb8f-1474e3cb225c"
+                        },
+                        {
+                            "destination_uuid": "a1e3dbde-0e76-40cd-bbc7-02718f79b7d1",
+                            "uuid": "d0644d6d-4a1c-44ff-a685-4cbf52e86d29"
+                        },
+                        {
+                            "destination_uuid": "a1e3dbde-0e76-40cd-bbc7-02718f79b7d1",
+                            "uuid": "0c9efd9a-ea58-4fee-9c0d-e60594147b68"
+                        },
+                        {
+                            "destination_uuid": "a1e3dbde-0e76-40cd-bbc7-02718f79b7d1",
+                            "uuid": "ea65d6de-6b6e-4ef1-8aa1-48a5c83b0504"
+                        },
+                        {
+                            "destination_uuid": "cd00de86-b765-4e07-9009-ccf361143db7",
+                            "uuid": "b6535485-6cfd-4e3d-b3bd-162a964a1c9e"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "352e2bf6-ac28-447c-89ac-4dd8ed30dd12",
+                                "type": "has_only_phrase",
+                                "category_uuid": "4c3eebc2-57d8-4831-b49c-d8198ec4d3df",
+                                "arguments": [
+                                    "Every Day"
+                                ]
+                            },
+                            {
+                                "uuid": "198ca115-ffe2-49fa-bc9b-6aa8a96f8e1d",
+                                "type": "has_only_phrase",
+                                "category_uuid": "94767955-ffc1-4118-a1e6-c4db08cec1bf",
+                                "arguments": [
+                                    "Once A Week"
+                                ]
+                            },
+                            {
+                                "uuid": "98912345-8edc-424a-a123-62a15f18b574",
+                                "type": "has_only_phrase",
+                                "category_uuid": "f0288234-e2e3-477f-943d-3ca820366cb1",
+                                "arguments": [
+                                    "About Once a Month"
+                                ]
+                            },
+                            {
+                                "uuid": "1ce8cae9-2680-4f2f-b4ed-cb7ec5cf500d",
+                                "type": "has_only_phrase",
+                                "category_uuid": "ffcda1ff-35fc-43f6-8e4b-bd7791499911",
+                                "arguments": [
+                                    "A Few Times Each Year"
+                                ]
+                            },
+                            {
+                                "uuid": "fa778b98-5de2-44c3-8d1b-1e6c2c88026a",
+                                "type": "has_only_phrase",
+                                "category_uuid": "b215781b-4eec-40c1-b825-f7ecdebd64ce",
+                                "arguments": [
+                                    "Never"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "4c3eebc2-57d8-4831-b49c-d8198ec4d3df",
+                                "name": "Every Day",
+                                "exit_uuid": "6e0121a6-1295-413e-97f8-1d772c001894"
+                            },
+                            {
+                                "uuid": "94767955-ffc1-4118-a1e6-c4db08cec1bf",
+                                "name": "Once A Week",
+                                "exit_uuid": "bfc166bb-6e6d-4b04-bb8f-1474e3cb225c"
+                            },
+                            {
+                                "uuid": "f0288234-e2e3-477f-943d-3ca820366cb1",
+                                "name": "About Once a Month",
+                                "exit_uuid": "d0644d6d-4a1c-44ff-a685-4cbf52e86d29"
+                            },
+                            {
+                                "uuid": "ffcda1ff-35fc-43f6-8e4b-bd7791499911",
+                                "name": "A Few Times Each Year",
+                                "exit_uuid": "0c9efd9a-ea58-4fee-9c0d-e60594147b68"
+                            },
+                            {
+                                "uuid": "b215781b-4eec-40c1-b825-f7ecdebd64ce",
+                                "name": "Never",
+                                "exit_uuid": "ea65d6de-6b6e-4ef1-8aa1-48a5c83b0504"
+                            },
+                            {
+                                "uuid": "6348b027-b29a-4085-83de-a4bdcc81e3c9",
+                                "name": "Other",
+                                "exit_uuid": "b6535485-6cfd-4e3d-b3bd-162a964a1c9e"
+                            }
+                        ],
+                        "default_category_uuid": "6348b027-b29a-4085-83de-a4bdcc81e3c9",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_7"
+                    }
+                },
+                {
+                    "uuid": "e6b16ea9-6cfc-4525-8810-7871cea17f90",
+                    "exits": [
+                        {
+                            "destination_uuid": "ae3906b1-67e7-4b5c-88b2-ffce13dc9b91",
+                            "uuid": "99920a4a-e7cc-4dc2-b00b-2eb9d274b4ab"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2d220971-c334-4400-9919-29adbdd5376a",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your child is feeling, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ae3906b1-67e7-4b5c-88b2-ffce13dc9b91",
+                    "exits": [
+                        {
+                            "destination_uuid": "a1e3dbde-0e76-40cd-bbc7-02718f79b7d1",
+                            "uuid": "31ad8e1e-1124-46c1-8731-87ba77304964"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "247e253f-1509-4610-b49b-3aeac14564d2"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "cd00de86-b765-4e07-9009-ccf361143db7",
+                    "exits": [
+                        {
+                            "destination_uuid": "2f36460e-1d36-4cfe-80a1-159f54977d1b",
+                            "uuid": "7762ae42-59b1-4159-b2d3-030b07cae9ca"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b1f042c4-2334-4802-a4f2-1e9f3e42e415",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "a1e3dbde-0e76-40cd-bbc7-02718f79b7d1",
+                    "exits": [
+                        {
+                            "destination_uuid": "69f7aff0-8abd-4aff-b59e-bd311977ebec",
+                            "uuid": "fb0f5514-6fca-459f-a588-a25fa6c0bc4f"
+                        },
+                        {
+                            "destination_uuid": "d10ad576-4cba-4436-bc0e-e2ecaac19506",
+                            "uuid": "c3524b79-c83a-446a-b775-61a2d8ec0308"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@results.concerning",
+                        "cases": [
+                            {
+                                "uuid": "e92cf158-a6a1-4573-b38b-2356f38915f6",
+                                "type": "has_any_word",
+                                "category_uuid": "61c5ff7f-e4b8-434a-b8c7-6402bea49f9c",
+                                "arguments": [
+                                    "yes"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "61c5ff7f-e4b8-434a-b8c7-6402bea49f9c",
+                                "name": "concerning",
+                                "exit_uuid": "fb0f5514-6fca-459f-a588-a25fa6c0bc4f"
+                            },
+                            {
+                                "uuid": "0bc689a1-1855-4c62-8059-8b2a9e50b5e0",
+                                "name": "Other",
+                                "exit_uuid": "c3524b79-c83a-446a-b775-61a2d8ec0308"
+                            }
+                        ],
+                        "default_category_uuid": "0bc689a1-1855-4c62-8059-8b2a9e50b5e0",
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "69f7aff0-8abd-4aff-b59e-bd311977ebec",
+                    "exits": [
+                        {
+                            "destination_uuid": "e3342566-90c7-4485-82b7-1270f985adc4",
+                            "uuid": "f206b848-db2b-4e4d-b3ca-e96f35de698d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9ef6dfb8-4e44-4b4e-8f86-49402c34df10",
+                            "type": "send_msg",
+                            "text": "Thank you for taking the child ability test. If you have any concerns, talk to a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e3342566-90c7-4485-82b7-1270f985adc4",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "ad22b91a-ec63-412b-ab71-1fe9b20dba4f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "584fd5a1-c93a-4391-8b33-7b7427f48c81",
+                            "type": "send_msg",
+                            "text": "Remember, if you ever need support type HELP.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d10ad576-4cba-4436-bc0e-e2ecaac19506",
+                    "exits": [
+                        {
+                            "destination_uuid": "3a4ed527-4a39-446a-8d18-891f9259c14a",
+                            "uuid": "91b116d1-f793-47a3-ad22-8d01d9673e0b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "20b4700c-68e0-40ac-9bec-e367f57d854d",
+                            "type": "send_msg",
+                            "text": "It looks like your child is developing well. That's great!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3a4ed527-4a39-446a-8d18-891f9259c14a",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "ced3b4ad-0a46-4dd5-93a3-43632660836d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "eb18e610-e102-48af-bae6-2450142d6bd4",
+                            "type": "send_msg",
+                            "text": "Remember, if you ever need support type HELP.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        },
+        {
+            "uuid": "3e67bbfe-bced-4bbf-9994-844b952c0661",
+            "name": "wg_unicef_survey - teen",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "f7ae3133-fd8d-4a48-afb1-bb96187bff50",
+                    "exits": [
+                        {
+                            "destination_uuid": "1e3454cc-51d3-4b5c-8e7e-7955aba41be6",
+                            "uuid": "80a31b1c-afca-4650-85bb-08519ea19c39"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "569d3ffb-5da8-49e9-96ca-47119056c68d",
+                            "type": "send_msg",
+                            "text": "Each teen grows and learns in their own way. This tool can help you learn what activities your teen can do.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1e3454cc-51d3-4b5c-8e7e-7955aba41be6",
+                    "exits": [
+                        {
+                            "destination_uuid": "3950a69a-7779-43a2-856b-5f6f0af60bac",
+                            "uuid": "166199cd-a52a-47b2-88b6-5db56bdb14a4"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2d9c9844-df08-44ab-8663-2f4d160b515b",
+                            "type": "send_msg",
+                            "text": "Does your teen have difficulty seeing or hearing sounds like peoples\u2019 voices or music, even with glasses or hearing aids?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot See and/or Hear"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3950a69a-7779-43a2-856b-5f6f0af60bac",
+                    "exits": [
+                        {
+                            "destination_uuid": "ccc9a7c0-cea7-4df7-aadf-dc9fb1e68b32",
+                            "uuid": "27ef7063-fa93-4957-bc36-bc08901e244e"
+                        },
+                        {
+                            "destination_uuid": "ccc9a7c0-cea7-4df7-aadf-dc9fb1e68b32",
+                            "uuid": "f40bf44b-f903-45c9-9d1c-7cbccc505f71"
+                        },
+                        {
+                            "destination_uuid": "1c9d07c7-0c03-4900-8260-f6b7f0f7e688",
+                            "uuid": "d3800113-9a8a-4a37-a76d-6dfbca249800"
+                        },
+                        {
+                            "destination_uuid": "6fc2771e-a1de-4e58-9b97-964b3f612808",
+                            "uuid": "ec459f71-735c-426b-ae17-4ea4dc9c4963"
+                        },
+                        {
+                            "destination_uuid": "e6ccde99-0292-4c2d-a469-0b7f0a48d20c",
+                            "uuid": "e1213a32-85ac-4c93-a141-3fada14618ae"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "dd334054-4417-46a1-98b4-7534c5f0d6cf",
+                                "type": "has_only_phrase",
+                                "category_uuid": "28687940-b3a3-4347-84d0-c333de6c34a6",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "4e6e49ae-0b7a-4a31-b464-789543038321",
+                                "type": "has_only_phrase",
+                                "category_uuid": "53f83b0d-af43-4884-8b7b-1750a8da9919",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "fc16b524-5ad9-4f12-b0fe-5893acacf6d2",
+                                "type": "has_only_phrase",
+                                "category_uuid": "aefcbfea-6658-43fb-a321-9ea80b92b0ba",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "955c9e64-94f8-4d3e-b58d-d16569d10836",
+                                "type": "has_only_phrase",
+                                "category_uuid": "3c669fcc-7366-4117-ac69-ef8a5d68928b",
+                                "arguments": [
+                                    "He or She Cannot See and/or Hear"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "28687940-b3a3-4347-84d0-c333de6c34a6",
+                                "name": "No Difficulty",
+                                "exit_uuid": "27ef7063-fa93-4957-bc36-bc08901e244e"
+                            },
+                            {
+                                "uuid": "53f83b0d-af43-4884-8b7b-1750a8da9919",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "f40bf44b-f903-45c9-9d1c-7cbccc505f71"
+                            },
+                            {
+                                "uuid": "aefcbfea-6658-43fb-a321-9ea80b92b0ba",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "d3800113-9a8a-4a37-a76d-6dfbca249800"
+                            },
+                            {
+                                "uuid": "3c669fcc-7366-4117-ac69-ef8a5d68928b",
+                                "name": "He or She Cannot See and/or Hear",
+                                "exit_uuid": "ec459f71-735c-426b-ae17-4ea4dc9c4963"
+                            },
+                            {
+                                "uuid": "2f309ca1-0952-4e7a-8339-93efdffb8e6c",
+                                "name": "Other",
+                                "exit_uuid": "e1213a32-85ac-4c93-a141-3fada14618ae"
+                            }
+                        ],
+                        "default_category_uuid": "2f309ca1-0952-4e7a-8339-93efdffb8e6c",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_0"
+                    }
+                },
+                {
+                    "uuid": "1c9d07c7-0c03-4900-8260-f6b7f0f7e688",
+                    "exits": [
+                        {
+                            "destination_uuid": "ff433e15-ec27-4980-95c8-9834bd695749",
+                            "uuid": "414777e0-a738-4f19-a244-63994a2d9553"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9e7edf5e-0f77-428e-a1eb-feeaf69964ab",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your teenager's eyesight or hearing, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ff433e15-ec27-4980-95c8-9834bd695749",
+                    "exits": [
+                        {
+                            "destination_uuid": "ccc9a7c0-cea7-4df7-aadf-dc9fb1e68b32",
+                            "uuid": "622074e9-b65f-47b3-8d30-db4a1db2518a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "6467a552-a7b1-43a0-be8d-02ac520930b7"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6fc2771e-a1de-4e58-9b97-964b3f612808",
+                    "exits": [
+                        {
+                            "destination_uuid": "d20dd55d-89bc-4b31-81dc-80cde8dfb072",
+                            "uuid": "dbfe8029-2ec9-4e82-9843-04e632e77d3a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "274e14ed-2d07-4995-a9ab-2ae3d9dbfbd6",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your teenager's eyesight or hearing, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d20dd55d-89bc-4b31-81dc-80cde8dfb072",
+                    "exits": [
+                        {
+                            "destination_uuid": "ccc9a7c0-cea7-4df7-aadf-dc9fb1e68b32",
+                            "uuid": "a4ffb2de-c7d0-41a5-927e-ec32e5f21c9d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "a9ea2910-eff0-4e09-b6e5-ebd6d9a6d2b5"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e6ccde99-0292-4c2d-a469-0b7f0a48d20c",
+                    "exits": [
+                        {
+                            "destination_uuid": "1e3454cc-51d3-4b5c-8e7e-7955aba41be6",
+                            "uuid": "1b40fc41-1a7c-47aa-9d1b-251338f18255"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "4d20caaf-314e-4bd2-849d-bdb68e028041",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ccc9a7c0-cea7-4df7-aadf-dc9fb1e68b32",
+                    "exits": [
+                        {
+                            "destination_uuid": "1aeab258-0b92-4638-8e24-b2770a805dd0",
+                            "uuid": "42948775-0c97-45c2-bfc6-58d0724d379e"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3b919ba8-fd1a-43c7-8ec8-a9ea0b8a25cc",
+                            "type": "send_msg",
+                            "text": "Compared with children of the same age, does your teen have difficulty walking?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Walk"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1aeab258-0b92-4638-8e24-b2770a805dd0",
+                    "exits": [
+                        {
+                            "destination_uuid": "95fda741-ad96-4b9e-84c9-76b974e2613f",
+                            "uuid": "3ced44b6-8643-49fe-beba-462a98e51731"
+                        },
+                        {
+                            "destination_uuid": "95fda741-ad96-4b9e-84c9-76b974e2613f",
+                            "uuid": "f1be828f-aa1c-4086-98dd-be237566ca56"
+                        },
+                        {
+                            "destination_uuid": "d64bce1a-9b76-4fc8-82a2-099785f0a20c",
+                            "uuid": "e6b37d1e-656d-4a57-98d6-0f4dba771af5"
+                        },
+                        {
+                            "destination_uuid": "057af2aa-1839-425b-88cd-6629117ab3f6",
+                            "uuid": "436756db-9172-4413-a277-72761c39a39a"
+                        },
+                        {
+                            "destination_uuid": "3d2e3eb1-c109-43a9-8945-6c22ff12112c",
+                            "uuid": "6962f628-037f-4d67-9a33-e677a27e8366"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "e1478e51-1e57-4d61-8027-8754229dbc3a",
+                                "type": "has_only_phrase",
+                                "category_uuid": "52220128-2a1c-4874-960a-d2a312dd0ecb",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "9f0b589b-5e1a-47e2-afe8-d6fa12367568",
+                                "type": "has_only_phrase",
+                                "category_uuid": "9d1a5de1-1f6c-4973-95c3-cf0612e85803",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "0399a9a2-6f6f-4cb1-a029-77261e7fb928",
+                                "type": "has_only_phrase",
+                                "category_uuid": "51199776-7b8f-43b9-830e-05cb2cc9b655",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "58926129-b572-4cb1-bafd-9af13f965051",
+                                "type": "has_only_phrase",
+                                "category_uuid": "77c516b0-aeb9-41ce-848c-0aed0cc22731",
+                                "arguments": [
+                                    "He or She Cannot Walk"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "52220128-2a1c-4874-960a-d2a312dd0ecb",
+                                "name": "No Difficulty",
+                                "exit_uuid": "3ced44b6-8643-49fe-beba-462a98e51731"
+                            },
+                            {
+                                "uuid": "9d1a5de1-1f6c-4973-95c3-cf0612e85803",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "f1be828f-aa1c-4086-98dd-be237566ca56"
+                            },
+                            {
+                                "uuid": "51199776-7b8f-43b9-830e-05cb2cc9b655",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "e6b37d1e-656d-4a57-98d6-0f4dba771af5"
+                            },
+                            {
+                                "uuid": "77c516b0-aeb9-41ce-848c-0aed0cc22731",
+                                "name": "He or She Cannot Walk",
+                                "exit_uuid": "436756db-9172-4413-a277-72761c39a39a"
+                            },
+                            {
+                                "uuid": "0fa2d153-ae2d-4148-be5c-ed050c2d5006",
+                                "name": "Other",
+                                "exit_uuid": "6962f628-037f-4d67-9a33-e677a27e8366"
+                            }
+                        ],
+                        "default_category_uuid": "0fa2d153-ae2d-4148-be5c-ed050c2d5006",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_1"
+                    }
+                },
+                {
+                    "uuid": "d64bce1a-9b76-4fc8-82a2-099785f0a20c",
+                    "exits": [
+                        {
+                            "destination_uuid": "f7e0a6b2-8c77-472b-b026-9116db4798c3",
+                            "uuid": "ac783c17-c1fc-480b-a06f-6ed65e22cd2f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "04dea0d1-2f8a-424e-b038-f2b661dcbe1a",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your teen's ability to move around, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f7e0a6b2-8c77-472b-b026-9116db4798c3",
+                    "exits": [
+                        {
+                            "destination_uuid": "95fda741-ad96-4b9e-84c9-76b974e2613f",
+                            "uuid": "ac6b79d8-9b11-4856-a146-3b064d0aa4f1"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "dcd2da33-5704-41ec-b7ec-2eec8ef92ea5"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "057af2aa-1839-425b-88cd-6629117ab3f6",
+                    "exits": [
+                        {
+                            "destination_uuid": "988d5e44-dae7-4906-8810-e8aa4ad7b697",
+                            "uuid": "c3c3af78-7c49-41f5-958d-49f0f876728b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "84391844-fac6-49e2-907e-b6eb49d1c70a",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about your teen's ability to move around, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "988d5e44-dae7-4906-8810-e8aa4ad7b697",
+                    "exits": [
+                        {
+                            "destination_uuid": "95fda741-ad96-4b9e-84c9-76b974e2613f",
+                            "uuid": "2ed6cdf2-f466-409f-8e0a-97c3c311cbfc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "de7bea80-3134-41eb-b43d-3b7a17fd5f24"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3d2e3eb1-c109-43a9-8945-6c22ff12112c",
+                    "exits": [
+                        {
+                            "destination_uuid": "ccc9a7c0-cea7-4df7-aadf-dc9fb1e68b32",
+                            "uuid": "a0723010-60c6-4d8e-8719-26cb8e3bde31"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8841805f-a162-42d9-bc76-dc3d60a8b37e",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "95fda741-ad96-4b9e-84c9-76b974e2613f",
+                    "exits": [
+                        {
+                            "destination_uuid": "76db4749-213b-439b-aead-f294e4df87cc",
+                            "uuid": "03b20d51-64bf-4194-a93a-8357056a08c5"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8d883190-a2ba-40dc-8da4-7f37f7380c13",
+                            "type": "send_msg",
+                            "text": "Does your teen have difficulty with self-care such as feeding or dressing him/herself?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Take Care of Themselves"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "76db4749-213b-439b-aead-f294e4df87cc",
+                    "exits": [
+                        {
+                            "destination_uuid": "c927aa12-f2a9-457d-a429-31424edcf536",
+                            "uuid": "5c9c02e9-f5e4-4a1c-a25d-48396e918900"
+                        },
+                        {
+                            "destination_uuid": "c927aa12-f2a9-457d-a429-31424edcf536",
+                            "uuid": "1e6aefbe-cf2d-40c3-800a-86def54ff07c"
+                        },
+                        {
+                            "destination_uuid": "12a7639f-a8c6-41ba-92c8-0284d0410e93",
+                            "uuid": "2261950e-d5ad-4340-a10c-6c670b38fe8c"
+                        },
+                        {
+                            "destination_uuid": "0152a48a-01c2-4d54-bcd1-d9e0b175fa1c",
+                            "uuid": "e5bee6a5-4372-4c40-a36e-e143329abaec"
+                        },
+                        {
+                            "destination_uuid": "e2f31dfb-9d76-46c7-8c90-f514362a9608",
+                            "uuid": "86f35223-b908-4cd1-b08d-d1c92bfc0f59"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "1cbaa681-f383-4a3d-931a-3a5f1a98827b",
+                                "type": "has_only_phrase",
+                                "category_uuid": "f4154faf-e1e2-430a-bef0-5ba93f4eff98",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "44589ced-8728-425d-8dc3-51b013155de2",
+                                "type": "has_only_phrase",
+                                "category_uuid": "4cc8c654-b045-406f-b327-11eb1100743a",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "142435e8-55e2-47eb-9cd3-89b3eec72501",
+                                "type": "has_only_phrase",
+                                "category_uuid": "e52dcbbd-643c-4033-ac8f-212ce60314f2",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "156e9e46-b303-4ae3-a389-f23ee4bc196d",
+                                "type": "has_only_phrase",
+                                "category_uuid": "fed64cfb-a8b1-4be0-8fc3-64031d337578",
+                                "arguments": [
+                                    "He or She Cannot Take Care of Themselves"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "f4154faf-e1e2-430a-bef0-5ba93f4eff98",
+                                "name": "No Difficulty",
+                                "exit_uuid": "5c9c02e9-f5e4-4a1c-a25d-48396e918900"
+                            },
+                            {
+                                "uuid": "4cc8c654-b045-406f-b327-11eb1100743a",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "1e6aefbe-cf2d-40c3-800a-86def54ff07c"
+                            },
+                            {
+                                "uuid": "e52dcbbd-643c-4033-ac8f-212ce60314f2",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "2261950e-d5ad-4340-a10c-6c670b38fe8c"
+                            },
+                            {
+                                "uuid": "fed64cfb-a8b1-4be0-8fc3-64031d337578",
+                                "name": "He or She Cannot Take Care of Themselves",
+                                "exit_uuid": "e5bee6a5-4372-4c40-a36e-e143329abaec"
+                            },
+                            {
+                                "uuid": "9bc0837f-c9d7-49ff-aca4-f3d8460a1e45",
+                                "name": "Other",
+                                "exit_uuid": "86f35223-b908-4cd1-b08d-d1c92bfc0f59"
+                            }
+                        ],
+                        "default_category_uuid": "9bc0837f-c9d7-49ff-aca4-f3d8460a1e45",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_2"
+                    }
+                },
+                {
+                    "uuid": "12a7639f-a8c6-41ba-92c8-0284d0410e93",
+                    "exits": [
+                        {
+                            "destination_uuid": "444c518b-ca4c-45fe-83c4-f4dd30c52951",
+                            "uuid": "2c316caa-281b-4a04-9205-8ae27d58c09a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b9ca2b95-a330-4408-83f7-29ea8afdf6fe",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your teen's ability to take care of themselves, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "444c518b-ca4c-45fe-83c4-f4dd30c52951",
+                    "exits": [
+                        {
+                            "destination_uuid": "c927aa12-f2a9-457d-a429-31424edcf536",
+                            "uuid": "53cedf1b-4b21-4884-8a98-85376c6a0f21"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "e177961a-1f73-4e34-8b4b-ae3359f826a6"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0152a48a-01c2-4d54-bcd1-d9e0b175fa1c",
+                    "exits": [
+                        {
+                            "destination_uuid": "f0515d8c-df65-4fea-942c-d413aef9cf5d",
+                            "uuid": "7061ccad-277e-4145-8392-5984f7a0fb57"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "ff73056a-e5fa-4631-bff1-a622e4c3707b",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your teen's ability to take care of themselves, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f0515d8c-df65-4fea-942c-d413aef9cf5d",
+                    "exits": [
+                        {
+                            "destination_uuid": "c927aa12-f2a9-457d-a429-31424edcf536",
+                            "uuid": "3995b967-2796-49a7-a7b0-1f54f77b7339"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "d4f6cf50-5bad-432a-b3e6-53d5ce6aa8e0"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e2f31dfb-9d76-46c7-8c90-f514362a9608",
+                    "exits": [
+                        {
+                            "destination_uuid": "95fda741-ad96-4b9e-84c9-76b974e2613f",
+                            "uuid": "afd906dd-8b50-4986-a9d2-4a6af708e58f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "63479f2a-a144-474d-b2b9-6538af48463d",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c927aa12-f2a9-457d-a429-31424edcf536",
+                    "exits": [
+                        {
+                            "destination_uuid": "53dd96b3-025d-44da-8784-e74540d967b5",
+                            "uuid": "2d7aa1a9-8e92-482a-a4c5-7254927e2b9d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "0b2bd9da-6801-4a07-866d-0895ae6ad7e6",
+                            "type": "send_msg",
+                            "text": "Does your teen have difficulty being understood by others?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Be Understood by Others"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "53dd96b3-025d-44da-8784-e74540d967b5",
+                    "exits": [
+                        {
+                            "destination_uuid": "be3cacba-c9f6-4001-9bc5-63ca990b7be7",
+                            "uuid": "c3339868-6ca8-4d09-98ee-cdeb69e423f0"
+                        },
+                        {
+                            "destination_uuid": "be3cacba-c9f6-4001-9bc5-63ca990b7be7",
+                            "uuid": "6fbfef78-75c2-4b41-ad21-08c531a8f970"
+                        },
+                        {
+                            "destination_uuid": "f2811b1f-1c2f-4b3a-ace0-2fd92ec5d906",
+                            "uuid": "9d4644ed-9858-4241-ae60-fd2c1bdda1fa"
+                        },
+                        {
+                            "destination_uuid": "32b758fc-64a1-40dd-b357-b938718035c7",
+                            "uuid": "c78a7b6a-762b-44a5-a2fc-626e1d27c22e"
+                        },
+                        {
+                            "destination_uuid": "b3c8cb0b-a6ae-4f60-a012-c1c20a03b4dd",
+                            "uuid": "40d72318-3ecf-4126-969f-6b6c6771e82b"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "98f16da0-dbfe-47e3-87f1-aefc80a28a6f",
+                                "type": "has_only_phrase",
+                                "category_uuid": "37d6a8ad-2735-4ba8-93de-7f5845b2aec3",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "6056d6df-0798-4f2f-9db0-edc674e6bd8f",
+                                "type": "has_only_phrase",
+                                "category_uuid": "f9d1c782-520b-4f7e-911a-4c9e84a12b1c",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "a813e7cb-cba0-475b-81d7-abefce324194",
+                                "type": "has_only_phrase",
+                                "category_uuid": "f961d805-f649-48d9-bda3-b531f880e83c",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "04b30907-202d-43c3-ab4f-1734dc01675c",
+                                "type": "has_only_phrase",
+                                "category_uuid": "889a9587-52a6-4724-a2d9-23be0b7f1a7d",
+                                "arguments": [
+                                    "He or She Cannot Be Understood by Others"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "37d6a8ad-2735-4ba8-93de-7f5845b2aec3",
+                                "name": "No Difficulty",
+                                "exit_uuid": "c3339868-6ca8-4d09-98ee-cdeb69e423f0"
+                            },
+                            {
+                                "uuid": "f9d1c782-520b-4f7e-911a-4c9e84a12b1c",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "6fbfef78-75c2-4b41-ad21-08c531a8f970"
+                            },
+                            {
+                                "uuid": "f961d805-f649-48d9-bda3-b531f880e83c",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "9d4644ed-9858-4241-ae60-fd2c1bdda1fa"
+                            },
+                            {
+                                "uuid": "889a9587-52a6-4724-a2d9-23be0b7f1a7d",
+                                "name": "He or She Cannot Be Understood by Others",
+                                "exit_uuid": "c78a7b6a-762b-44a5-a2fc-626e1d27c22e"
+                            },
+                            {
+                                "uuid": "bf590072-f0d3-4a1f-ac38-d3e5d14d17c4",
+                                "name": "Other",
+                                "exit_uuid": "40d72318-3ecf-4126-969f-6b6c6771e82b"
+                            }
+                        ],
+                        "default_category_uuid": "bf590072-f0d3-4a1f-ac38-d3e5d14d17c4",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_3"
+                    }
+                },
+                {
+                    "uuid": "f2811b1f-1c2f-4b3a-ace0-2fd92ec5d906",
+                    "exits": [
+                        {
+                            "destination_uuid": "6ad75aa1-eff5-4b13-aa73-203786d0cc38",
+                            "uuid": "6b8d46ee-fbcc-4531-8632-92ac33ddc186"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2024a2d9-2e0e-4c07-a330-b6fa4c7cb7bd",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your teen communicates, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6ad75aa1-eff5-4b13-aa73-203786d0cc38",
+                    "exits": [
+                        {
+                            "destination_uuid": "be3cacba-c9f6-4001-9bc5-63ca990b7be7",
+                            "uuid": "dc7df187-389f-4b7a-ae05-31004439a180"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "a6633cbe-42ac-4c79-803f-52d059a0eeed"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "32b758fc-64a1-40dd-b357-b938718035c7",
+                    "exits": [
+                        {
+                            "destination_uuid": "f9f9762a-971b-4c50-8a8e-f5c65e486afa",
+                            "uuid": "334d6567-a3ba-43b4-b407-96af8f9be8bf"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "1367e767-093f-411d-b442-b0a9c191ec4b",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your teen communicates, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f9f9762a-971b-4c50-8a8e-f5c65e486afa",
+                    "exits": [
+                        {
+                            "destination_uuid": "be3cacba-c9f6-4001-9bc5-63ca990b7be7",
+                            "uuid": "88b92165-9013-4bc7-9124-a39964bc8c4d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "fa0428d9-9374-455c-9972-0277fea245b7"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "b3c8cb0b-a6ae-4f60-a012-c1c20a03b4dd",
+                    "exits": [
+                        {
+                            "destination_uuid": "c927aa12-f2a9-457d-a429-31424edcf536",
+                            "uuid": "4b687e7e-9aa1-426a-9875-49b93e4b3b6a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "5a6d426a-d867-41ee-82b3-39f07cb5c2ef",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "be3cacba-c9f6-4001-9bc5-63ca990b7be7",
+                    "exits": [
+                        {
+                            "destination_uuid": "7e0cbe0a-cb93-456b-a3b0-e3dab997abf9",
+                            "uuid": "983506f0-e9d6-4ae9-9dff-7eb269c2c9b5"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "a3a0a010-5b11-43bc-98b4-9c3dd0ade6ef",
+                            "type": "send_msg",
+                            "text": "Does your teen have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Learn, Remember or Focus"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7e0cbe0a-cb93-456b-a3b0-e3dab997abf9",
+                    "exits": [
+                        {
+                            "destination_uuid": "f1afd058-0fb6-4363-8441-b6e9fdf807d9",
+                            "uuid": "1726a8d2-c32c-488b-982b-412a77d4dbce"
+                        },
+                        {
+                            "destination_uuid": "f1afd058-0fb6-4363-8441-b6e9fdf807d9",
+                            "uuid": "56459b40-26c1-4e3c-abf1-eac8dc992904"
+                        },
+                        {
+                            "destination_uuid": "86280d37-8f3d-4552-98eb-95a6e1bfec16",
+                            "uuid": "58614fca-653b-4109-a8bf-62c54fe9baeb"
+                        },
+                        {
+                            "destination_uuid": "751db24c-4e60-42b1-a395-57e4f8bf6faa",
+                            "uuid": "5ebc019b-7d38-4eff-861f-639e6c21ec1a"
+                        },
+                        {
+                            "destination_uuid": "f869ecc7-6ef4-4e53-82dc-ce4f84f58ede",
+                            "uuid": "0afb6e23-d05c-4dfb-befa-482e5d73ccc7"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "558ea878-659f-4864-91c5-d705924adcb0",
+                                "type": "has_only_phrase",
+                                "category_uuid": "807c6115-e4b1-4e61-9114-f585c3bc1d0a",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "37a1342f-2bf9-4ac9-ab2f-afde0e761336",
+                                "type": "has_only_phrase",
+                                "category_uuid": "75e68d77-be31-443c-88e0-82841a0686a1",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "e8d620b8-9bac-46bc-adf8-765ace09efc5",
+                                "type": "has_only_phrase",
+                                "category_uuid": "a03c594c-ec1c-4b7b-aa14-78fc7116f6f9",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "3a7c3e55-76ee-4dd4-8938-50fbcffac709",
+                                "type": "has_only_phrase",
+                                "category_uuid": "7774677b-0c82-4629-be83-655d3018c4a5",
+                                "arguments": [
+                                    "He or She Cannot Learn, Remember or Focus"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "807c6115-e4b1-4e61-9114-f585c3bc1d0a",
+                                "name": "No Difficulty",
+                                "exit_uuid": "1726a8d2-c32c-488b-982b-412a77d4dbce"
+                            },
+                            {
+                                "uuid": "75e68d77-be31-443c-88e0-82841a0686a1",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "56459b40-26c1-4e3c-abf1-eac8dc992904"
+                            },
+                            {
+                                "uuid": "a03c594c-ec1c-4b7b-aa14-78fc7116f6f9",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "58614fca-653b-4109-a8bf-62c54fe9baeb"
+                            },
+                            {
+                                "uuid": "7774677b-0c82-4629-be83-655d3018c4a5",
+                                "name": "He or She Cannot Learn, Remember or Focus",
+                                "exit_uuid": "5ebc019b-7d38-4eff-861f-639e6c21ec1a"
+                            },
+                            {
+                                "uuid": "f4abd77c-8338-47ec-be28-da34a252432e",
+                                "name": "Other",
+                                "exit_uuid": "0afb6e23-d05c-4dfb-befa-482e5d73ccc7"
+                            }
+                        ],
+                        "default_category_uuid": "f4abd77c-8338-47ec-be28-da34a252432e",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_4"
+                    }
+                },
+                {
+                    "uuid": "86280d37-8f3d-4552-98eb-95a6e1bfec16",
+                    "exits": [
+                        {
+                            "destination_uuid": "d219fd98-e70d-427e-af95-9e95712c7698",
+                            "uuid": "3146b8b2-9076-4fcb-86be-b6fe0a724246"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "86700880-46b8-4cd7-bca7-a88797232d8b",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your teen is able to think or understand things, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d219fd98-e70d-427e-af95-9e95712c7698",
+                    "exits": [
+                        {
+                            "destination_uuid": "f1afd058-0fb6-4363-8441-b6e9fdf807d9",
+                            "uuid": "58fb7cea-404b-4991-9f8d-2cd4a187adeb"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "c4079f2b-be4d-4a3e-96b4-1059e1b303a8"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "751db24c-4e60-42b1-a395-57e4f8bf6faa",
+                    "exits": [
+                        {
+                            "destination_uuid": "e8277e38-6089-4976-89e1-7777a0729844",
+                            "uuid": "774cba05-1d9f-40fc-99a9-f9dd9f88869b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "73da84b7-8871-4977-8e08-c33fb0d7925d",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your teen is able to think or understand things, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e8277e38-6089-4976-89e1-7777a0729844",
+                    "exits": [
+                        {
+                            "destination_uuid": "f1afd058-0fb6-4363-8441-b6e9fdf807d9",
+                            "uuid": "73a1521d-dd5c-490e-81bc-77a114a4b871"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "d214b75f-3ac1-4d53-813b-dd5b1520ffaa"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f869ecc7-6ef4-4e53-82dc-ce4f84f58ede",
+                    "exits": [
+                        {
+                            "destination_uuid": "be3cacba-c9f6-4001-9bc5-63ca990b7be7",
+                            "uuid": "6c418160-3aff-4bea-b279-527e4f336d08"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e7ec4663-8c51-4e65-8df1-62748ae1e810",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "f1afd058-0fb6-4363-8441-b6e9fdf807d9",
+                    "exits": [
+                        {
+                            "destination_uuid": "80d2a9c6-5dfd-4997-8704-70b420df2437",
+                            "uuid": "01415d0a-0861-45e2-943a-ca9055ccc002"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7c5d9404-8aa6-4b5e-b5f3-11d5e792313f",
+                            "type": "send_msg",
+                            "text": "Compared with teens of the same age, does your teen have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Control Their Behaviour"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "80d2a9c6-5dfd-4997-8704-70b420df2437",
+                    "exits": [
+                        {
+                            "destination_uuid": "7ddab4ad-96dc-4ec6-8e81-470487464731",
+                            "uuid": "e6155920-f649-4211-a756-c58c19a1e339"
+                        },
+                        {
+                            "destination_uuid": "7ddab4ad-96dc-4ec6-8e81-470487464731",
+                            "uuid": "7712c4a8-fed4-4686-80cc-434224d9a19a"
+                        },
+                        {
+                            "destination_uuid": "374b74dc-5e60-4f40-aca5-a32c329b00a9",
+                            "uuid": "42dc116b-4a98-49f3-b515-e35fe3488f65"
+                        },
+                        {
+                            "destination_uuid": "fbfbe94c-f63f-4139-a086-f8ab8e14d664",
+                            "uuid": "e7e1bf55-88b1-45b5-8618-aa069000d22e"
+                        },
+                        {
+                            "destination_uuid": "cf55f361-43bb-4862-b0b9-4acd66fdab62",
+                            "uuid": "1057f684-0866-4fbe-a287-4540216d45fd"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "e0173c45-cb0c-401e-a362-a80ebef82299",
+                                "type": "has_only_phrase",
+                                "category_uuid": "92632c9a-048a-4dc8-8d6a-adb15bcdf64a",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "e2c4a77d-41b3-43e1-a1b0-6bc75e9f3b19",
+                                "type": "has_only_phrase",
+                                "category_uuid": "e021cd62-f22b-4b67-9a0a-8fb4c8ef0a60",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "a729c965-7481-4561-aefc-131b8713fda5",
+                                "type": "has_only_phrase",
+                                "category_uuid": "1579add2-bf55-4aed-8822-9b8763c6ed51",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "5dad0c9f-79d4-48f0-8f14-a7d6d92a1924",
+                                "type": "has_only_phrase",
+                                "category_uuid": "40631daa-a98a-4a9f-9bff-51d5cd6d0328",
+                                "arguments": [
+                                    "He or She Cannot Control Their Behaviour"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "92632c9a-048a-4dc8-8d6a-adb15bcdf64a",
+                                "name": "No Difficulty",
+                                "exit_uuid": "e6155920-f649-4211-a756-c58c19a1e339"
+                            },
+                            {
+                                "uuid": "e021cd62-f22b-4b67-9a0a-8fb4c8ef0a60",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "7712c4a8-fed4-4686-80cc-434224d9a19a"
+                            },
+                            {
+                                "uuid": "1579add2-bf55-4aed-8822-9b8763c6ed51",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "42dc116b-4a98-49f3-b515-e35fe3488f65"
+                            },
+                            {
+                                "uuid": "40631daa-a98a-4a9f-9bff-51d5cd6d0328",
+                                "name": "He or She Cannot Control Their Behaviour",
+                                "exit_uuid": "e7e1bf55-88b1-45b5-8618-aa069000d22e"
+                            },
+                            {
+                                "uuid": "3530ab19-8087-4f04-b179-b3f2c5d9260d",
+                                "name": "Other",
+                                "exit_uuid": "1057f684-0866-4fbe-a287-4540216d45fd"
+                            }
+                        ],
+                        "default_category_uuid": "3530ab19-8087-4f04-b179-b3f2c5d9260d",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_5"
+                    }
+                },
+                {
+                    "uuid": "374b74dc-5e60-4f40-aca5-a32c329b00a9",
+                    "exits": [
+                        {
+                            "destination_uuid": "b80104de-67d2-43a8-9cc2-47dbf0390446",
+                            "uuid": "c2e9abf8-8dbb-4b94-9230-a2b2d7fcc4d0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "6dfc4b21-7556-4fb2-ac4c-d6c4585b596d",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your teen's behaviour, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "b80104de-67d2-43a8-9cc2-47dbf0390446",
+                    "exits": [
+                        {
+                            "destination_uuid": "7ddab4ad-96dc-4ec6-8e81-470487464731",
+                            "uuid": "b32e9902-e4d6-4cef-a814-96735a1f006b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "35a6f005-a77f-4786-a82d-033cd3de92f0"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "fbfbe94c-f63f-4139-a086-f8ab8e14d664",
+                    "exits": [
+                        {
+                            "destination_uuid": "1011e336-50c1-4a92-a939-b221fdc7d022",
+                            "uuid": "6e303427-f014-4fd0-815f-6f283dcf392a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "83ee306a-8dcf-4f19-b4c0-4b95bb6b9d02",
+                            "type": "send_msg",
+                            "text": "It seems like you are concerned about your teen's behaviour, and they might need help from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1011e336-50c1-4a92-a939-b221fdc7d022",
+                    "exits": [
+                        {
+                            "destination_uuid": "7ddab4ad-96dc-4ec6-8e81-470487464731",
+                            "uuid": "ba042673-13a4-42f9-89df-8962cfe50899"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "c80a2be1-23ca-4310-9c6a-bccf8de75db0"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "cf55f361-43bb-4862-b0b9-4acd66fdab62",
+                    "exits": [
+                        {
+                            "destination_uuid": "f1afd058-0fb6-4363-8441-b6e9fdf807d9",
+                            "uuid": "b89c1acc-3cd6-4476-bdba-6316ac6f9bd0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "98fb64f1-630c-4b96-8625-3792fc164656",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7ddab4ad-96dc-4ec6-8e81-470487464731",
+                    "exits": [
+                        {
+                            "destination_uuid": "ea79e0a3-4d8d-4d3a-927d-674c4d5fd022",
+                            "uuid": "7442c302-7897-45da-a049-b35b35f27877"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "f3b51a41-aebb-440d-8096-4742ce730783",
+                            "type": "send_msg",
+                            "text": "Does your teen have difficulty making friends?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "No Difficulty",
+                                "Some Difficulty",
+                                "A Lot of Difficulty",
+                                "He or She Cannot Make Friends"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ea79e0a3-4d8d-4d3a-927d-674c4d5fd022",
+                    "exits": [
+                        {
+                            "destination_uuid": "45f1329e-07ad-4700-bfaf-df3ee703d858",
+                            "uuid": "34470d62-e5d6-4ae5-8e0b-adbeae9c6b68"
+                        },
+                        {
+                            "destination_uuid": "45f1329e-07ad-4700-bfaf-df3ee703d858",
+                            "uuid": "8c54e1de-b89a-4c86-a12a-82d1fcfc5f5c"
+                        },
+                        {
+                            "destination_uuid": "db6575b8-2084-4dc9-bb14-b0ab156c9d03",
+                            "uuid": "37728dc3-65ef-4a91-843f-c092ae94fa6d"
+                        },
+                        {
+                            "destination_uuid": "8c486c0c-6aa8-4352-869a-5e378ba36fd9",
+                            "uuid": "3de8a7fe-8d3d-4bb1-9ffd-15a6e971b7a0"
+                        },
+                        {
+                            "destination_uuid": "51631699-2418-4759-a4a3-33172e4dbaab",
+                            "uuid": "6795a9e0-d20a-422d-9f5d-0a08173be22e"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "d61f01b6-2218-4ce2-80ba-05eff13425a7",
+                                "type": "has_only_phrase",
+                                "category_uuid": "ef5bc968-dd7f-4100-be04-9f003b2e0844",
+                                "arguments": [
+                                    "No Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "dd4e64b6-ae66-4a35-ae0b-780f3e2d143d",
+                                "type": "has_only_phrase",
+                                "category_uuid": "d3dcc3d7-f0e8-4f96-a1ac-3ebfa48f8c1b",
+                                "arguments": [
+                                    "Some Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "67e984f0-2486-45ec-8754-4cacc1781784",
+                                "type": "has_only_phrase",
+                                "category_uuid": "9216abd1-bd4c-4bc2-8838-003fb7e70fa8",
+                                "arguments": [
+                                    "A Lot of Difficulty"
+                                ]
+                            },
+                            {
+                                "uuid": "4c65f39b-b0f5-40fe-a0a8-6a5bcfecada3",
+                                "type": "has_only_phrase",
+                                "category_uuid": "ab51ad39-deb5-428e-ad3f-f7d7d20498ff",
+                                "arguments": [
+                                    "He or She Cannot Make Friends"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "ef5bc968-dd7f-4100-be04-9f003b2e0844",
+                                "name": "No Difficulty",
+                                "exit_uuid": "34470d62-e5d6-4ae5-8e0b-adbeae9c6b68"
+                            },
+                            {
+                                "uuid": "d3dcc3d7-f0e8-4f96-a1ac-3ebfa48f8c1b",
+                                "name": "Some Difficulty",
+                                "exit_uuid": "8c54e1de-b89a-4c86-a12a-82d1fcfc5f5c"
+                            },
+                            {
+                                "uuid": "9216abd1-bd4c-4bc2-8838-003fb7e70fa8",
+                                "name": "A Lot of Difficulty",
+                                "exit_uuid": "37728dc3-65ef-4a91-843f-c092ae94fa6d"
+                            },
+                            {
+                                "uuid": "ab51ad39-deb5-428e-ad3f-f7d7d20498ff",
+                                "name": "He or She Cannot Make Friends",
+                                "exit_uuid": "3de8a7fe-8d3d-4bb1-9ffd-15a6e971b7a0"
+                            },
+                            {
+                                "uuid": "73dc95a9-5c0a-4089-9a64-d4b3a704fdc6",
+                                "name": "Other",
+                                "exit_uuid": "6795a9e0-d20a-422d-9f5d-0a08173be22e"
+                            }
+                        ],
+                        "default_category_uuid": "73dc95a9-5c0a-4089-9a64-d4b3a704fdc6",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_6"
+                    }
+                },
+                {
+                    "uuid": "db6575b8-2084-4dc9-bb14-b0ab156c9d03",
+                    "exits": [
+                        {
+                            "destination_uuid": "27c6e345-1957-4f46-aa15-97679df41785",
+                            "uuid": "70cdb858-7665-48d0-933e-c781b5c44f8b"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "1ef91b3b-1636-44b2-b328-5f073304ab8c",
+                            "type": "send_msg",
+                            "text": "It seems that you're worried about your teen's ability to interact with others, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "27c6e345-1957-4f46-aa15-97679df41785",
+                    "exits": [
+                        {
+                            "destination_uuid": "45f1329e-07ad-4700-bfaf-df3ee703d858",
+                            "uuid": "a57b201e-d502-45f1-9111-e5cc55bea02c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "fbdeb6a4-852f-4656-9398-1362d1f26823"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "8c486c0c-6aa8-4352-869a-5e378ba36fd9",
+                    "exits": [
+                        {
+                            "destination_uuid": "503140da-b249-4eac-92c8-9c07065d3285",
+                            "uuid": "60e9c7ca-cfbc-44c4-ab49-837c87b8e904"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "0829087f-c0c1-4daf-a782-d7db6a38bacc",
+                            "type": "send_msg",
+                            "text": "It seems that you're worried about your teen's ability to interact with others, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "503140da-b249-4eac-92c8-9c07065d3285",
+                    "exits": [
+                        {
+                            "destination_uuid": "45f1329e-07ad-4700-bfaf-df3ee703d858",
+                            "uuid": "9a32b9cf-9354-4390-b32e-f36c8f221cb7"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "84c98116-662e-4e89-9c62-87d89f66fdb1"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "51631699-2418-4759-a4a3-33172e4dbaab",
+                    "exits": [
+                        {
+                            "destination_uuid": "7ddab4ad-96dc-4ec6-8e81-470487464731",
+                            "uuid": "7a171cc2-583b-4d2a-988e-05604585f8ca"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "80da69c3-0460-4fb9-9e1a-d8bf7a25b1d9",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "45f1329e-07ad-4700-bfaf-df3ee703d858",
+                    "exits": [
+                        {
+                            "destination_uuid": "9e6ffaa0-154e-4664-9368-a7d1f83657a3",
+                            "uuid": "b49a28fe-54f5-49dd-a7e5-a74d4f8abb00"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "f8e46972-b670-41c7-aa57-43251fa30534",
+                            "type": "send_msg",
+                            "text": "How often does your teen seem very anxious, nervous, worried, sad, or depressed?",
+                            "attachments": [],
+                            "quick_replies": [
+                                "Every Day",
+                                "Once A Week",
+                                "About Once a Month",
+                                "A Few Times Each Year",
+                                "Never"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "9e6ffaa0-154e-4664-9368-a7d1f83657a3",
+                    "exits": [
+                        {
+                            "destination_uuid": "81e4c692-b83f-482f-b77a-048da25c05b7",
+                            "uuid": "0102cfff-4c96-492f-8b3c-a7bde22d230a"
+                        },
+                        {
+                            "destination_uuid": "c4038395-baab-449b-b57e-c6993d0795f4",
+                            "uuid": "f562cb1d-8f55-413e-9322-0050235fdfde"
+                        },
+                        {
+                            "destination_uuid": "c4038395-baab-449b-b57e-c6993d0795f4",
+                            "uuid": "db4d4167-bdfd-40de-bbbf-6b022bd25c1e"
+                        },
+                        {
+                            "destination_uuid": "c4038395-baab-449b-b57e-c6993d0795f4",
+                            "uuid": "4fef5403-4ba0-4419-a7d2-e0b8d3aff72c"
+                        },
+                        {
+                            "destination_uuid": "c4038395-baab-449b-b57e-c6993d0795f4",
+                            "uuid": "f26f65d2-d69b-4c8d-9631-631ed715a229"
+                        },
+                        {
+                            "destination_uuid": "26438136-6dd8-481d-a9d9-f8b9f6cee3e5",
+                            "uuid": "291c9f08-2b72-4530-9611-f576b90fbfba"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@input.text",
+                        "cases": [
+                            {
+                                "uuid": "d1ae775b-8b8d-431c-b4cd-60154c4124d3",
+                                "type": "has_only_phrase",
+                                "category_uuid": "e21898b4-53aa-46f9-b4b4-2b5f20ee1a20",
+                                "arguments": [
+                                    "Every Day"
+                                ]
+                            },
+                            {
+                                "uuid": "22a3db2c-a0fa-4d07-aefa-161a01c714f5",
+                                "type": "has_only_phrase",
+                                "category_uuid": "754e773c-fdb4-430c-8254-09a1bb8b88e9",
+                                "arguments": [
+                                    "Once A Week"
+                                ]
+                            },
+                            {
+                                "uuid": "f5f6022f-b66b-4214-812f-ee22b68b9035",
+                                "type": "has_only_phrase",
+                                "category_uuid": "c7632af1-3338-4dac-90c1-9d001d67d9f8",
+                                "arguments": [
+                                    "About Once a Month"
+                                ]
+                            },
+                            {
+                                "uuid": "51079561-74e9-442f-85be-889720e26fd8",
+                                "type": "has_only_phrase",
+                                "category_uuid": "535fedf1-ca88-43be-80a9-37ca5e1884e6",
+                                "arguments": [
+                                    "A Few Times Each Year"
+                                ]
+                            },
+                            {
+                                "uuid": "f2423524-7d42-4d22-b6cd-57789cb305c4",
+                                "type": "has_only_phrase",
+                                "category_uuid": "ec693181-554e-4006-9ba1-c8ae54148fdd",
+                                "arguments": [
+                                    "Never"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "e21898b4-53aa-46f9-b4b4-2b5f20ee1a20",
+                                "name": "Every Day",
+                                "exit_uuid": "0102cfff-4c96-492f-8b3c-a7bde22d230a"
+                            },
+                            {
+                                "uuid": "754e773c-fdb4-430c-8254-09a1bb8b88e9",
+                                "name": "Once A Week",
+                                "exit_uuid": "f562cb1d-8f55-413e-9322-0050235fdfde"
+                            },
+                            {
+                                "uuid": "c7632af1-3338-4dac-90c1-9d001d67d9f8",
+                                "name": "About Once a Month",
+                                "exit_uuid": "db4d4167-bdfd-40de-bbbf-6b022bd25c1e"
+                            },
+                            {
+                                "uuid": "535fedf1-ca88-43be-80a9-37ca5e1884e6",
+                                "name": "A Few Times Each Year",
+                                "exit_uuid": "4fef5403-4ba0-4419-a7d2-e0b8d3aff72c"
+                            },
+                            {
+                                "uuid": "ec693181-554e-4006-9ba1-c8ae54148fdd",
+                                "name": "Never",
+                                "exit_uuid": "f26f65d2-d69b-4c8d-9631-631ed715a229"
+                            },
+                            {
+                                "uuid": "bbec9195-6140-472f-86bf-d10842d4bf77",
+                                "name": "Other",
+                                "exit_uuid": "291c9f08-2b72-4530-9611-f576b90fbfba"
+                            }
+                        ],
+                        "default_category_uuid": "bbec9195-6140-472f-86bf-d10842d4bf77",
+                        "wait": {
+                            "type": "msg"
+                        },
+                        "result_name": "survey_answer_7"
+                    }
+                },
+                {
+                    "uuid": "81e4c692-b83f-482f-b77a-048da25c05b7",
+                    "exits": [
+                        {
+                            "destination_uuid": "95471e25-5d6a-4199-96bc-99d6d3ed1575",
+                            "uuid": "ef77165c-cb0c-40a6-8d46-88cab52ae50c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3309623f-8b51-4507-94fa-9639b24ae471",
+                            "type": "send_msg",
+                            "text": "It seems like you're worried about how your teen is feeling, and they might need assistance from a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "95471e25-5d6a-4199-96bc-99d6d3ed1575",
+                    "exits": [
+                        {
+                            "destination_uuid": "c4038395-baab-449b-b57e-c6993d0795f4",
+                            "uuid": "5d018484-bd85-41ed-a65e-df7ad4ba8728"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "set_run_result",
+                            "name": "concerning",
+                            "value": "yes",
+                            "uuid": "0a0869fb-76e6-493f-afef-36e2de24dde2"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "26438136-6dd8-481d-a9d9-f8b9f6cee3e5",
+                    "exits": [
+                        {
+                            "destination_uuid": "45f1329e-07ad-4700-bfaf-df3ee703d858",
+                            "uuid": "71618a97-0b6c-43f4-947b-5366d6fb249e"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "9ae1eb38-6541-4897-beac-fba74b59dbf7",
+                            "type": "send_msg",
+                            "text": "Sorry, I dont' understand what you mean.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "c4038395-baab-449b-b57e-c6993d0795f4",
+                    "exits": [
+                        {
+                            "destination_uuid": "0877f586-869f-474b-8665-b93ccac9c338",
+                            "uuid": "800bae16-2d48-42df-bfe0-ac732d082d26"
+                        },
+                        {
+                            "destination_uuid": "7fa0ef30-648e-4ca1-a897-bc0334fc88b9",
+                            "uuid": "f5318094-e333-45f3-83fd-675717d3195f"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@results.concerning",
+                        "cases": [
+                            {
+                                "uuid": "8d69257b-d324-4939-910a-36e33fd8def5",
+                                "type": "has_any_word",
+                                "category_uuid": "c64c1cbe-00d2-46b3-ad06-ddf91ab5f0ac",
+                                "arguments": [
+                                    "yes"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "c64c1cbe-00d2-46b3-ad06-ddf91ab5f0ac",
+                                "name": "concerning",
+                                "exit_uuid": "800bae16-2d48-42df-bfe0-ac732d082d26"
+                            },
+                            {
+                                "uuid": "4451265d-b3b0-4332-8665-624c52a9a8e5",
+                                "name": "Other",
+                                "exit_uuid": "f5318094-e333-45f3-83fd-675717d3195f"
+                            }
+                        ],
+                        "default_category_uuid": "4451265d-b3b0-4332-8665-624c52a9a8e5",
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "0877f586-869f-474b-8665-b93ccac9c338",
+                    "exits": [
+                        {
+                            "destination_uuid": "08e95ba9-d3da-460d-b442-5f465947f759",
+                            "uuid": "23736c5c-c946-4b45-a6ba-a7d6f228f1a4"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "18df5131-a910-4532-a10e-7cf59d28c9fe",
+                            "type": "send_msg",
+                            "text": "Thank you for taking the teen ability test. If you have any concerns, talk to a professional.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "08e95ba9-d3da-460d-b442-5f465947f759",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "b08fb5bb-0be3-40ad-8219-f39b597f7fc0"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "12a1a1ce-6b4d-444c-bd9c-1933e582a021",
+                            "type": "send_msg",
+                            "text": "Remember, if you ever need support type HELP.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7fa0ef30-648e-4ca1-a897-bc0334fc88b9",
+                    "exits": [
+                        {
+                            "destination_uuid": "02b5524e-7949-427d-b769-26092b5ceb57",
+                            "uuid": "9e0a8f05-a32e-4cae-b948-6692117c1e2e"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "5bcf9e7f-d94f-4982-8ada-ab08f3bd71b4",
+                            "type": "send_msg",
+                            "text": "It looks like your teen is developing well. That's great!",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "02b5524e-7949-427d-b769-26092b5ceb57",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "570876f1-2125-4657-8f70-d364b7e1e1e8"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "daa9a2c1-1091-412f-b61a-e9f64da7b648",
+                            "type": "send_msg",
+                            "text": "Remember, if you ever need support type HELP.",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        }
+    ],
+    "groups": [],
+    "site": "https://rapidpro.idems.international",
+    "triggers": [],
+    "version": "13"
+}

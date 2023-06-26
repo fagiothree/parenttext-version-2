@@ -1,0 +1,1599 @@
+{
+  "campaigns": [],
+  "fields": [],
+  "flows": [
+    {
+      "uuid": "6dc34314-81bb-4b68-b1c7-1632737d9375",
+      "name": "module - praise_child",
+      "language": "eng",
+      "type": "messaging",
+      "nodes": [
+        {
+          "uuid": "10ee509a-9381-44b9-9589-83296d0b0f50",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "3d275495-fd03-4f15-b31d-a6e4529af4f9",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "0f4bbcac-c083-48fa-b75c-1d58e57e5a6e"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "0f4bbcac-c083-48fa-b75c-1d58e57e5a6e",
+                "name": "child_nickname",
+                "exit_uuid": "60d91932-d262-479d-b249-aa1b0d6d4749"
+              },
+              {
+                "uuid": "da8bb09b-a277-4d9c-95fb-15aa4ea5031c",
+                "name": "Other",
+                "exit_uuid": "4903c86f-1755-4eab-ad32-c03448081114"
+              }
+            ],
+            "default_category_uuid": "da8bb09b-a277-4d9c-95fb-15aa4ea5031c",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "60d91932-d262-479d-b249-aa1b0d6d4749",
+              "destination_uuid": "d1c0d6ef-306e-4a07-b7d8-cd79e5297457"
+            },
+            {
+              "uuid": "4903c86f-1755-4eab-ad32-c03448081114",
+              "destination_uuid": "4d23f1a5-296a-42fc-999d-00c7a191365a"
+            }
+          ]
+        },
+        {
+          "uuid": "d1c0d6ef-306e-4a07-b7d8-cd79e5297457",
+          "exits": [
+            {
+              "destination_uuid": "98605df3-5d31-4812-9278-b1592212a642",
+              "uuid": "5f8fa8e0-66fb-4bf0-9c96-25a264b3aad3"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "11179bb5-d864-459d-916a-725e3a36cd07",
+              "type": "send_msg",
+              "text": "Well done for committing to helping @fields.child_nickname live a good life. It shows you really care! \ud83d\udc99",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "4d23f1a5-296a-42fc-999d-00c7a191365a",
+          "exits": [
+            {
+              "destination_uuid": "98605df3-5d31-4812-9278-b1592212a642",
+              "uuid": "b05a6955-258a-4a20-8a2d-aed1bfcdd22a"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "5fbfdf70-f45f-4318-a1e1-04732de00ffe",
+              "type": "send_msg",
+              "text": "Well done for committing to helping your child live a good life. It shows you really care! \ud83d\udc99",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "98605df3-5d31-4812-9278-b1592212a642",
+          "exits": [
+            {
+              "destination_uuid": "4d44f02f-0e07-4259-b117-b6c64e467cf1",
+              "uuid": "0b735ebc-8d10-45a8-b037-2d11deacc0f9"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "8e3effb9-f936-4581-9acc-d7e556536b32",
+              "type": "send_msg",
+              "text": "This skill is about praise. \ud83c\udf89 How did the message above make you feel? We all feel better when others notice the good things we do. It\u2019s even better when it is by someone we love.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "0a154ad0-b592-4652-93e3-1b746ba80da6",
+          "exits": [
+            {
+              "destination_uuid": "b73b1dcb-63ed-402f-ad03-46343e7318d0",
+              "uuid": "63c1f10f-f6b2-40a3-a679-40d01c7440b6"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "3aeedbca-71d3-49f2-b527-54f8639bce33",
+              "type": "set_contact_field",
+              "field": {
+                "key": "bugfix",
+                "name": "bugfix"
+              },
+              "value": "x"
+            }
+          ]
+        },
+        {
+          "uuid": "b73b1dcb-63ed-402f-ad03-46343e7318d0",
+          "exits": [
+            {
+              "destination_uuid": "b27e5127-e77c-45e5-86c0-34bc8e3e2498",
+              "uuid": "2c558d2b-a134-4642-88b3-d79b2c83fc3e"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "9cc8feae-90e6-4412-bb56-7db8a3af8437",
+              "type": "send_msg",
+              "text": "Let\u2019s check in on Jenny and her son, Alex, to see how giving praise can work at home. ",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "b27e5127-e77c-45e5-86c0-34bc8e3e2498",
+          "exits": [
+            {
+              "destination_uuid": "49e014ad-83b5-40a6-8923-e0099f65d0f6",
+              "uuid": "dcdf1081-efcd-45ad-a974-7f3be96100db"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "59ee40c5-bb8d-4b6f-a96f-cd4d363d456e",
+              "type": "send_msg",
+              "text": "You found a striped sock and one with dots. Let\u2019s find the socks that match those two. ",
+              "attachments": [
+                "image:@(fields.comic_path & \"praise_child_1.jpg\")"
+              ],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "49e014ad-83b5-40a6-8923-e0099f65d0f6",
+          "exits": [
+            {
+              "destination_uuid": "c388f397-ca1a-46b9-bd22-acbd51ff917a",
+              "uuid": "c6e0c542-b103-4ccb-9c89-7d7b7ced9b8b"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "35fef77e-fc5f-4d63-80d2-4f62ddbbb359",
+                "name": "Other",
+                "exit_uuid": "c6e0c542-b103-4ccb-9c89-7d7b7ced9b8b"
+              }
+            ],
+            "default_category_uuid": "35fef77e-fc5f-4d63-80d2-4f62ddbbb359",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "c388f397-ca1a-46b9-bd22-acbd51ff917a",
+          "exits": [
+            {
+              "destination_uuid": "de9ad04b-719c-4b5f-b5df-9916ce9a15c0",
+              "uuid": "d275cfa2-1d62-451b-997a-17d8e4ec4f72"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "2b46c140-5903-4cab-acf9-cb72ce0829f6",
+              "type": "send_msg",
+              "text": "Another sock! This one is white. It isn\u2019t easy finding a matching pair. It can be frustrating.",
+              "attachments": [
+                "image:@(fields.comic_path & \"praise_child_2.jpg\")"
+              ],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "de9ad04b-719c-4b5f-b5df-9916ce9a15c0",
+          "exits": [
+            {
+              "destination_uuid": "364d9832-3275-41d8-b428-4790a1b2ca53",
+              "uuid": "34fd6173-ac5c-4e79-969e-db29344d0dbb"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "138e5b1c-84e3-4878-a1e8-916f1243f857",
+                "name": "Other",
+                "exit_uuid": "34fd6173-ac5c-4e79-969e-db29344d0dbb"
+              }
+            ],
+            "default_category_uuid": "138e5b1c-84e3-4878-a1e8-916f1243f857",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "364d9832-3275-41d8-b428-4790a1b2ca53",
+          "exits": [
+            {
+              "destination_uuid": "fc498aa9-2a5b-45fb-86e1-935318a7141d",
+              "uuid": "c15718cf-b9e4-495f-b59d-7c02624dcb51"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "8df76263-c5da-40e2-8e08-379ddb2f8ce4",
+              "type": "send_msg",
+              "text": "You are being very patient and looking very hard, Alex. Good for trying. ",
+              "attachments": [
+                "image:@(fields.comic_path & \"praise_child_3.jpg\")"
+              ],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "fc498aa9-2a5b-45fb-86e1-935318a7141d",
+          "exits": [
+            {
+              "destination_uuid": "04df0736-9d9f-47a9-92ed-733747a5c00e",
+              "uuid": "31c5e9f9-f070-4e9a-b2d5-6425e6a9ac94"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "05d4b60a-db09-44a2-877a-11b273721c05",
+                "name": "Other",
+                "exit_uuid": "31c5e9f9-f070-4e9a-b2d5-6425e6a9ac94"
+              }
+            ],
+            "default_category_uuid": "05d4b60a-db09-44a2-877a-11b273721c05",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "04df0736-9d9f-47a9-92ed-733747a5c00e",
+          "exits": [
+            {
+              "destination_uuid": "fe00772b-51f6-4dd6-a188-4bb3ece95bce",
+              "uuid": "7f3ccb35-b29c-4c71-a550-ae5779dc4e87"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "30deecf9-c63a-4ff7-b696-5633724a3f69",
+              "type": "send_msg",
+              "text": "You found matching socks of the same pattern! Well done for looking, Alex!",
+              "attachments": [
+                "image:@(fields.comic_path & \"praise_child_4.jpg\")"
+              ],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "fe00772b-51f6-4dd6-a188-4bb3ece95bce",
+          "exits": [
+            {
+              "destination_uuid": "dad53460-ce38-4d91-9ff4-eb854b8ae4cb",
+              "uuid": "95c9d068-770f-4f3e-814b-d48229e47180"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "59b45187-c5c7-4070-9e08-38d9b2c45d54",
+                "name": "Other",
+                "exit_uuid": "95c9d068-770f-4f3e-814b-d48229e47180"
+              }
+            ],
+            "default_category_uuid": "59b45187-c5c7-4070-9e08-38d9b2c45d54",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "dad53460-ce38-4d91-9ff4-eb854b8ae4cb",
+          "exits": [
+            {
+              "destination_uuid": "99ca4b6e-42f3-4f10-94ee-e1bfcbfac530",
+              "uuid": "e393d410-84b9-4d70-8535-0b066b511df3"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "8b607d61-9e90-4397-bfa4-34f90d0df7d1",
+              "type": "send_msg",
+              "text": "\u2705\u2b1c\ufe0f\u2b1c\ufe0f\u2b1c\ufe0f\nYou\u2019ve completed 25% of this skill! Press NEXT to continue.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "99ca4b6e-42f3-4f10-94ee-e1bfcbfac530",
+          "exits": [
+            {
+              "destination_uuid": "238b9f69-de1a-465a-b7a0-f716b2593a91",
+              "uuid": "7ff9170a-9532-440b-b8de-467d0343c053"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "223ccedf-f3e9-4d43-972d-2e13bf718933",
+                "name": "Other",
+                "exit_uuid": "7ff9170a-9532-440b-b8de-467d0343c053"
+              }
+            ],
+            "default_category_uuid": "223ccedf-f3e9-4d43-972d-2e13bf718933",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "238b9f69-de1a-465a-b7a0-f716b2593a91",
+          "exits": [
+            {
+              "destination_uuid": "534574ba-7baa-4005-af3f-5d4de7171a25",
+              "uuid": "2c4980c4-fc32-431f-9453-c746eec86426"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "46afa4d1-04fa-4e54-8184-6fd66a3d2bbd",
+              "type": "send_msg",
+              "text": "Let\u2019s do a True/False quiz!",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "57720e21-1f7c-4eb2-abc0-44833d36e27b",
+          "exits": [
+            {
+              "destination_uuid": "9dfff188-64f5-4ce6-8bd2-9067486ebd35",
+              "uuid": "f5630f89-a93b-4b45-b571-8846ef51c742"
+            },
+            {
+              "destination_uuid": "f7054d0c-2c27-4714-b973-52f96592e950",
+              "uuid": "6d243e6b-0292-46da-9b62-b606c07fa527"
+            },
+            {
+              "destination_uuid": "c5492a77-f774-48d1-8baa-1139543c1941",
+              "uuid": "309bd4c4-1956-4f99-9ea4-3c68b71764a1"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [
+              {
+                "uuid": "1eeca021-c48e-4431-99e1-13b85ec621d8",
+                "type": "has_only_phrase",
+                "category_uuid": "856eb9f5-b9d7-40cc-8f89-d46ad9e31cfe",
+                "arguments": [
+                  "True"
+                ]
+              },
+              {
+                "uuid": "942c7bf3-6b7c-46ab-9b7c-fcb0e0dc54f6",
+                "type": "has_only_phrase",
+                "category_uuid": "064f95fa-d028-46fc-8deb-03c4fd85b1fb",
+                "arguments": [
+                  "False"
+                ]
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "856eb9f5-b9d7-40cc-8f89-d46ad9e31cfe",
+                "name": "True",
+                "exit_uuid": "f5630f89-a93b-4b45-b571-8846ef51c742"
+              },
+              {
+                "uuid": "064f95fa-d028-46fc-8deb-03c4fd85b1fb",
+                "name": "False",
+                "exit_uuid": "6d243e6b-0292-46da-9b62-b606c07fa527"
+              },
+              {
+                "uuid": "f1221194-473d-460f-922d-c3721773907d",
+                "name": "Other",
+                "exit_uuid": "309bd4c4-1956-4f99-9ea4-3c68b71764a1"
+              }
+            ],
+            "default_category_uuid": "f1221194-473d-460f-922d-c3721773907d",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": "quiz_answer_0"
+          }
+        },
+        {
+          "uuid": "9dfff188-64f5-4ce6-8bd2-9067486ebd35",
+          "exits": [
+            {
+              "destination_uuid": "6cbfff7b-2b3c-44ad-9fe4-d1c3dbd9af62",
+              "uuid": "98591dd2-6000-4532-90c6-7e6be5abfea3"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "b5940eaa-df19-4b5f-b4ac-5f4c8e19cfda",
+              "type": "send_msg",
+              "text": "Incorrect. How you praise your child is important. Praise should be specific, immediate, and genuine. You can begin by praising your child for the smallest things, such as playing by themselves quietly for 2 minutes.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "f7054d0c-2c27-4714-b973-52f96592e950",
+          "exits": [
+            {
+              "destination_uuid": "6cbfff7b-2b3c-44ad-9fe4-d1c3dbd9af62",
+              "uuid": "afa686bb-c91d-48cc-8206-045139b26465"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "39ffa0a9-28bb-47fb-8dc6-cdbd842bf4e8",
+              "type": "send_msg",
+              "text": "You are right! How you praise your child is important. Praise should be specific, immediate, and genuine. You can begin by praising your child for the smallest things, such as playing by themselves quietly for 2 minutes.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "c5492a77-f774-48d1-8baa-1139543c1941",
+          "exits": [
+            {
+              "destination_uuid": "534574ba-7baa-4005-af3f-5d4de7171a25",
+              "uuid": "bee52f8d-f916-4f2d-a3d9-e34591b9a2c5"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "434795f8-24f5-4ab2-a7b5-444827a0bbd1",
+              "type": "send_msg",
+              "text": "Sorry, I dont' understand what you mean.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "6cbfff7b-2b3c-44ad-9fe4-d1c3dbd9af62",
+          "exits": [
+            {
+              "destination_uuid": "431c18fc-4fe3-4cdd-a473-6264ee480d56",
+              "uuid": "0ca9bff1-d7c0-4543-ab58-1c6bfc9fd0d4"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "e7abfbb1-23e3-4314-9e08-c03e5f713a6f",
+              "type": "send_msg",
+              "text": "\u2705\u2705\u2b1c\ufe0f\u2b1c\ufe0f\nYou\u2019ve completed 50% of this skill! Press NEXT to continue.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "431c18fc-4fe3-4cdd-a473-6264ee480d56",
+          "exits": [
+            {
+              "destination_uuid": "cb6b722c-0165-4482-b044-365852e2ce8f",
+              "uuid": "bc5d4ded-40d8-401f-b557-b533e4e6f0b4"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "4cba080a-ef4e-466f-b60d-ae93864fbe56",
+                "name": "Other",
+                "exit_uuid": "bc5d4ded-40d8-401f-b557-b533e4e6f0b4"
+              }
+            ],
+            "default_category_uuid": "4cba080a-ef4e-466f-b60d-ae93864fbe56",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "cb6b722c-0165-4482-b044-365852e2ce8f",
+          "exits": [
+            {
+              "destination_uuid": "f7cd858c-a9dd-4ad9-a6ed-3738970b3a52",
+              "uuid": "ed834fb3-5e73-45c4-9f77-838b52afc0ff"
+            },
+            {
+              "destination_uuid": "81e8c5ff-2d05-45e0-8281-35a999795332",
+              "uuid": "047665e1-6151-453d-9259-4b7503070a3c"
+            },
+            {
+              "destination_uuid": "57955e7a-d260-45ee-84e4-ae596fb85b56",
+              "uuid": "dcb5a357-abb1-41ab-8d7c-2b6c285ce4e7"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@fields.type_of_media",
+            "cases": [
+              {
+                "uuid": "4fc15439-f4c9-44ed-9686-b352895905e7",
+                "type": "has_any_word",
+                "category_uuid": "88f17631-86ec-417d-8c65-c75ccdae9e0c",
+                "arguments": [
+                  "high"
+                ]
+              },
+              {
+                "uuid": "c3f69d71-66c2-4857-ac2f-1c0aef466d11",
+                "type": "has_any_word",
+                "category_uuid": "ead25ddc-73a5-4658-88a1-c24a48be4bc2",
+                "arguments": [
+                  "medium"
+                ]
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "88f17631-86ec-417d-8c65-c75ccdae9e0c",
+                "name": "High",
+                "exit_uuid": "ed834fb3-5e73-45c4-9f77-838b52afc0ff"
+              },
+              {
+                "uuid": "ead25ddc-73a5-4658-88a1-c24a48be4bc2",
+                "name": "Medium",
+                "exit_uuid": "047665e1-6151-453d-9259-4b7503070a3c"
+              },
+              {
+                "uuid": "fdd9f12f-b886-4ab8-ab7a-1b5e0343f47f",
+                "name": "Other",
+                "exit_uuid": "dcb5a357-abb1-41ab-8d7c-2b6c285ce4e7"
+              }
+            ],
+            "default_category_uuid": "fdd9f12f-b886-4ab8-ab7a-1b5e0343f47f",
+            "result_name": "media"
+          }
+        },
+        {
+          "uuid": "f7cd858c-a9dd-4ad9-a6ed-3738970b3a52",
+          "exits": [
+            {
+              "destination_uuid": "67eddc42-cf26-4104-94c3-2f23d200e2da",
+              "uuid": "d8f54bb9-5e05-42a9-8eee-a285d8f5d13a"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "2307991b-d3ef-46f6-99dd-08c164a9d3ae",
+              "type": "send_msg",
+              "text": "Press PLAY \u25b6\ufe0f for a video message on giving your child praise.",
+              "attachments": [
+                "video:@(fields.voiceover_video_path & \"praise_child.mp4\")"
+              ],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "67eddc42-cf26-4104-94c3-2f23d200e2da",
+          "exits": [
+            {
+              "destination_uuid": "2c9876b0-f9c0-4103-a142-fad5c241d147",
+              "uuid": "88aa3773-c048-40ee-8a73-be024051b804"
+            },
+            {
+              "destination_uuid": "2c9876b0-f9c0-4103-a142-fad5c241d147",
+              "uuid": "d7c4edbb-57c3-4cbe-b174-66f585f7186c"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "ec988a3f-605c-4358-b167-72810206ad75",
+                "name": "Other",
+                "exit_uuid": "88aa3773-c048-40ee-8a73-be024051b804"
+              },
+              {
+                "uuid": "78f22a89-91dc-4384-a1d2-70cd8bd62a91",
+                "name": "No Response",
+                "exit_uuid": "d7c4edbb-57c3-4cbe-b174-66f585f7186c"
+              }
+            ],
+            "default_category_uuid": "ec988a3f-605c-4358-b167-72810206ad75",
+            "wait": {
+              "type": "msg",
+              "timeout": {
+                "seconds": 1,
+                "category_uuid": "78f22a89-91dc-4384-a1d2-70cd8bd62a91"
+              }
+            },
+            "result_name": "wait_media"
+          }
+        },
+        {
+          "uuid": "81e8c5ff-2d05-45e0-8281-35a999795332",
+          "exits": [
+            {
+              "destination_uuid": "57955e7a-d260-45ee-84e4-ae596fb85b56",
+              "uuid": "d7e16644-3d53-43a5-ae6a-bda217e35bc2"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "a4dbb114-6b0d-409c-9494-e4a1163163a0",
+              "type": "send_msg",
+              "text": "Press PLAY \u25b6\ufe0f for an audio message on giving your child praise.",
+              "attachments": [
+                "audio:@(fields.voiceover_audio_path & \"praise_child.mp3\")"
+              ],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "6d3166f6-ec0e-4ba5-a8c4-a1834600b59b",
+          "exits": [
+            {
+              "destination_uuid": "e4d6aa88-f8e3-4666-8e19-e8d245891060",
+              "uuid": "43a1029f-1663-4539-96c1-181fa64f1aee"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "884f5d07-3fd6-4c5b-a739-cf0a5194fe8f",
+                "name": "Other",
+                "exit_uuid": "43a1029f-1663-4539-96c1-181fa64f1aee"
+              }
+            ],
+            "default_category_uuid": "884f5d07-3fd6-4c5b-a739-cf0a5194fe8f",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "e4d6aa88-f8e3-4666-8e19-e8d245891060",
+          "exits": [
+            {
+              "destination_uuid": "06b72810-2315-49cc-98ae-9d071c73c606",
+              "uuid": "ae2fcc5e-5529-483d-a08c-f144e62bdb63"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "e7d122ec-92a7-4375-8fc7-c3451746a3ed",
+              "type": "send_msg",
+              "text": "2\ufe0f\u20e3 *SAY IT*\n\n\ud83c\udfc6 Praise them when you see them do something you like.\n\n\u2705 Tell them specifically what they have done well.\n\n\ud83c\udf89 Be enthusiastic and really mean it!\n\n\ud83d\udd04 This means they are more likely to do it again.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "06b72810-2315-49cc-98ae-9d071c73c606",
+          "exits": [
+            {
+              "destination_uuid": "b484b326-96c5-4522-ab93-a99634567ffc",
+              "uuid": "6e981e3a-a6ee-48e4-a489-2d60f1088f1a"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "6bbd9753-3d10-401f-b7d6-ff74670f922b",
+                "name": "Other",
+                "exit_uuid": "6e981e3a-a6ee-48e4-a489-2d60f1088f1a"
+              }
+            ],
+            "default_category_uuid": "6bbd9753-3d10-401f-b7d6-ff74670f922b",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "43df3d1b-1afc-48e9-9edc-56048c810ad6",
+          "exits": [
+            {
+              "destination_uuid": "1aafa1b5-00cc-4b13-bc75-90e77e11500a",
+              "uuid": "27f8ec9b-30e8-4032-b4ab-215f6c7bdc9d"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "f16d29f5-31a5-4500-ab1a-0029d9be8106",
+                "name": "Other",
+                "exit_uuid": "27f8ec9b-30e8-4032-b4ab-215f6c7bdc9d"
+              }
+            ],
+            "default_category_uuid": "f16d29f5-31a5-4500-ab1a-0029d9be8106",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "f8a7cc91-c63c-4df3-a4b2-e348921e0117",
+          "exits": [
+            {
+              "destination_uuid": "2c9876b0-f9c0-4103-a142-fad5c241d147",
+              "uuid": "d5c024a1-5f25-4091-a0a1-dee3048d1fe7"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "3993daf5-99a2-425e-9155-fb3abad98f24",
+                "name": "Other",
+                "exit_uuid": "d5c024a1-5f25-4091-a0a1-dee3048d1fe7"
+              }
+            ],
+            "default_category_uuid": "3993daf5-99a2-425e-9155-fb3abad98f24",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "2c9876b0-f9c0-4103-a142-fad5c241d147",
+          "exits": [
+            {
+              "destination_uuid": "231abbf4-ba47-4b69-bedf-ddb59864772b",
+              "uuid": "2b6e6df4-37f0-4850-beff-50fbce053173"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "f59b60db-b998-4b80-ae98-df7ceb86828d",
+              "type": "send_msg",
+              "text": "\u2705\u2705\u2705\u2b1c\ufe0f\nYou\u2019ve completed 75% of this skill! Press NEXT to continue.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "231abbf4-ba47-4b69-bedf-ddb59864772b",
+          "exits": [
+            {
+              "destination_uuid": "436dd0e9-114d-4ecf-831c-807d2db59d60",
+              "uuid": "d19596e9-bf58-44a1-9bdd-54415326c818"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [],
+            "categories": [
+              {
+                "uuid": "dfc56529-964d-4f63-9b6f-9615415b7d8f",
+                "name": "Other",
+                "exit_uuid": "d19596e9-bf58-44a1-9bdd-54415326c818"
+              }
+            ],
+            "default_category_uuid": "dfc56529-964d-4f63-9b6f-9615415b7d8f",
+            "wait": {
+              "type": "msg"
+            },
+            "result_name": ""
+          }
+        },
+        {
+          "uuid": "436dd0e9-114d-4ecf-831c-807d2db59d60",
+          "exits": [
+            {
+              "destination_uuid": "d3c626f2-4a38-44d7-83d8-1d63616e1141",
+              "uuid": "1a9e64e3-f00a-4c14-8dad-dc93c471930c"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "d2b53fcb-72c6-4b05-b9b1-6ab092d6a7b8",
+              "type": "set_contact_field",
+              "field": {
+                "key": "bug_fix",
+                "name": "bug fix"
+              },
+              "value": ""
+            }
+          ]
+        },
+        {
+          "uuid": "d3c626f2-4a38-44d7-83d8-1d63616e1141",
+          "exits": [
+            {
+              "destination_uuid": "df5e936d-57c5-4493-8736-3fa2e0c5746f",
+              "uuid": "6295aef2-6595-4875-be05-4599c5c754fd"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "9c094cc0-3a09-4e2d-86e7-a708bee5d59f",
+              "type": "send_msg",
+              "text": "Your Home Activity today is to praise your child. Can you try it today?",
+              "attachments": [],
+              "quick_replies": [
+                "Yes",
+                "No"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "df5e936d-57c5-4493-8736-3fa2e0c5746f",
+          "exits": [
+            {
+              "destination_uuid": "8d3f6167-e68c-44d3-8434-cd6165b8ca8c",
+              "uuid": "6669abba-8077-4980-90a1-12c1395853aa"
+            },
+            {
+              "destination_uuid": "3b3eb9e3-227f-4534-bfd6-ec4153ff20d4",
+              "uuid": "da1cbb29-a061-459c-a04f-3c9203106a41"
+            },
+            {
+              "destination_uuid": "c45c8c3e-2827-45c1-8877-08b1c299bb49",
+              "uuid": "087870d6-1e3f-49c1-9530-4ec378261718"
+            }
+          ],
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "operand": "@input.text",
+            "cases": [
+              {
+                "uuid": "81c73ed7-8d5a-44c0-92b5-08e12c3d11d1",
+                "type": "has_any_word",
+                "category_uuid": "dede658b-9951-4794-b5ad-918fbbe5c60b",
+                "arguments": [
+                  "yes y yeah yep"
+                ]
+              },
+              {
+                "uuid": "e3dd6192-3957-4164-bbba-b82415f1f6e3",
+                "type": "has_any_word",
+                "category_uuid": "bc3900a8-16ab-43f3-8dc1-e127c9a8f5a7",
+                "arguments": [
+                  "no nope n"
+                ]
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "dede658b-9951-4794-b5ad-918fbbe5c60b",
+                "name": "Yes Y Yeah Yep",
+                "exit_uuid": "6669abba-8077-4980-90a1-12c1395853aa"
+              },
+              {
+                "uuid": "bc3900a8-16ab-43f3-8dc1-e127c9a8f5a7",
+                "name": "No Nope N",
+                "exit_uuid": "da1cbb29-a061-459c-a04f-3c9203106a41"
+              },
+              {
+                "uuid": "7df44d23-e1f7-4d66-a6be-dbf588455fd2",
+                "name": "Other",
+                "exit_uuid": "087870d6-1e3f-49c1-9530-4ec378261718"
+              }
+            ],
+            "default_category_uuid": "7df44d23-e1f7-4d66-a6be-dbf588455fd2",
+            "wait": {
+              "type": "msg"
+            }
+          }
+        },
+        {
+          "uuid": "3b3eb9e3-227f-4534-bfd6-ec4153ff20d4",
+          "exits": [
+            {
+              "destination_uuid": "8df8451a-535d-497a-8116-2ff19c761e38",
+              "uuid": "917434b4-f334-4d58-b3f8-87402e4976f3"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "62026ca7-be1d-407d-aa96-f1d5a428a196",
+              "type": "send_msg",
+              "text": "That's OK! Sometimes things take time. You can review this skill in the Main Menu any time. At the end of the day, think of all of the positive things that happened - this makes it easier to point them out. \u2600\ufe0f With time, praise will come easily to you.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "c45c8c3e-2827-45c1-8877-08b1c299bb49",
+          "exits": [
+            {
+              "destination_uuid": "d3c626f2-4a38-44d7-83d8-1d63616e1141",
+              "uuid": "0bc61658-63a2-4e0a-8583-aa501dbeed67"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "66a4e0b2-ee51-4aed-bb75-e2b4587cf141",
+              "type": "send_msg",
+              "text": "Sorry, I don't understand what you mean.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "8df8451a-535d-497a-8116-2ff19c761e38",
+          "exits": [
+            {
+              "destination_uuid": null,
+              "uuid": "ac8158db-571c-4034-91d7-0a0f57cfb966"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "25696b1f-2e33-4194-a698-2fc091f103d7",
+              "type": "send_msg",
+              "text": "Well done, you have now learnt the four steps to Praise! \u2b50 You have completed @(fields.c_n_mod_compl +1) out of @fields.c_n_mod  skills in the goal, Improve my Relationship with My Child.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "4d44f02f-0e07-4259-b117-b6c64e467cf1",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "6c295025-6cdf-4171-80ea-240aab36cee5",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "95a75ef1-6a8b-4399-a91b-611aff2421de"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "95a75ef1-6a8b-4399-a91b-611aff2421de",
+                "name": "child_nickname",
+                "exit_uuid": "8116ec81-1264-48e8-9ebb-4539e2d5ae14"
+              },
+              {
+                "uuid": "6800cc17-47b9-4827-8ca6-e98f85fd8da1",
+                "name": "Other",
+                "exit_uuid": "34eb6bee-01b1-4cb7-be74-169bf5286c24"
+              }
+            ],
+            "default_category_uuid": "6800cc17-47b9-4827-8ca6-e98f85fd8da1",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "8116ec81-1264-48e8-9ebb-4539e2d5ae14",
+              "destination_uuid": "c2e9b6e3-4085-4b91-9e5b-191199f32cca"
+            },
+            {
+              "uuid": "34eb6bee-01b1-4cb7-be74-169bf5286c24",
+              "destination_uuid": "e6d21e9f-9c46-4c8e-91c6-27e4b2aa0ecf"
+            }
+          ]
+        },
+        {
+          "uuid": "c2e9b6e3-4085-4b91-9e5b-191199f32cca",
+          "exits": [
+            {
+              "destination_uuid": "0a154ad0-b592-4652-93e3-1b746ba80da6",
+              "uuid": "74876a90-70de-4f05-ae45-dbb574419cba"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "d8220752-5bd2-4789-b8c6-7ab2590a9907",
+              "type": "send_msg",
+              "text": "Praising @fields.child_nickname when they behave in a good way will make them want to behave that way more often. It also creates a positive and loving relationship between you and @fields.child_nickname \u2b50",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "e6d21e9f-9c46-4c8e-91c6-27e4b2aa0ecf",
+          "exits": [
+            {
+              "destination_uuid": "0a154ad0-b592-4652-93e3-1b746ba80da6",
+              "uuid": "674ab269-08c5-4255-8ee3-36028f119326"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "915c2921-4b45-4bdc-92ee-2d7ec2f7e93b",
+              "type": "send_msg",
+              "text": "Praising your child when they behave in a good way will make them want to behave that way more often. It also creates a positive and loving relationship between you and your child \u2b50",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "534574ba-7baa-4005-af3f-5d4de7171a25",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "0644d39e-425e-487f-8d11-bc9cd766b6bb",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "503a8ab6-15b8-4f9f-a5bf-aecbb8595492"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "503a8ab6-15b8-4f9f-a5bf-aecbb8595492",
+                "name": "child_nickname",
+                "exit_uuid": "5f65fd49-98dd-473f-90e0-9b5bb3ad5d63"
+              },
+              {
+                "uuid": "ec178f57-2703-4e3c-a1de-cab0672e927c",
+                "name": "Other",
+                "exit_uuid": "9fb651ab-37f2-4232-b85b-863607391ffe"
+              }
+            ],
+            "default_category_uuid": "ec178f57-2703-4e3c-a1de-cab0672e927c",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "5f65fd49-98dd-473f-90e0-9b5bb3ad5d63",
+              "destination_uuid": "cd116f28-bab8-40bc-868f-ce1470e00c00"
+            },
+            {
+              "uuid": "9fb651ab-37f2-4232-b85b-863607391ffe",
+              "destination_uuid": "f1b70f1e-e14a-4dc1-b2f5-b03e67108309"
+            }
+          ]
+        },
+        {
+          "uuid": "cd116f28-bab8-40bc-868f-ce1470e00c00",
+          "exits": [
+            {
+              "destination_uuid": "57720e21-1f7c-4eb2-abc0-44833d36e27b",
+              "uuid": "a1f22369-2d15-4bd8-a91f-37b0367b066b"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "4f4902e1-f6e3-4d0a-953d-495098ad924c",
+              "type": "send_msg",
+              "text": "The way in which you give praise to @fields.child_nickname does not matter because any kind of praise is effective.",
+              "attachments": [],
+              "quick_replies": [
+                "True",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "f1b70f1e-e14a-4dc1-b2f5-b03e67108309",
+          "exits": [
+            {
+              "destination_uuid": "57720e21-1f7c-4eb2-abc0-44833d36e27b",
+              "uuid": "ae5a2aac-a3b5-4fde-8cd6-6faac9d3a180"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "bcae59e8-2492-4240-adcb-086ba05e461e",
+              "type": "send_msg",
+              "text": "The way in which you give praise to your child does not matter because any kind of praise is effective.",
+              "attachments": [],
+              "quick_replies": [
+                "True",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "57955e7a-d260-45ee-84e4-ae596fb85b56",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "8501acbd-b0b1-4a2e-8167-7dfab84f39a3",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "0b2c0aaa-6c46-4096-af31-c40bd32c2d41"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "0b2c0aaa-6c46-4096-af31-c40bd32c2d41",
+                "name": "child_nickname",
+                "exit_uuid": "6fb68ca3-bb3c-47b5-88d2-f1b529ef487e"
+              },
+              {
+                "uuid": "c2936fbf-2d89-4279-92b2-30786111c400",
+                "name": "Other",
+                "exit_uuid": "255460f2-1349-4581-b3dc-400a6744d39a"
+              }
+            ],
+            "default_category_uuid": "c2936fbf-2d89-4279-92b2-30786111c400",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "6fb68ca3-bb3c-47b5-88d2-f1b529ef487e",
+              "destination_uuid": "a7a2ed83-a864-4a65-a10b-65b4de3114c8"
+            },
+            {
+              "uuid": "255460f2-1349-4581-b3dc-400a6744d39a",
+              "destination_uuid": "6fc2839b-f530-4577-ac51-63606cf7a852"
+            }
+          ]
+        },
+        {
+          "uuid": "a7a2ed83-a864-4a65-a10b-65b4de3114c8",
+          "exits": [
+            {
+              "destination_uuid": "630e7dfa-bbcb-473c-b928-90ba1a595e29",
+              "uuid": "c4eae48f-1202-4e0d-be67-0e13545d07a9"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "19b8d56c-05a3-453a-ab2d-84db6c8ce88a",
+              "type": "send_msg",
+              "text": "When we praise our children, and point out the good things they do, it encourages them to repeat that behaviour. Giving praise also helps build confidence and a positive relationship with you. \n\nHere are 4 simple tips for praising @fields.child_nickname:",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "6fc2839b-f530-4577-ac51-63606cf7a852",
+          "exits": [
+            {
+              "destination_uuid": "630e7dfa-bbcb-473c-b928-90ba1a595e29",
+              "uuid": "5d4a892e-ea5e-4f8e-8ac5-56b9a54ad4ae"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "bfe35c9b-aefa-438e-8c97-3ddb6726821c",
+              "type": "send_msg",
+              "text": "When we praise our children, and point out the good things they do, it encourages them to repeat that behaviour. Giving praise also helps build confidence and a positive relationship with you. \n\nHere are 4 simple tips for praising your child:",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "630e7dfa-bbcb-473c-b928-90ba1a595e29",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "a11196a7-aad5-432c-92fb-481e7ac526e0",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "5786d151-a10a-4690-9b55-77100cbc477a"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "5786d151-a10a-4690-9b55-77100cbc477a",
+                "name": "child_nickname",
+                "exit_uuid": "7f3c3dff-bc7e-4fe7-ad88-c532fd08f778"
+              },
+              {
+                "uuid": "c8347c4d-54cf-4754-b0e9-ed2e3fb6c20f",
+                "name": "Other",
+                "exit_uuid": "2d7c899d-8c10-42fa-9be9-ea255a73376a"
+              }
+            ],
+            "default_category_uuid": "c8347c4d-54cf-4754-b0e9-ed2e3fb6c20f",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "7f3c3dff-bc7e-4fe7-ad88-c532fd08f778",
+              "destination_uuid": "28e81b81-54f7-40a1-b40c-7ce3a5cd8627"
+            },
+            {
+              "uuid": "2d7c899d-8c10-42fa-9be9-ea255a73376a",
+              "destination_uuid": "1e851798-15ec-4f1d-a20d-d0f5f30d6476"
+            }
+          ]
+        },
+        {
+          "uuid": "28e81b81-54f7-40a1-b40c-7ce3a5cd8627",
+          "exits": [
+            {
+              "destination_uuid": "6d3166f6-ec0e-4ba5-a8c4-a1834600b59b",
+              "uuid": "4e11422f-7379-4962-8f67-8cf1924c001a"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "615a4c1b-99ae-432a-9c19-bdcd5f75b5fc",
+              "type": "send_msg",
+              "text": "1\ufe0f\u20e3 *SEE IT*\n\n\ud83d\udc40 Look for anything good or helpful @fields.child_nickname does.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "1e851798-15ec-4f1d-a20d-d0f5f30d6476",
+          "exits": [
+            {
+              "destination_uuid": "6d3166f6-ec0e-4ba5-a8c4-a1834600b59b",
+              "uuid": "57874a65-6cdd-44e1-87fa-88d7ec2cc5a5"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "587fa2dc-d507-4677-b778-0e3f9406f79a",
+              "type": "send_msg",
+              "text": "1\ufe0f\u20e3 *SEE IT*\n\n\ud83d\udc40 Look for anything good or helpful your child does.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "b484b326-96c5-4522-ab93-a99634567ffc",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "21543d89-167f-4155-a82a-57098ef63008",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "d7e836ae-8e2a-4682-ade7-ee3f74efc406"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "d7e836ae-8e2a-4682-ade7-ee3f74efc406",
+                "name": "child_nickname",
+                "exit_uuid": "4097f382-d70a-4dee-9029-5d02d0715522"
+              },
+              {
+                "uuid": "43befbf4-363e-4797-9720-2d4532273e19",
+                "name": "Other",
+                "exit_uuid": "0bbec931-8034-437e-9716-c82ed79b37eb"
+              }
+            ],
+            "default_category_uuid": "43befbf4-363e-4797-9720-2d4532273e19",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "4097f382-d70a-4dee-9029-5d02d0715522",
+              "destination_uuid": "5e962527-5e15-44c4-a1fa-f349c664b378"
+            },
+            {
+              "uuid": "0bbec931-8034-437e-9716-c82ed79b37eb",
+              "destination_uuid": "1845e4da-dadc-414a-b045-cd4221010d56"
+            }
+          ]
+        },
+        {
+          "uuid": "5e962527-5e15-44c4-a1fa-f349c664b378",
+          "exits": [
+            {
+              "destination_uuid": "43df3d1b-1afc-48e9-9edc-56048c810ad6",
+              "uuid": "884afad7-b794-4dd5-9113-e2f1d4168cb2"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "0acd7ba7-11a2-4381-a027-aa418a81ed77",
+              "type": "send_msg",
+              "text": "3\ufe0f\u20e3 *REPEAT IT*\n\n\ud83c\udf37 Look for something to praise @fields.child_nickname for every day.\n\n\ud83d\udd36 Even if it is something really small, keep doing it.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "1845e4da-dadc-414a-b045-cd4221010d56",
+          "exits": [
+            {
+              "destination_uuid": "43df3d1b-1afc-48e9-9edc-56048c810ad6",
+              "uuid": "5fe0aad8-9ff3-45ba-8dc8-6544a5cce31c"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "72ec9853-9cff-4105-93fa-d5d9143e30a1",
+              "type": "send_msg",
+              "text": "3\ufe0f\u20e3 *REPEAT IT*\n\n\ud83c\udf37 Look for something to praise your child for every day.\n\n\ud83d\udd36 Even if it is something really small, keep doing it.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "1aafa1b5-00cc-4b13-bc75-90e77e11500a",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "3342b182-cdf8-45cc-a388-fd6ad6583dba",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "289d08f1-e1e2-4bd9-aa31-d4c553f26bf9"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "289d08f1-e1e2-4bd9-aa31-d4c553f26bf9",
+                "name": "child_nickname",
+                "exit_uuid": "101469b9-6008-45ad-ad99-8eaee79fcc5f"
+              },
+              {
+                "uuid": "625332b3-ada7-4c77-a4cf-4c16c85dd451",
+                "name": "Other",
+                "exit_uuid": "b94ad976-fb5d-4df4-a200-261fb6975fa9"
+              }
+            ],
+            "default_category_uuid": "625332b3-ada7-4c77-a4cf-4c16c85dd451",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "101469b9-6008-45ad-ad99-8eaee79fcc5f",
+              "destination_uuid": "288b843f-3def-43fc-8a09-dbe79b4dcdd2"
+            },
+            {
+              "uuid": "b94ad976-fb5d-4df4-a200-261fb6975fa9",
+              "destination_uuid": "3f82b4b1-ada0-4894-b49e-f6352db8034c"
+            }
+          ]
+        },
+        {
+          "uuid": "288b843f-3def-43fc-8a09-dbe79b4dcdd2",
+          "exits": [
+            {
+              "destination_uuid": "f8a7cc91-c63c-4df3-a4b2-e348921e0117",
+              "uuid": "e2f660d9-dbb6-495b-a66a-f8a4fc215a39"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "6f9d7a59-0e9e-4fac-b932-d9a344c4298b",
+              "type": "send_msg",
+              "text": "4\ufe0f\u20e3 *KEEP IT POSITIVE*\n\n\ud83d\udca1 Make sure you focus on something @fields.child_nickname has done well.\n\n\ud83c\udf08 Keeping it positive reminds @fields.child_nickname that you notice them and care.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "3f82b4b1-ada0-4894-b49e-f6352db8034c",
+          "exits": [
+            {
+              "destination_uuid": "f8a7cc91-c63c-4df3-a4b2-e348921e0117",
+              "uuid": "9678d439-4910-4082-833b-4b79d34a1ac3"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "a8f0a784-0b07-4966-9712-0ab5d6c5744d",
+              "type": "send_msg",
+              "text": "4\ufe0f\u20e3 *KEEP IT POSITIVE*\n\n\ud83d\udca1 Make sure you focus on something your child has done well.\n\n\ud83c\udf08 Keeping it positive reminds your child that you notice them and care.",
+              "attachments": [],
+              "quick_replies": [
+                "NEXT"
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "8d3f6167-e68c-44d3-8434-cd6165b8ca8c",
+          "actions": [],
+          "router": {
+            "type": "switch",
+            "cases": [
+              {
+                "uuid": "70c07419-da61-4797-a2a7-1c8443653b92",
+                "type": "has_text",
+                "arguments": [],
+                "category_uuid": "0df832a2-8c7f-44e2-a309-01fe5c353fe6"
+              }
+            ],
+            "categories": [
+              {
+                "uuid": "0df832a2-8c7f-44e2-a309-01fe5c353fe6",
+                "name": "child_nickname",
+                "exit_uuid": "fa4692c4-156f-4568-b6e4-eeca2231f8ea"
+              },
+              {
+                "uuid": "70537df1-20a8-4306-acfd-010c32e00253",
+                "name": "Other",
+                "exit_uuid": "914ce7fb-6a76-474b-98ff-bb8fad21871b"
+              }
+            ],
+            "default_category_uuid": "70537df1-20a8-4306-acfd-010c32e00253",
+            "operand": "@fields.child_nickname",
+            "result_name": ""
+          },
+          "exits": [
+            {
+              "uuid": "fa4692c4-156f-4568-b6e4-eeca2231f8ea",
+              "destination_uuid": "5b1e54b2-06ce-46af-8cc0-5493ceabca5b"
+            },
+            {
+              "uuid": "914ce7fb-6a76-474b-98ff-bb8fad21871b",
+              "destination_uuid": "925cd9e1-09a9-4873-9fb2-a9518785aad3"
+            }
+          ]
+        },
+        {
+          "uuid": "5b1e54b2-06ce-46af-8cc0-5493ceabca5b",
+          "exits": [
+            {
+              "destination_uuid": "8df8451a-535d-497a-8116-2ff19c761e38",
+              "uuid": "ef50fdba-f9b4-4c8b-abed-62e306f63a5e"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "f6754cf4-f5d5-4840-9628-a05d9608a8c9",
+              "type": "send_msg",
+              "text": "Amazing! \ud83c\udf89 Look for three things that you can praise @fields.child_nickname for every day. You can praise other adults in your household, too. Notice how they respond.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        },
+        {
+          "uuid": "925cd9e1-09a9-4873-9fb2-a9518785aad3",
+          "exits": [
+            {
+              "destination_uuid": "8df8451a-535d-497a-8116-2ff19c761e38",
+              "uuid": "04c5a4e1-26cc-46f0-9a9b-2fa7d670cde0"
+            }
+          ],
+          "actions": [
+            {
+              "uuid": "c442bfa6-daed-41eb-aa2a-d64829b54c23",
+              "type": "send_msg",
+              "text": "Amazing! \ud83c\udf89 Look for three things that you can praise your child for every day. You can praise other adults in your household, too. Notice how they respond.",
+              "attachments": [],
+              "quick_replies": []
+            }
+          ]
+        }
+      ],
+      "spec_version": "13.1.0",
+      "revision": 0,
+      "expire_after_minutes": 10080,
+      "metadata": {},
+      "localization": {}
+    }
+  ],
+  "groups": [],
+  "site": "https://rapidpro.idems.international",
+  "triggers": [],
+  "version": "13"
+}

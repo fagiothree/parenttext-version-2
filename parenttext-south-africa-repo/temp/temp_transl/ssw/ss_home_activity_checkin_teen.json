@@ -1,0 +1,986 @@
+[
+  {
+    "SourceText": "You’re doing great towards your goal, @(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal]).",
+    "text": "Wenta kahle kufika emgomeni wakho, @(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal]).",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "Were you able to spend 5 minutes of 1-on-1 time with your teen?",
+    "text": "Ukhonile yini kucitsa imizuzu lengu-5 nemntfwanakho ninodvwa?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Well done for making this commitment.",
+    "text": "Kuhle kuyamangalisa! Wente kahle kutinikela kuloku.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and set aside some time in the coming days.",
+    "text": "Kulungile loko! Tama kutinika sikhatsi kulamalanga letako.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Sorry, I don't understand what you mean.",
+    "text": "Ngiyacolisa, angivisisi kutsi utsini.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to use the three steps of praise: see it, say it, and repeat it?",
+    "text": "Ukhonile yini kusebentisa letinyatselo letintsatfu tekudvumisa: yibone, yisho, uyiphindze futsi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for remembering to praise your teen and other family members!",
+    "text": "Wente kahle kukhumbula kudvumisa umntfwanakho nalamanye emalunga emndeni!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to praise @fields.child_nickname today, even if it’s something small.",
+    "text": "Kulungile loko! Tama kudvumisa @fields.child_nickname namuhla, noma ngabe kuyintfo lencane.",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "That’s okay! Try to praise your teen today, even if it’s something small.",
+    "text": "Kulungile loko! Tama kudvumisa umntfwanakho namuhla, noma ngabe kuyintfo lencane.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about the six steps to coping with their emotions?",
+    "text": "Ukhonile yini kukhuluma nemntfwanakho ngetinyatselo letisitfupha tekubhekana nemiva yakhe?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! This will help your teen manage difficult emotions when they happen.",
+    "text": "Wente kahle! Loku kutawusita umntfwanakho kubhekana nemiva lematima ngesikhatsi ifika.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to talk to your teen about emotions.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi namuhla sekukhuluma nemntfwanakho ngemiva yakhe.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to stretch and move yesterday?",
+    "text": "Ukhonile yini kutelula nekushukuma itolo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for taking the time to care for yourself!",
+    "text": "Wente kahle kutinika sikhatsi sekutinakekela!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to stretch.",
+    "text": "Kulungle loko! Tama kutfola sikhatsi sekutelula namuhla.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to spend 1-on-1 time with your teen, listen to their experiences, notice their feelings, and thank them for sharing?",
+    "text": "Ukhonile yini kucitsa sikhatsi sekukhulumisana nemntfwanakho, kulalela lekahlangabetana nakho, kunaka imiva yakhe, nekumbonga kutsi akutjele?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for being open to listening to your teen!",
+    "text": "Wente kahle kutsi uvuleke ulalele umntfwanakho!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to listen to your teen today during your 1-on-1 time.",
+    "text": "Kulungile loko! Tama kulalela umntfwanakho namuhla ngesikhatsi lotosicitsa naye yedvwa.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to use 1-on-1 time to talk to your teen about their friends?",
+    "text": "Ukhonile yini kusebentisa sikhatsi nemntfwanakho yedvwa kumkhulumisa ngabangani bakhe?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! You are learning so much more about your teen.",
+    "text": "Kuyamangalisa! Ufundza lokunye lokuningi ngemntfwanakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and use your 1-on-1 time today to talk with your teen about their friends.",
+    "text": "Kulungile loko! Tama kusebentisa sikhatsi nemntfwanakho yedvwa namuhla kukhuluma naye ngebangani bakhe.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to complete the development assessment?",
+    "text": "Ukhonile yini kucedza luhlolo lwekukhula?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great!",
+    "text": "Kuhle kakhulu!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to complete the assessment this week. You can type GROW at any time to begin.",
+    "text": "Kulungile loko! Tama kucedza luhlolo kuleliviki. Ungathayipha GROW noma nini utocala.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to invite your teen to take a break from their homework and do something active?",
+    "text": "Ukhonile yini kucela umntfwanakho kutsatsa likhefu emsebentini wasekhaya kuze ente lokunye lokumshukumisako?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Taking a break can help your teen refocus and continue working on their school work. We all need a break sometime!",
+    "text": "Wente kahle! Kutsatsa likhefu kungamsita umntfwanakho kubuyisa ingcondvo bese uchubeka nemsebenti wakhe wesikolwa. Sonkhe siyadzinga kutsatsa likhtfu ngalesinye sikhatsi!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Next time your teen is doing homework, try and do something active and fun together!",
+    "text": "Kulungile loko! Ngesikhatsi lesitako umntfwanakho nakenta umsebenti wesikolwa ekhaya, tama kutsi nente intfo leshukumisako nalejabulisako kanyekanye!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to support your teen with their school work by setting their goals?",
+    "text": "Ukhonile yini kusekela umntfwanakho emsebentini wakhe wesikolwa ngekumisa imigomo yakhe?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! This is one goal you can be proud of!",
+    "text": "Wente kahle! Lona ngumgomo longaticabha ngawo!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and take a few minutes with your teen to set goals with them. This is a great way to support their learning.",
+    "text": "Kulungile loko! Tama kutsatsa imizuzu lembalwa nemntfwanakho kumisa imgomo nakhe. Loku kuyindlela lekahle kakhulu yekusekela kufundza kwakhe.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about finding the right study spot?",
+    "text": "Ukhonile yini kukhuluma nemntfwanakho ngekutfola indzawo lekahle langafundzela kuyo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Finding a good place to study will help your teen focus and succeed with their school work.",
+    "text": "Kuyamangalisa! Kutfola indzawo yekufundzela kutawusita umntfwanakho kucondzisa ingcondvo nekuphumelela emsebentini wakhe wesikolwa.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to help your teen find a good study spot today. This will help their learning.",
+    "text": "Kulungile loko! Tama kusita umntfwanakho namuhla kutfola indzawo lekahle langafundzela kuyo. Loku kutomsita ekufundzeni kwabo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share a story with your teen about a time you learned from a mistake?",
+    "text": "Ukhonile yini kucocela umntfwanakho indzaba ngesikhatsi lesitsite leyakufundzisa lokutsite ngesiphosiso sakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Being open is not always easy, well done for doing it anyways!",
+    "text": "Kutivula ulalele akusilula ngaso sonkhe sikhatsi, wenta kahle kukwenta noma kunjalo!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Being open can be difficult, but it’s important. Try and find time to share with your teen.",
+    "text": "Kulungile loko! Kulukhuni kutivula, kepha kumcoka. Tama kutfola sikhatsi sekucocela umntfwanakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to chat with your teen and identify a possible study buddy?",
+    "text": "Ukhonile yini kucocisana nemntfwanakho ngekutfola umngani langafundza naye?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! Studying with a friend is a great way to learn.",
+    "text": "Kuhle kakhulu! Kufundza nemngani kuyindlela lekahle yekufundza.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to chat with your teen and find a study buddy. Studying with friends is a great way to learn.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi sekutsi nicicisane nemntfwanakho nekutfola umngani langafundza naye. Kufundza nebangani kuyindlela lekahle kakhulu yekufundza.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to set a routine with your teen?",
+    "text": "Ukhonile yini kumisa inchubo lejwayelekile nemntfwanakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Setting routines with your teen will help provide structure in their lives.",
+    "text": "Kuyamangalisa! Kumisa inchubo lejwayelekile nemntfwanakho kutawusita kwakha tinsika ekuphileni kwakhe.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to set a routine with your teen. It's a great way for your teen to feel secure and safe.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi sekumisa inchubo lejwayelekile nemntfwanakho. Kuyindlela lenhle kakhulu yekutsi umntfwanakho ativele akhululekile futsi aphephile.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to create a family rule with your teen?",
+    "text": "Ukhonile yini kubeka umtsetfo wasekhaya nemntfwanakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Involving your teen in creating family rules will make it more likely that they follow them in the future.",
+    "text": "Wente kahle! Kwenta kutsi umntfwanakho ahlanganyele ekwakheni imitsetfo yasekhaya kutakwenta kutsi bakhone kuyilandzela esikhatsini lesitako.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and set up a rule with your teen in the next few days. It will make it more likely that they follow them in the future.!",
+    "text": "Kulungile loko? Tama kubeka imitsetfo nemntfwanakho kulamalanga letako. Kutokwenta kutsi akhone kuyilandzela esikhatsini lesitako.!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to ask your teen what they do to stay safe online?",
+    "text": "Ukhonile yini kubuta umntfwanakho kutsi yini layentako kuze ahlale aphephile ku-intanethi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! It is so important that we are able to protect our children online.",
+    "text": "Kuhle kakhulu! Kumcoka kakhulu kutsi sikhone kuvikela bantfwana betfu ku-intanethi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Online safety is really important so try and find some time to chat to your teen about staying safe online.",
+    "text": "Kulungile loko! Kuphepha ku-intanethi kumcoka kakhulu ngako tama kutfola sikhatsi sekucocisana nemntfwanakho ngekuhlala aphephile ku-intanethi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about their habits to stay safe online?",
+    "text": "Ukhonile yini kukhuluma nemntfwanakho ngemikhuba yekuhlala uphephile ku-intanethi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! You are helping your teen learn how to be safe online!",
+    "text": "Wente kahle! Usita umntfwanakho kufundza kutsi angaphepha kanjani ku-intanethi!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and chat to your teen in the next few days. Safe online habits are important for your teen's safety.",
+    "text": "Kulungile loko! Tama kucocisana nemntfwanakho kulamalanga letako. Imikhuba lephephile ku-intanathi imcoka kuphephisa umntfwanakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to discuss your wants and needs with your teen?",
+    "text": "Ukhonile yini kukhulumisana nemntfwanakho ngalokufunako nangetidzingo takho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! You’re ready for today’s lesson.",
+    "text": "Kuhle kakhulu! Sewulungele sifundvo sanahuhla.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and talk to your family about needs and wants, it’s the first step to building a family budget.",
+    "text": "Kulungile loko! Tama kukhuluma nemndeni wakho ngetidzingo netimfuno, kusinyatselo sekucala ekwakheni ibhajethi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to discuss your monthly expenses with your teen?",
+    "text": "Ukhonile yini kukhulumisana nemntfwanakho ngetindleko tenyanga ngenyanga?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! You are making great progress on your family budget!",
+    "text": "Kuyamangalisa! Kunekuchubekela embili ngebhajethi yemndeni wakho!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Talking about your monthly expenses is an important step to family budgeting. Try to complete this step with your family.",
+    "text": "Kulungile loko! Kukhuluma ngetindleko tenyanga ngenyanga kusinyatselo lesimcoka ekwenteni ibhajethi yemndeni. Tama kucedzela lesinyatselo nemndeni wakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to make a monthly budget with your teen?",
+    "text": "Ukhonile yini kwenta ibhajethi yenyanga ngenyanga nemntfwanakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Making a monthly budget will set your family up for success!",
+    "text": "Wente kahle! Kwenta ibhajethi yenyanga ngenyanga kutawuphumelelisa umndeni wakho!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Completing a monthly budget will set your family up for success. Try to find time to complete this activity.",
+    "text": "Kulungile loko! Kucedzela ibhajethi yenyanga ngenyanga kutawuphumelelisa umndeni wakho. Tama kutfola sikhatsi sekucedzela lomsebenti.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to create a saving plan with your teen?",
+    "text": "Ukhonile yini kucamba luhlelo lwekonga nemntfwanakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! You have completed all the steps for creating a family budget.",
+    "text": "Kuyamangalisa! Sewuticedzile tonkhe tinyatselo tekucamba ibhajethi yemndeni.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to make a saving plan with your family.",
+    "text": "Kulungile loko! Tama kwenta luhlelo lwekonga nemndeni wakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to practise self-care yesterday?",
+    "text": "Ukhonile yini kutijwayeta kutinakekela itolo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for taking the time to be kind to yourself!",
+    "text": "Wente kahle kutinika sikhatsi sekutinakekela!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to practise self-care.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi sekutijwayeta kutinakekela namuhla.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about what makes them stressed?",
+    "text": "Ukhonile yini kukhuluma nemntfwanakho ngalokumenta akhatsateke?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Knowing what stresses your teen can help you and your teen work on reducing these and strengthen their wellbeing.",
+    "text": "Kuhle ke loko! Kwati lokukhatsata umntfwanakho kungakusita wena kanye nemntfwanakho kukunciphisa loko nekucinisa kuphila kahle kwakhe.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to talk to your teen about what stresses them. This is important information so that you can help.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi kukhuluma nemntfwanakho ngalokumkhatsatako. Loku kulwati lolumcoka lolungenta kutsi ukhone kumsita.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to go through the kindness tips together?",
+    "text": "Ukhonile yini kutsi nibuke onkhe emasu esihe kanyekanye?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Showing your teen kindness will keep your relationship strong and positive!",
+    "text": "Wente kahle! Kukhombisa umntfwanakho sihe kutawucinisa futsi kukhulise buhlobo benu!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to go through the kindness tips together.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi namuhla sekubuka lamasu esihe kanyekanye.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "You can always access the kindness tips again in the main menu. Type MENU to access the library.",
+    "text": "Uyakhona njalo kutfola lamasu esihe eluhlwini lolukhulu. Thayipha MENU utotfola ilayibrari.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk to your teen about the different sources of support in your community?",
+    "text": "Ukhonile yini kukhuluma nemntfwanakho ngetindzawo letehlukene tekutfokala kwekusekelwa emphakatsini?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! This will be helpful whenever you and your teen need to find support in the community. Well done for doing this important work!",
+    "text": "Kuhle kakhulu! Loku kutawusita uma wena nemntfwanakho nidzinga kusekelwa emphakatsini. Wente kahle ngekwenta lomsebenti lomkhulu!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to speak to your teen about what support is available in your community. Feeling supported is important when you are going through a difficult time.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi sekukhuluma nemntfwanakho ngekusekelwa lokutfolakala emphakatsini wakho. Kutivela ninekusekelwa kumcoka ngesikhatsi lesimatima.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to find time to do an activity that brings you joy?",
+    "text": "Ukhonile yini kutfola sikhatsi sekwenta umsebenti lokuletsela injabulo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Doing things that make you happy is a great way to take care of yourself.",
+    "text": "Kuhle ke loko! Kwenta tintfo letikuletsela injabulo kuyindlela lenhle yekutinakekela.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! If you have time today, try and do an activity that brings you joy",
+    "text": "Kulungile loko! Uma ungaba nesikhatsi namuhla, tama kwenta umsebenti lokuletsela injabulo",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share the four steps of managing your teen's behaviour with a family member?",
+    "text": "Ukhonile yini kutjela lilunga lemndeni ngaletinyatselo letine tekucondzisa kutiphatsa kwemntfwanakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Sharing these tips is great for everyone’s well-being.",
+    "text": "Kuyamangalisa! Kutjela labanye ngalamasu kuyindlela lekahle kakhulu kunhlala kahle yabo bonkhe.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try sharing the four steps with a family member today. It helps when everyone is working together.",
+    "text": "Kulungile loko! Tama kutjela lilunga lemndeni namuhla ngaletinyatselo letine. Kuyasita uma nonkhe nibambisana.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share the four steps to problem solving with @fields.child_nickname?",
+    "text": "Ukhonile yini kutjela @fields.child_nickname letinyatselo letine tekucatulula inkinga?",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "Were you able to share the four steps to problem solving with your teen?",
+    "text": "Ukhonile yini kutjela umntfwanakho ngaletinatselo letine tekucatulula inkinga?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Great! Teaching your teen how to solve problems will set them up for success in life!",
+    "text": "Kuhle kakhulu! Kufundzisa umntfwanakho ngekucatulula tinkinga kutomphumelelisa ekuphileni!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time today to talk to your teen about the four steps to problem solving: know it, solve it, try it, and test it. This is an important life skill!",
+    "text": "Kulungile loko! Tama kutfola sikhatsi sekukhuluma nemntfwanakho ngaletinyatselo letine tekucatulula inkinga: kuyati, kuyicatulula, kuyitama, nekuyilinga. Leli likhono lelimcoka lekuphila!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to write a list of fair consequences with your teen to use later?",
+    "text": "Ukhonile yini kubhala nemntfwanakho luhlu lwemiphumela lekahle letosetjentiswa emva kwesikhatsi?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Involving your teen in this activity will make it more likely that they follow family rules and accept consequences when they don’t.",
+    "text": "Kuhle ke loko! Kuvumela umntfwanakho kutsi ahlanganyele kulomsebenti kutamenta kutsi akhone kulandzela imitsetfo yasekhaya nekwemukela imiphumela uma angenti njalo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time with your teen to write a list of consequences, this will make it more likely that they follow family rules and accept consequences when they don’t.",
+    "text": "Kulungile loko, Tama kutfola sikhatsi nemntfwanakho sekutsi nibhale loluhlu lwemiphumela, loku kutokwenta kutsi akhone kulandzela imitsetfo yasekhaya nekwemukela imiphumela uma angenti njalo.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to create a community safety map with your teen?",
+    "text": "Ukhonile yini kucambq imephu yekuphepha emphakatsini nemntfwanakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Remember to revisit the safety map with your teen every now and then to see if things have changed.",
+    "text": "Wente kahle! Khumbula kuphindze nibukete imephu yekuphepha nemntfwanakho njalo njalo kubona kutsi kukhona yini tingucuko.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to create a safety map with your teen, this is a great tool to keep them safe.",
+    "text": "Kulungile lok! Tama kutfola sikhatsi sekucamba imephu yekuphepha nemntfwanakho, loku kulithulusi lelikahle lekumphephisa.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to share teach self-defence tips with your teen?",
+    "text": "Ukhonile yini kutjela umntfwanakho ngekufundza emasu ekutivikela?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you! Self-defence is an important step to keep your teen safe.",
+    "text": "Kuhle ke loko! Kutivikela kusinyatselo letimcoka sekuphephisa umntfwanakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find some time today to talk to your teen about the self-defence tips. Self-defence is an important step to keep your teen safe. You can type SAFE at any time to start the lesson over again with your teen.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi namuhla sekukhuluma nemntfwanakho ngemasu ekutivikela. Kutivikela kusinyatselo lesimcoka sekuvikela umntfwanakho. Ungathayipha SAFE noma nini kuphindze ucale lesifundvo kabusha nemntfwanakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to go through the sexual violence prevention tips with your teen?",
+    "text": "Ukhonile yini kubuka onkhe emasu ekuvimbela kuhlukubetwa ngasecansini nemntfwanakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Good for you. That was probably not easy. Well done for making the commitment to keep your teen safe from sexual harm.",
+    "text": "Kuhle ke loko! Mhlawumbe loko akukabi lula. Wente kahle kutinikela kugcina umntfwanakho aphephile ekulimaleni ngasecansini.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try to go through the sexual violence prevention tips with your teen. This information can keep your teen safe. You can type PREVENT at any time to start the lesson over again with your teen.",
+    "text": "Kulungile loko! Tama kufundza lamasu ekuvimbela kuhlukubetwa ngasecansini nemntfwanakho. Lolwati lolu lungamgcina umntfwanakho aphephile. Ungathayipha PREVENT noma nini utophindze ucale kabusha nemntfwanakho.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to talk with your teen about possible crises that may happen and what to do?",
+    "text": "Ukhonile yini kukhuluma nemntfwanakho ngetehlakalo letingenteka nekutsi angenta njani?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! This will help you and @fields.child_nickname be prepared if a crisis ever happens. Good work!",
+    "text": "Wente kahle! Loku kutokusita wena na @fields.child_nickname kulungela uma kuvela sehlakalo. Sinifisela inhlanhla!",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "Well done! This will help you and your teen be prepared if a crisis ever happens. Good work!",
+    "text": "Wente kahle! Loku kutawusita wena nemntfwanakho kulungela uma kungenteka kuvele sehlakalo. Ngumsebenti lomuhle lowo!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time today. As a reminder, for this home activity you should: ",
+    "text": "Kulungile loko! Tama kutfola sikhatsi namuhla. Khumbula kutsi, kulomsebenti lona wasekhaya kufanele: ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "1️⃣Find a calm time to talk with @fields.child_nickname about possible crises that may happen. ",
+    "text": "1️⃣Utfole sikhatsi lesithulile na @fields.child_nickname ngetehlakalo letingenteka. ",
+    "type": "text",
+    "note": "Strings like @fields.xxx and @results.yyy should not be translated."
+  },
+  {
+    "SourceText": "2️⃣Discuss possible actions that you can take with your teen if they happen. ",
+    "text": "Ucocisane nemntfwanakho ngaleningakwenta uma kuvela tehlakalo. ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "3️⃣Revisit the Mapping Activity to identify other sources of support in the community. ",
+    "text": "Ubukete i-Mapping Activity kutfola letinye tindlela tetingasekela emphakatsini. ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "4️⃣Thank your teen for taking the time to chat about this.",
+    "text": "Ubonge umntfwanakho ngekutinika sikhatsi sekucocisana ngaloku.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "1️⃣Find a calm time to talk with your teen about possible crises that may happen. ",
+    "text": "1️⃣Utfole sikhatsi lesithulile sekukhuluma nemntfwanakho ngetehlakalo letingavela. ",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to involve your partner in a decision you made yesterday?",
+    "text": "Ukhonile yini kutsi umlingani wakho ahlanganyele esincumeni losente itolo?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for making the effort to do this!!",
+    "text": "Wente kahle ngekwenta imitamo yekwenta njalo!!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and involve your partner in a decision you make today! It’s a great feeling to be valued!",
+    "text": "Kulungile loko! Tama kutsi umlingani wakho ahlanganyele esincumeni lotawusenta namuhla! Kuyindlela lekahle kakhulu yekutivela amcoka!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to do childcare or housework with your partner?",
+    "text": "Ukhonile yini kunakekela bantfwana noma kwenta umsebenti wasendlini nemlingani wakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Amazing! Sharing childcare or housework is a great way to support each other.",
+    "text": "Kuyamangalisa! Kubambisana ngekunakekela bantfwana nekwenta umsebenti wasendlini kuyindlela lenhle kakhulu yekusekelana.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and share your childcare or housecare with your partner. It's a great way to support each other.",
+    "text": "Kulungile loko! Tama kutsi nibambisane kunakekela bantfwana noma kwenta umsebenti wasendlini nemlingani wakho. Kuyindlela lenhle kakhulu yekusekelana.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to invite your partner to discuss how you can share family responsibilities?",
+    "text": "Ukhonile yini kucela umlingani wakho kutsi nikhulumisane ngekutsi ningabambisana kanjani imisebenti yasekhaya?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done for taking the time to discuss sharing responsibilities with your partner!",
+    "text": "Wente kahle kutinika sikhatsi sekukhulumisana nemlingani wakho ngekubambisana imisebenti yasekhaya!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time to share responsibilities with your partner. Sharing responsibilities is an important part of a healthy relationship.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi sekuhlanganyela imisebenti nemlingani wakho. Kubambisana imisebenti kuyincenye lemcoka yebuhlobo lobuhle.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to practice taking a pause?",
+    "text": "Ukhonile yini kutsi ubambe umoya uphumule?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Taking a pause is a great skill to use whenever you are stressed!",
+    "text": "Wente kahle! Kutsatsa sikhatsi sekuphumula kuyindlela lekahle longayisebentisa noma nini nawukhatsatekile!",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Try and find time today to take a pause, the more you practise the more it will help.",
+    "text": "Kulungile loko! Tama kutfola sikhatsi sekuphumula, kutakusita uma ukwenta futsi futsi.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Were you able to set aside time to talk to your partner about your feelings?",
+    "text": "Ukhonile yini kutinika sikhatsi sekukhuluma nemlingani wakho ngemivo yakho?",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Well done! Talking to your partner about how you are feeling can be difficult, but it is very important for a healthy relationship.",
+    "text": "Wente kahle! Kukhuluma nemlingani wakho ngekutsi utiva kanjani kungaba lukhuni, kodvwa kumcoka kakhulu ekwakheni buhlobo lobuhle.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "That’s okay! Talking about your feelings can seem scary, but being open and communicating is an important part of a healthy relationship.",
+    "text": "Kulungile! Kukhuluma ngemivo kungesabisa, kodvwa kukhululeka uvuleke futsi ucoce kuyincenye lemcoka yebuhlobo lobuhle.",
+    "type": "text",
+    "note": ""
+  },
+  {
+    "SourceText": "Yes",
+    "text": "Yebo",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "Not yet",
+    "text": "Hhayi kwanyalo",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "@(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal])",
+    "text": "@(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal])",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "spend 5 minutes of 1-on-1 time with your teen",
+    "text": "citsa imizuzu lengu-5 ukhuluma nemntfwanakho ayedvwa",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "use the three steps of praise: see it, say it, and repeat it",
+    "text": "sebentisa letinyatselo letintsatfu tekudvumisa: yibone, yisho, uyiphindze futsi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about the six steps to coping with their emotions",
+    "text": "khuluma nemntfwanakho ngaletinyatselo letisitfupha tekubhekana nemiva yakhe",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "stretch and move yesterday",
+    "text": "telule futsi ushukume itolo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "spend 1-on-1 time with your teen, listen to their experiences, notice their feelings, and thank them for sharing",
+    "text": "citsa sikatsi nemntfwanakho ayedvwa, ulalele lahlangabetane nakho, unake imivo yakhe, futsi umbonge ngekutsi avuleke nicocisane",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "use 1-on-1 time to talk to your teen about their friends",
+    "text": "sebentisa sikhatsi ninodvwa nobabili nemntfwanakho kukhuluma ngebangani bakhe",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "complete the development assessment",
+    "text": "cedzela luhlolo lwekukhula",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "invite your teen to take a break from their homework and do something active",
+    "text": "cela umntfwanakho kutsi aphumule emsebentini wakhe wesikolwa ekhaya nekwenta lokutsite lokushukumisako",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "support your teen with their school work by setting their goals",
+    "text": "sekela umntfwanakho emsebentini wesikolwa ngekumisa imigomo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about finding the right study spot",
+    "text": "khuluma nemntfwanakho ngekutsi atfole indzawo lelungile langafundzela kuyo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share a story with your teen about a time you learned from a mistake",
+    "text": "cocela umntfwanakho indzaba ngesikhatsi lowafundza ngaso ngesiphosiso lowasenta",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "chat with your teen and identify a possible study buddy",
+    "text": "cocisana nemntfwanakho ngekutfola umngani langafundza naye",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "set a routine with your teen",
+    "text": "misa inchubo lejwayelekile nemntfwanakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "create a family rule with your teen",
+    "text": "yakha umtsetfo wasekhaya nemntfwanakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "ask your teen what they do to stay safe online",
+    "text": "buta umntfwanakho ngalakwentako kuze ahlale aphephile ku-intanethi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about their habits to stay safe online",
+    "text": "khuluma nemntfwanakho ngemikhuba yakhe yekuhlala aphephile ku-intanethi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "discuss your wants and needs with your teen",
+    "text": "khulumisana nemntfwanakho ngalokufunako netidzingo takho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "discuss your monthly expenses with your teen",
+    "text": "khulumisana nemntfwanakho ngetindleko takho tenyanga ngenyanga",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "make a monthly budget with your teen",
+    "text": "yenta ibhajethi yenyanga ngenyanga nemntfwanakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "create a saving plan with your teen",
+    "text": "camba luhlelo lwekonga nemntfwanakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "practise self-care yesterday",
+    "text": "tijwayete kutinakekela itolo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about what makes them stressed",
+    "text": "khuluma nemntfwanakho ngalokumenta akhatsateke",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "go through the kindness tips together",
+    "text": "bukani lamasu esihe kanyekanye",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk to your teen about the different sources of support in your community",
+    "text": "khuluma nemntfwanakho ngetindzawo letehlukene tekutfolakala kwelusito emphakatsini wakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "find time to do an activity that brings you joy",
+    "text": "tfola sikhatsi sekwenta lokutsite lokukuletsela injabulo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share the four steps of managing your teen's behaviour with a family member",
+    "text": "tjela lilunga lemndeni letinyatselo letine tekucondzisa kutiphatsa kwemntfwwanakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share the four steps to problem solving with Your Teen",
+    "text": "tjela umntfwanakho letinyatselo letine tekucatulula inkinga",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "write a list of fair consequences with your teen to use later",
+    "text": "bhala nemntfwanakho luhla lwemiphumela lekahle lolungasetjentiswa emva kwesikhatsi",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "create a community safety map with your teen",
+    "text": "camba imephu yekuphepha kwemphakatsi nemntfwanakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "share teach self-defence tips with your teen",
+    "text": "tjela umntfwanakho ngekufundza emasu ekutivikela",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "go through the sexual violence prevention tips with your teen",
+    "text": "fundzani onkhe lamasu ekuvimbela kuhlukubetwa ngasecansini nemntfwanakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "talk with your teen about possible crises that may happen and what to do",
+    "text": "khuluma nemntfwanakho ngetehlakalo letingenteka nekutsi angenta njani",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "involve your partner in a decision you made yesterday",
+    "text": "vumela umlingani wakho kutsi ahlanganyele esicumeni losente itolo",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "do childcare or housework with your partner",
+    "text": "yentani umsebenti wekunakekela bantfwana noma wasendlini nemlingani wakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "invite your partner to discuss how you can share family responsibilities",
+    "text": "cela umlingani wakho kutsi nikhulumisane ngekutsi ningabambisana kanjani imisebenti yasekhaya",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "practice taking a pause",
+    "text": "tijwayete kutsatsa sikhatsi sekuphumula",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "set aside time to talk to your partner about your feelings",
+    "text": "tinike sikhatsi sekukhuluma nemlingani wakho ngemivo yakho",
+    "type": "variables",
+    "note": ""
+  },
+  {
+    "SourceText": "yes",
+    "text": "yebo",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "not yet",
+    "text": "hhayi kwanyalo",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  }
+]

@@ -1,0 +1,382 @@
+[
+  {
+    "SourceText": "Each child grows and learns in their own way. This tool can help you learn what activities your child can do.",
+    "text": "Each child grows and learns in their own way. This tool can help you learn what activities your child can do.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your child have difficulty seeing or hearing sounds like peoples’ voices or music, even with glasses or hearing aids?",
+    "text": "Does your child have difficulty seeing or hearing sounds like peoples’ voices or music, even with glasses or hearing aids?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about your child's eyesight or hearing, and they might need help from a professional.",
+    "text": "It seems like you're worried about your child's eyesight or hearing, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Sorry, I dont' understand what you mean.",
+    "text": "Sorry, I dont' understand what you mean.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Compared with children of the same age, does your child have difficulty walking?",
+    "text": "Compared with children of the same age, does your child have difficulty walking?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about your child's ability to move around, and they might need assistance from a professional.",
+    "text": "It seems like you're worried about your child's ability to move around, and they might need assistance from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your child have difficulty with self-care such as feeding or dressing him/herself?",
+    "text": "Does your child have difficulty with self-care such as feeding or dressing him/herself?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you are concerned about your child's ability to take care of themselves, and they might need help from a professional.",
+    "text": "It seems like you are concerned about your child's ability to take care of themselves, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your child have difficulty being understood by others?",
+    "text": "Does your child have difficulty being understood by others?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about how your child communicates, and they might need help from a professional.",
+    "text": "It seems like you're worried about how your child communicates, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your child have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?",
+    "text": "Does your child have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about how your child is able to think or understand things, and they might need help from a professional.",
+    "text": "It seems like you're worried about how your child is able to think or understand things, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Compared with children of the same age, does your child have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?",
+    "text": "Compared with children of the same age, does your child have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you are concerned about your child's behaviour, and they might need help from a professional.",
+    "text": "It seems like you are concerned about your child's behaviour, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your child have difficulty making friends?",
+    "text": "Does your child have difficulty making friends?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems that you're worried about your child's ability to interact with others, and they might need assistance from a professional.",
+    "text": "It seems that you're worried about your child's ability to interact with others, and they might need assistance from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "How often does your child seem very anxious, nervous, worried, sad, or depressed?",
+    "text": "How often does your child seem very anxious, nervous, worried, sad, or depressed?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about how your child is feeling, and they might need assistance from a professional.",
+    "text": "It seems like you're worried about how your child is feeling, and they might need assistance from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Thank you for taking the child ability test. If you have any concerns, talk to a professional.",
+    "text": "Thank you for taking the child ability test. If you have any concerns, talk to a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Remember, if you ever need support type HELP.",
+    "text": "Remember, if you ever need support type HELP.",
+    "type": "text"
+  },
+  {
+    "SourceText": "It looks like your child is developing well. That's great!",
+    "text": "It looks like your child is developing well. That's great!",
+    "type": "text"
+  },
+  {
+    "SourceText": "Each teen grows and learns in their own way. This tool can help you learn what activities your teen can do.",
+    "text": "Each teen grows and learns in their own way. This tool can help you learn what activities your teen can do.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your teen have difficulty seeing or hearing sounds like peoples’ voices or music, even with glasses or hearing aids?",
+    "text": "Does your teen have difficulty seeing or hearing sounds like peoples’ voices or music, even with glasses or hearing aids?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about your teenager's eyesight or hearing, and they might need help from a professional.",
+    "text": "It seems like you're worried about your teenager's eyesight or hearing, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Compared with children of the same age, does your teen have difficulty walking?",
+    "text": "Compared with children of the same age, does your teen have difficulty walking?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about your teen's ability to move around, and they might need assistance from a professional.",
+    "text": "It seems like you're worried about your teen's ability to move around, and they might need assistance from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your teen have difficulty with self-care such as feeding or dressing him/herself?",
+    "text": "Does your teen have difficulty with self-care such as feeding or dressing him/herself?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you are concerned about your teen's ability to take care of themselves, and they might need help from a professional.",
+    "text": "It seems like you are concerned about your teen's ability to take care of themselves, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your teen have difficulty being understood by others?",
+    "text": "Does your teen have difficulty being understood by others?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about how your teen communicates, and they might need help from a professional.",
+    "text": "It seems like you're worried about how your teen communicates, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your teen have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?",
+    "text": "Does your teen have difficulty learning or remembering things, focusing on an activity that he or she enjoys doing, or accepting changes in his or her routine?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about how your teen is able to think or understand things, and they might need help from a professional.",
+    "text": "It seems like you're worried about how your teen is able to think or understand things, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Compared with teens of the same age, does your teen have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?",
+    "text": "Compared with teens of the same age, does your teen have difficulty controlling their behaviour, such as fighting, screaming, or breaking rules?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you are concerned about your teen's behaviour, and they might need help from a professional.",
+    "text": "It seems like you are concerned about your teen's behaviour, and they might need help from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Does your teen have difficulty making friends?",
+    "text": "Does your teen have difficulty making friends?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems that you're worried about your teen's ability to interact with others, and they might need assistance from a professional.",
+    "text": "It seems that you're worried about your teen's ability to interact with others, and they might need assistance from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "How often does your teen seem very anxious, nervous, worried, sad, or depressed?",
+    "text": "How often does your teen seem very anxious, nervous, worried, sad, or depressed?",
+    "type": "text"
+  },
+  {
+    "SourceText": "It seems like you're worried about how your teen is feeling, and they might need assistance from a professional.",
+    "text": "It seems like you're worried about how your teen is feeling, and they might need assistance from a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "Thank you for taking the teen ability test. If you have any concerns, talk to a professional.",
+    "text": "Thank you for taking the teen ability test. If you have any concerns, talk to a professional.",
+    "type": "text"
+  },
+  {
+    "SourceText": "It looks like your teen is developing well. That's great!",
+    "text": "It looks like your teen is developing well. That's great!",
+    "type": "text"
+  },
+  {
+    "SourceText": "No Difficulty",
+    "text": "No Difficulty",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "Some Difficulty",
+    "text": "Some Difficulty",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "A Lot of Difficulty",
+    "text": "A Lot of Difficulty",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "He or She Cannot See and/or Hear",
+    "text": "He or She Cannot See and/or Hear",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "He or She Cannot Walk",
+    "text": "He or She Cannot Walk",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "He or She Cannot Take Care of Themselves",
+    "text": "He or She Cannot Take Care of Themselves",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "He or She Cannot Be Understood by Others",
+    "text": "He or She Cannot Be Understood by Others",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "He or She Cannot Learn, Remember or Focus",
+    "text": "He or She Cannot Learn, Remember or Focus",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "He or She Cannot Control Their Behaviour",
+    "text": "He or She Cannot Control Their Behaviour",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "He or She Cannot Make Friends",
+    "text": "He or She Cannot Make Friends",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "Every Day",
+    "text": "Every Day",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "Once A Week",
+    "text": "Once A Week",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "About Once a Month",
+    "text": "About Once a Month",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "A Few Times Each Year",
+    "text": "A Few Times Each Year",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "Never",
+    "text": "Never",
+    "type": "quick_replies",
+    "note": "This is a quick reply and its translation should be uniquely identified by the corresponding argument"
+  },
+  {
+    "SourceText": "no difficulty",
+    "text": "no difficulty",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "some difficulty",
+    "text": "some difficulty",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "a lot of difficulty",
+    "text": "a lot of difficulty",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "he or she cannot see and/or hear",
+    "text": "he or she cannot see and/or hear",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "he or she cannot walk",
+    "text": "he or she cannot walk",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "he or she cannot take care of themselves",
+    "text": "he or she cannot take care of themselves",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "he or she cannot be understood by others",
+    "text": "he or she cannot be understood by others",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "he or she cannot learn, remember or focus",
+    "text": "he or she cannot learn, remember or focus",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "he or she cannot control their behaviour",
+    "text": "he or she cannot control their behaviour",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "he or she cannot make friends",
+    "text": "he or she cannot make friends",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "every day",
+    "text": "every day",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "once a week",
+    "text": "once a week",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "about once a month",
+    "text": "about once a month",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "a few times each year",
+    "text": "a few times each year",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  },
+  {
+    "SourceText": "never",
+    "text": "never",
+    "type": "arguments",
+    "note": "This is an argument and it may be used to identify a corresponding quick reply"
+  }
+]

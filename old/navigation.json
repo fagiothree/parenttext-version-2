@@ -1,0 +1,746 @@
+
+{
+    "campaigns": [],
+    "fields": [],
+    "flows": [
+        {
+            "uuid": "9108c721-3490-4511-8619-b1d9b1016085",
+            "name": "dispatcher_main",
+            "language": "eng",
+            "type": "messaging",
+            "nodes": [
+                {
+                    "uuid": "e0b6db00-1308-40f2-bb0b-5b37cf4dac98",
+                    "exits": [
+                        {
+                            "destination_uuid": "ba2e1a77-925c-40bb-a504-ecd5eaeaced1",
+                            "uuid": "78081405-64aa-4e54-9cd1-5b4f3e6f8988"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "3dc79529-72dc-4b62-a01e-23af688719d0",
+                            "type": "send_msg",
+                            "text": "Main dispatcher",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ba2e1a77-925c-40bb-a504-ecd5eaeaced1",
+                    "exits": [
+                        {
+                            "destination_uuid": "9c0e5466-f66c-4a61-9da3-c3eaff9ecfa3",
+                            "uuid": "549b3d43-3761-4596-921f-70d386c98c89"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "80fc0521-1967-4b14-980d-dc0d48ff3acc",
+                            "type": "send_msg",
+                            "text": "Field depth: 0",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "9c0e5466-f66c-4a61-9da3-c3eaff9ecfa3",
+                    "exits": [
+                        {
+                            "destination_uuid": "84928b4b-d492-442b-8dfd-2d6fc67afbad",
+                            "uuid": "45ea04f8-fa15-43d3-8cdf-c416fe9893d5"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2106d908-e27c-4107-b308-e0e6b68abe89",
+                            "type": "send_msg",
+                            "text": "[('', [ContentModel(ID='c', properties=['', 'happy'], content=['c1', 'c2', '', 'c4']), ContentModel(ID='f', properties=['', 'sad'], content=['f1', 'f2', '', ''])]), ('female', [ContentModel(ID='b', properties=['female', 'happy'], content=['b2', 'b3', 'b3', 'b4']), ContentModel(ID='e', properties=['female', 'sad'], content=['e1', 'e2', 'e3', 'e4'])]), ('male', [ContentModel(ID='a', properties=['male', 'happy'], content=['a1', 'a2', 'a3', '']), ContentModel(ID='d', properties=['male', 'sad'], content=['', 'd2', 'd3', 'd4'])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "84928b4b-d492-442b-8dfd-2d6fc67afbad",
+                    "exits": [
+                        {
+                            "destination_uuid": "1f547b37-990e-4ce3-b32f-e873c31d4cfb",
+                            "uuid": "adbd41b2-dfe9-41fe-a0a6-2529b6812bea"
+                        },
+                        {
+                            "destination_uuid": "1907c86d-494d-45ee-a80a-e09795af46c2",
+                            "uuid": "dbcb695c-4d8d-4c40-8931-a15f08aa8324"
+                        },
+                        {
+                            "destination_uuid": "0a5c6fc5-ecfd-4ddc-9012-a4a874a8fc84",
+                            "uuid": "b4736f43-e489-4249-8510-7225e7f6f92b"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.gender",
+                        "cases": [
+                            {
+                                "uuid": "2a7b9639-ff01-4308-b9b2-f6d894048814",
+                                "type": "has_any_word",
+                                "category_uuid": "c6c30839-c07c-496a-8390-15759d7bee49",
+                                "arguments": [
+                                    "female"
+                                ]
+                            },
+                            {
+                                "uuid": "607b0178-45d6-47e1-a534-cbff8e8548c1",
+                                "type": "has_any_word",
+                                "category_uuid": "d4aa6eef-12cc-4e57-93c3-ddf842ad02dd",
+                                "arguments": [
+                                    "male"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "c6c30839-c07c-496a-8390-15759d7bee49",
+                                "name": "Female",
+                                "exit_uuid": "adbd41b2-dfe9-41fe-a0a6-2529b6812bea"
+                            },
+                            {
+                                "uuid": "d4aa6eef-12cc-4e57-93c3-ddf842ad02dd",
+                                "name": "Male",
+                                "exit_uuid": "dbcb695c-4d8d-4c40-8931-a15f08aa8324"
+                            },
+                            {
+                                "uuid": "d60b137d-9d8f-43c7-a2e4-38be7e0c0e9d",
+                                "name": "Other",
+                                "exit_uuid": "b4736f43-e489-4249-8510-7225e7f6f92b"
+                            }
+                        ],
+                        "default_category_uuid": "d60b137d-9d8f-43c7-a2e4-38be7e0c0e9d",
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "0a5c6fc5-ecfd-4ddc-9012-a4a874a8fc84",
+                    "exits": [
+                        {
+                            "destination_uuid": "acb8a5a3-826b-46cf-a053-de6162877b83",
+                            "uuid": "c3549097-0a24-4906-b22f-cdb2214d7a0a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "050fff43-120c-4314-8d1c-4b67e88c0903",
+                            "type": "send_msg",
+                            "text": "Field depth: 1",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "acb8a5a3-826b-46cf-a053-de6162877b83",
+                    "exits": [
+                        {
+                            "destination_uuid": "37604606-91b6-4ba5-b168-4563f2807827",
+                            "uuid": "306258dc-28e4-4f84-80a6-f002d9848e62"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "a05829c5-18fc-4736-bc8f-0308dfc77df6",
+                            "type": "send_msg",
+                            "text": "[('happy', [ContentModel(ID='c', properties=['', 'happy'], content=['c1', 'c2', '', 'c4'])]), ('sad', [ContentModel(ID='f', properties=['', 'sad'], content=['f1', 'f2', '', ''])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "37604606-91b6-4ba5-b168-4563f2807827",
+                    "exits": [
+                        {
+                            "destination_uuid": "38906c31-70d4-47a6-a8d7-5d382fb7378a",
+                            "uuid": "972e81a7-e818-4013-b229-59f9a69171c7"
+                        },
+                        {
+                            "destination_uuid": "33d6fc1c-59c7-4c4b-b086-50b13a325195",
+                            "uuid": "f6cdbe8f-0c07-45e5-8cbc-fcf4c65f2694"
+                        },
+                        {
+                            "destination_uuid": null,
+                            "uuid": "210161b5-093b-4e0f-bcce-bee5523a452a"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.mood",
+                        "cases": [
+                            {
+                                "uuid": "594c3ff3-fe41-4d10-ba80-bf34397f3c1c",
+                                "type": "has_any_word",
+                                "category_uuid": "9c52b8b4-8e99-4e22-b2b7-73e3558c1cc6",
+                                "arguments": [
+                                    "happy"
+                                ]
+                            },
+                            {
+                                "uuid": "27c7bada-6e43-4e9c-8433-b295dedb9ca1",
+                                "type": "has_any_word",
+                                "category_uuid": "0076b5af-d3e4-4ffa-94a8-2aa371514f71",
+                                "arguments": [
+                                    "sad"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "9c52b8b4-8e99-4e22-b2b7-73e3558c1cc6",
+                                "name": "Happy",
+                                "exit_uuid": "972e81a7-e818-4013-b229-59f9a69171c7"
+                            },
+                            {
+                                "uuid": "0076b5af-d3e4-4ffa-94a8-2aa371514f71",
+                                "name": "Sad",
+                                "exit_uuid": "f6cdbe8f-0c07-45e5-8cbc-fcf4c65f2694"
+                            },
+                            {
+                                "uuid": "9d00fb8c-4e25-4951-9f1b-05b631bee8d8",
+                                "name": "Other",
+                                "exit_uuid": "210161b5-093b-4e0f-bcce-bee5523a452a"
+                            }
+                        ],
+                        "default_category_uuid": "9d00fb8c-4e25-4951-9f1b-05b631bee8d8",
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "38906c31-70d4-47a6-a8d7-5d382fb7378a",
+                    "exits": [
+                        {
+                            "destination_uuid": "1aefdfd2-814f-4e3e-bfdc-1cdadddb46c7",
+                            "uuid": "ddddc206-d05b-492a-8715-adf77a59133a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "8a36a521-8e74-457a-8f96-ec84f4ed27fb",
+                            "type": "send_msg",
+                            "text": "Field depth: 2",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1aefdfd2-814f-4e3e-bfdc-1cdadddb46c7",
+                    "exits": [
+                        {
+                            "destination_uuid": "fb85402a-cb1a-4313-9c3d-3fb4c22aa856",
+                            "uuid": "260b744d-bed9-4be1-9935-4e5b10c43018"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "d4712de1-e8ae-4b4b-aabe-71fe8fde840a",
+                            "type": "send_msg",
+                            "text": "[(Undefined, [ContentModel(ID='c', properties=['', 'happy'], content=['c1', 'c2', '', 'c4'])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "fb85402a-cb1a-4313-9c3d-3fb4c22aa856",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "00be48ad-b884-4477-96e9-66e6ed4e4d73"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "028209e9-c8a3-4a85-a865-18ffb1fe5ca5",
+                            "type": "send_msg",
+                            "text": "Content cycle: ['c1', 'c2', '', 'c4']",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "33d6fc1c-59c7-4c4b-b086-50b13a325195",
+                    "exits": [
+                        {
+                            "destination_uuid": "63585a0a-c87b-42d0-9585-5c06e0113c41",
+                            "uuid": "ab51158d-c8bc-4c9c-a3d0-615c62336652"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7d8f43d7-287d-458d-ab07-bf89fee93af0",
+                            "type": "send_msg",
+                            "text": "Field depth: 2",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "63585a0a-c87b-42d0-9585-5c06e0113c41",
+                    "exits": [
+                        {
+                            "destination_uuid": "3bd1e9a5-bb25-4170-8053-c1e238f1f63d",
+                            "uuid": "1ceef2e2-d0a3-4722-9a8f-3ec156f33d15"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "5ac9dc31-9b2c-4ccd-bad5-26c4bc047e00",
+                            "type": "send_msg",
+                            "text": "[(Undefined, [ContentModel(ID='f', properties=['', 'sad'], content=['f1', 'f2', '', ''])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "3bd1e9a5-bb25-4170-8053-c1e238f1f63d",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "a78014f3-147d-4d89-91f1-e5d646601591"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "c6f5fe79-9988-4e4d-82ec-f31d01dd063d",
+                            "type": "send_msg",
+                            "text": "Content cycle: ['f1', 'f2', '', '']",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1f547b37-990e-4ce3-b32f-e873c31d4cfb",
+                    "exits": [
+                        {
+                            "destination_uuid": "9cd7d6e6-3c66-46e5-8605-e85e1b2e2b6b",
+                            "uuid": "88ab440f-8d77-423b-9e03-e85b234aa87e"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "09d51033-110e-48a4-8668-00dc123c0495",
+                            "type": "send_msg",
+                            "text": "Field depth: 1",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "9cd7d6e6-3c66-46e5-8605-e85e1b2e2b6b",
+                    "exits": [
+                        {
+                            "destination_uuid": "23626475-e577-44fa-b5c9-693aa7d612db",
+                            "uuid": "d84ea744-7877-4886-a9d4-19b4beea6575"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "4ac4e79d-4c18-42db-b0bb-a31bd4db2a4f",
+                            "type": "send_msg",
+                            "text": "[('happy', [ContentModel(ID='b', properties=['female', 'happy'], content=['b2', 'b3', 'b3', 'b4'])]), ('sad', [ContentModel(ID='e', properties=['female', 'sad'], content=['e1', 'e2', 'e3', 'e4'])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "23626475-e577-44fa-b5c9-693aa7d612db",
+                    "exits": [
+                        {
+                            "destination_uuid": "88da028d-2f62-4e45-9435-754eea26d2f7",
+                            "uuid": "15b4a55f-481b-4e8a-b43a-2c1d999aa364"
+                        },
+                        {
+                            "destination_uuid": "ba4cdca5-1d2b-472e-8b55-3e24163fefaf",
+                            "uuid": "fffcc912-835c-4d5e-8046-0068ad8ff059"
+                        },
+                        {
+                            "destination_uuid": null,
+                            "uuid": "c7490df2-f854-4829-a1be-a9c21beb3148"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.mood",
+                        "cases": [
+                            {
+                                "uuid": "6cfd25b8-bbc0-47a1-ab8d-1ee917636f1e",
+                                "type": "has_any_word",
+                                "category_uuid": "c6c28918-25eb-4a4d-be06-9d18f16b91b0",
+                                "arguments": [
+                                    "happy"
+                                ]
+                            },
+                            {
+                                "uuid": "bb7d0a5f-af5f-4ca6-b8b3-5501c179a5ae",
+                                "type": "has_any_word",
+                                "category_uuid": "0b4183cf-4e05-419f-9e35-edaf6ed555a3",
+                                "arguments": [
+                                    "sad"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "c6c28918-25eb-4a4d-be06-9d18f16b91b0",
+                                "name": "Happy",
+                                "exit_uuid": "15b4a55f-481b-4e8a-b43a-2c1d999aa364"
+                            },
+                            {
+                                "uuid": "0b4183cf-4e05-419f-9e35-edaf6ed555a3",
+                                "name": "Sad",
+                                "exit_uuid": "fffcc912-835c-4d5e-8046-0068ad8ff059"
+                            },
+                            {
+                                "uuid": "d0147b7b-eba9-412b-8ed4-3a110d6c0094",
+                                "name": "Other",
+                                "exit_uuid": "c7490df2-f854-4829-a1be-a9c21beb3148"
+                            }
+                        ],
+                        "default_category_uuid": "d0147b7b-eba9-412b-8ed4-3a110d6c0094",
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "88da028d-2f62-4e45-9435-754eea26d2f7",
+                    "exits": [
+                        {
+                            "destination_uuid": "8fba5f58-6e07-4809-a628-faf461a8410d",
+                            "uuid": "2a13957f-4bc6-4b23-8c35-f07a9c0129cc"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "b48f64f3-7fd2-4a27-8bdd-21f6689e68a3",
+                            "type": "send_msg",
+                            "text": "Field depth: 2",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "8fba5f58-6e07-4809-a628-faf461a8410d",
+                    "exits": [
+                        {
+                            "destination_uuid": "677bdf02-9c5d-4c83-9fe3-fa652f2e1fcf",
+                            "uuid": "ddaae4cc-92ca-4de0-8b33-6c6a84463346"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "104467b6-6a70-40fc-817b-615a9887714a",
+                            "type": "send_msg",
+                            "text": "[(Undefined, [ContentModel(ID='b', properties=['female', 'happy'], content=['b2', 'b3', 'b3', 'b4'])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "677bdf02-9c5d-4c83-9fe3-fa652f2e1fcf",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "f6e06c62-10ad-480f-8bad-9fbf044409ea"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "d6135c82-a3bb-4239-bda5-ea5b649ec760",
+                            "type": "send_msg",
+                            "text": "Content cycle: ['b2', 'b3', 'b3', 'b4']",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "ba4cdca5-1d2b-472e-8b55-3e24163fefaf",
+                    "exits": [
+                        {
+                            "destination_uuid": "38f61a0b-9b94-43d5-8869-51dba465626a",
+                            "uuid": "9c3a0017-d86b-4dc1-b06e-91538a01a15e"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "e17b041d-07a9-45f0-b188-91e60c66136c",
+                            "type": "send_msg",
+                            "text": "Field depth: 2",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "38f61a0b-9b94-43d5-8869-51dba465626a",
+                    "exits": [
+                        {
+                            "destination_uuid": "2c09830d-9938-4436-9b00-acc423c245ff",
+                            "uuid": "6f67cee7-4012-467d-a792-30f73b4f0962"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "df792e66-4a89-4f9f-bb01-f2b9103ea2a3",
+                            "type": "send_msg",
+                            "text": "[(Undefined, [ContentModel(ID='e', properties=['female', 'sad'], content=['e1', 'e2', 'e3', 'e4'])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "2c09830d-9938-4436-9b00-acc423c245ff",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "ea4df3f0-6bc3-4806-94ac-1bb0ba0fd4a7"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "88c126d1-fe84-4628-b449-531cc0e4be68",
+                            "type": "send_msg",
+                            "text": "Content cycle: ['e1', 'e2', 'e3', 'e4']",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "1907c86d-494d-45ee-a80a-e09795af46c2",
+                    "exits": [
+                        {
+                            "destination_uuid": "e5e019bd-c912-456b-a28e-2247837ebe21",
+                            "uuid": "4e1e0f08-4f1c-4b4b-b79f-d72c9e710763"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "c205ba13-e665-4797-997e-49fe5e6a306c",
+                            "type": "send_msg",
+                            "text": "Field depth: 1",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e5e019bd-c912-456b-a28e-2247837ebe21",
+                    "exits": [
+                        {
+                            "destination_uuid": "d3feb361-1f2f-4783-9219-d808f224e0e6",
+                            "uuid": "b2f94fc5-8c51-435f-8449-b7c9fd9f961a"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "7c007ebb-54b8-4f97-b8b5-2196f74fcfae",
+                            "type": "send_msg",
+                            "text": "[('happy', [ContentModel(ID='a', properties=['male', 'happy'], content=['a1', 'a2', 'a3', ''])]), ('sad', [ContentModel(ID='d', properties=['male', 'sad'], content=['', 'd2', 'd3', 'd4'])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "d3feb361-1f2f-4783-9219-d808f224e0e6",
+                    "exits": [
+                        {
+                            "destination_uuid": "56cdcbc6-b027-4d31-bada-5876200f9cff",
+                            "uuid": "58074058-9bfe-4bd1-873d-af1473d43a32"
+                        },
+                        {
+                            "destination_uuid": "780db0df-570c-4a28-a6e8-038483095008",
+                            "uuid": "99dc54be-4a28-41a7-9618-59d1d099e105"
+                        },
+                        {
+                            "destination_uuid": null,
+                            "uuid": "63927713-c45c-4d83-a7c9-832c9206d89a"
+                        }
+                    ],
+                    "actions": [],
+                    "router": {
+                        "type": "switch",
+                        "operand": "@fields.mood",
+                        "cases": [
+                            {
+                                "uuid": "a4b27e6b-7385-4003-9251-a4b2498b9e77",
+                                "type": "has_any_word",
+                                "category_uuid": "80eb534e-6840-4ee3-930b-7c5901db920f",
+                                "arguments": [
+                                    "happy"
+                                ]
+                            },
+                            {
+                                "uuid": "3b9044ce-461b-46b5-a67a-57a60c8a41af",
+                                "type": "has_any_word",
+                                "category_uuid": "0c9bb07d-f23f-44a0-bbbc-59110dccbbd5",
+                                "arguments": [
+                                    "sad"
+                                ]
+                            }
+                        ],
+                        "categories": [
+                            {
+                                "uuid": "80eb534e-6840-4ee3-930b-7c5901db920f",
+                                "name": "Happy",
+                                "exit_uuid": "58074058-9bfe-4bd1-873d-af1473d43a32"
+                            },
+                            {
+                                "uuid": "0c9bb07d-f23f-44a0-bbbc-59110dccbbd5",
+                                "name": "Sad",
+                                "exit_uuid": "99dc54be-4a28-41a7-9618-59d1d099e105"
+                            },
+                            {
+                                "uuid": "8526f131-b789-4628-9e9a-a40b6ef1b8fe",
+                                "name": "Other",
+                                "exit_uuid": "63927713-c45c-4d83-a7c9-832c9206d89a"
+                            }
+                        ],
+                        "default_category_uuid": "8526f131-b789-4628-9e9a-a40b6ef1b8fe",
+                        "result_name": ""
+                    }
+                },
+                {
+                    "uuid": "56cdcbc6-b027-4d31-bada-5876200f9cff",
+                    "exits": [
+                        {
+                            "destination_uuid": "da27d44a-7362-4f96-9621-3e0ebd1582a7",
+                            "uuid": "3f251b55-ea1e-4aa8-b8da-3285a550b50c"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "4f7a29ec-2af6-4567-b08e-c9df36e266ee",
+                            "type": "send_msg",
+                            "text": "Field depth: 2",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "da27d44a-7362-4f96-9621-3e0ebd1582a7",
+                    "exits": [
+                        {
+                            "destination_uuid": "7be0b8be-cd0c-4eac-aca8-2469f27efe19",
+                            "uuid": "db6d6231-43b1-4bc9-96ec-631afc687092"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "c84cf820-7df8-414c-9171-4eb5225a4237",
+                            "type": "send_msg",
+                            "text": "[(Undefined, [ContentModel(ID='a', properties=['male', 'happy'], content=['a1', 'a2', 'a3', ''])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "7be0b8be-cd0c-4eac-aca8-2469f27efe19",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "bd551ddc-97a8-4006-a2b8-2aeaa2aa827f"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "f05740e8-b028-413c-a858-9059035eb612",
+                            "type": "send_msg",
+                            "text": "Content cycle: ['a1', 'a2', 'a3', '']",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "780db0df-570c-4a28-a6e8-038483095008",
+                    "exits": [
+                        {
+                            "destination_uuid": "6501b961-c9a8-4eb8-a0bf-c52d024a0429",
+                            "uuid": "e5bbbc2c-2191-44c4-9200-76ac6a1cf04d"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "2300c1b8-4355-41a3-81c2-9b043f119eea",
+                            "type": "send_msg",
+                            "text": "Field depth: 2",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "6501b961-c9a8-4eb8-a0bf-c52d024a0429",
+                    "exits": [
+                        {
+                            "destination_uuid": "5a557e4a-8a16-4c52-bb08-7c48c0bf9400",
+                            "uuid": "0e53e237-fcd5-4a44-8b62-c2951d181be6"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "f7c3f46b-84c3-4bbc-b661-683cb92eb940",
+                            "type": "send_msg",
+                            "text": "[(Undefined, [ContentModel(ID='d', properties=['male', 'sad'], content=['', 'd2', 'd3', 'd4'])])]",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                },
+                {
+                    "uuid": "5a557e4a-8a16-4c52-bb08-7c48c0bf9400",
+                    "exits": [
+                        {
+                            "destination_uuid": null,
+                            "uuid": "824b85f8-48c5-428c-9f9b-8fda9cdb0d46"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "uuid": "666b1010-4769-478a-8ded-c146b927f21e",
+                            "type": "send_msg",
+                            "text": "Content cycle: ['', 'd2', 'd3', 'd4']",
+                            "attachments": [],
+                            "quick_replies": []
+                        }
+                    ]
+                }
+            ],
+            "spec_version": "13.1.0",
+            "revision": 0,
+            "expire_after_minutes": 10080,
+            "metadata": {},
+            "localization": {}
+        }
+    ],
+    "groups": [],
+    "site": "https://rapidpro.idems.international",
+    "triggers": [],
+    "version": "13"
+}

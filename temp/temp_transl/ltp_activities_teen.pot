@@ -1,0 +1,899 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+#. type=text
+msgctxt "text"
+msgid "*A friendly chat*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Talk to your teen about something that they are interested in! 😃"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⚽ An easy way to start talking to your teen is to ask them about something they are interested in. For example, you could talk about sports, books, movies, friends, music, celebrities, or school."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👂 You may not find everything your teen shares to be interesting, but it’s important to show enthusiasm and an eagerness to learn."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Create your own Recipe*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Let your teen come up with a new meal idea! "
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "🍚 Create a new dish with @fields.child_nickname using ingredients they love!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔵 Together, choose two ingredients, and ask your teen to prepare a meal using them. For example: chicken and spinach, tomatoes and rice, maize and pumpkin."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📝 If you enjoy the meal, make it something your family eats weekly, and ask your teen to write it down for you. Give the meal a name and explain how to make it. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✨ If your teen notices that you are learning from their cooking, it will boost their confidence!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🍚 Create a new dish with your teen using ingredients they love!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Reflect on the positive*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Spread Positivity! 🌈"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 Together, take a minute to think about all the things you did today. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "☀️ Take turns sharing one positive or fun thing that happened. This could be something small, like feeling good because you cleaned the house, or something big, like spending time with family and friends. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏰ Try doing this every day - even more on the days it feels like you have not done anything special."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*What’s new?*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Learning is fun! 🎓"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "❓ Ask your teen to think of a new, fun skill you could learn together. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "For example: keeping a ball in the air with your foot, juggling, making soup, moonwalking, whistling, saying the alphabet backwards, learning all the countries in Africa. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 Take turns trying out the new skill.  Make sure to praise each other and learn and play together!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💛 Approach learning the skill in a kind and fun way, and do not judge your teen or yourself for your ability in the skill."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Dance moves*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Let's get moving! 👋 Dancing is a great way to exercise, have fun, and bond with your teen at the same time! You both get to express yourselves in a fun, relaxed way.  🎵 "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "This game can be played in pairs or a group with everyone taking turns being the leader:\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📱 Let your teen choose a song they like and create a set of dance moves.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👀 First person does a dance move and everyone else copies it.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "☀️ Don’t worry about perfecting the dance moves, it’s all about having fun together!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 If you want to, you can perform your dance for the household!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Dance Activity*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Try something new and learn a dance challenge with your teen! ✨ Have fun!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⭐ Dancing is a great way to have fun together while being creative and moving your body!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📱 If your teen uses the app TikTok, suggest doing a dance challenge together.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "😃 Ask your teen to choose their favourite dance and learn it with them.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎉 It’s okay if you can’t dance well, have fun and try not to take it too seriously! \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 You do not have to post the video to learn the dance. You can keep it as a memory between you and your teen."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Check-in chat*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Actively checking in on one another helps to keep relationships healthy! ⭐\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Ask each other questions: “What made you happy today?” 👂 “What was difficult today?” 👂 “How can I help you?” 👂\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "For this to help, your teen needs to feel safe while sharing things with you. Be open to their responses. 💚 Teens tend to be more honest when they trust that what they say will not be used against them later.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Go easy on yourself if your teen does not want to share their problems with you. 💙 Often, teens are afraid to share as they are scared they will get in trouble. Getting upset with them won’t help - keep showing you love them and give them time! 🌷"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Express Yourself*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Dancing makes people happy!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🌈 This game can be played in pairs or as a group - stand facing each other or in a circle.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎵 Together, choose a fun and upbeat song to play and a person to start the game by creating one dance move.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👀 The person to their right must copy that dance move and add their own move to it.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✨ Go around the circle, each person adding their own dance move to the full song.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 The first one who forgets someone's dance moves or does it in the wrong order chooses the next song and starts the game again.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎉 Try new dance moves with this game and have fun!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*2 Truths, 1 Lie*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "This is a fun, quick game, and the point of it is to learn things about each other. Make your answers as interesting as possible! 🎨"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 Ask your teen to think of 3 facts about themselves. 2 must be true, 1 must be a lie. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔷 Here are some examples: I hate bananas, I have travelled to Kenya, my favourite subject in school was maths.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👀 Share the facts with your teen and ask them to guess which one is a lie. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 Now ask them to do the same, and guess theirs.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Did you learn anything new about your teen, or did they learn anything new about you? 💛"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Yes, No or Maybe *"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Are you tired of hearing your teen say yes, no, or maybe to all of your questions? Turn your chat into a game, and don’t allow one-word answers. 🎈"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔴 Teens are known to give one-word answers to avoid talking. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 When you would like to really know how your teen is doing, you can turn your chat into a game. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⭐ Take turns asking each other questions. The only rule is that you cannot use one-word responses, such as Yes, No, Maybe, Fine, and Okay.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⚽ You can ask about things your teen likes or what they did today. For example, how was your day? What are you excited for? Is there anything worrying you?\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 It is important to let your teen ask a question as well. Trust is built when your teen can see that you are also sharing your life with them, and not only trying to learn about their life."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Movie World*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Leaving the busy and stressful world behind can be good for our health. 🌱 Take a moment to escape with your teen by creating a superhero story together!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎈 Ask your teen to imagine that they are a superhero and what their superpowers would be. Flying? Time travel? Mind reading? Super Strength?\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✨ Ask them how they would use these superpowers, and why. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🌈 Help them give their superhero a name, an outfit, and a sidekick, and act it out. If your teen does not want to act, that is fine - talking about it is just as good! \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👑 Now, let them make up a superhero for you. Play the part! You can ask questions, like who the villain would be, or how you became a superhero. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 Create a story - what happens to the characters? Is it an action story? Is it a thriller, space, sport, adventure, or romance?\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "➡️ Next time you play this game, you could create a new story or superhero with your teen or continue the story you started together."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Get Active*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Exercise is a great way to spend time together and it is so good for your health. 🌱 Find a sport or exercise that both you and your teen want to do and try it out together! \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏰ Even walking for 10 minutes a day is good for you. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⚽ Together you can walk, run, play soccer, swim, dance, or do any other sport..\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🏆 Together, think of ways to make it even more fun. Can you jog to a certain point? Take turns being the coach? Can there be a small, free reward, like getting to decide the next activity?\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🌈 Exercise becomes easier and more enjoyable the more you do it. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 If you or your teen do not like the first exercise you pick, try a new exercise."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Make up a story*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Creating stories together is a great way to learn the art of storytelling - and to build your teen’s creativity! 📖\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔟 With your teen, come up with 10 words to use. They can be any words you want! For example: banana, spaceship, fish, water, painting, wasp nest, cooking, wedding.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎂 Start your story with, “Once upon a time, there was a…” and make sure you use one of the words from the list in your sentence. For example, “Once upon a time, there was a family who worked on a **banana** farm.”\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📝 Let your teen make up the next sentence using another word from the list.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 Take turns until you have used as many words from the list as you can, or until you have finished your story. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔔 Be as creative as possible with your story and do not tell your teen what to say. It does not need to be a real story to be a good story!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎁 Ask your teen what their favourite part of the story was, and tell them yours!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Take A Pause with your teen*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Take a pause with your teen. This helps them deal with stress in a healthy way!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏰ You could take a pause before dinner, after school, before school, or before bedtime.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👂 Sit down together and close your eyes. Listen to your breath as it goes in and out. Notice how you feel. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⭐ Take 5 more deep breaths.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👀 When you are ready, open your eyes again. Do you feel any different? \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏸ Ask your teen what it was like to take a pause. Listen and accept whatever they say about it."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Name That Tune*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Listening to music is a great way to lower your stress and have fun with your family. 💚\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📻 Gather your family members and choose one person to play or sing a song.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "❓ Everyone else must guess the name and artist of the song.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎉 The first one to guess it right becomes the next person to sing or play a song. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 Keep going around until everyone has been able to play their favourite song and let the rest hear."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Pass the ball*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Games are a great, fun way to spend time with your family! \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "3️⃣ This game is best with at least 3 people.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⚽ Find a ball to play. If you cannot find a ball, choose an item you can safely throw around. For example, a bottle cap or a plastic cup.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "➡️ Start in a circle and pass the ball around. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👋 Start throwing the ball in new directions (up, down, straight, curved, rolling on the ground) and with different forces (hard, soft, medium). You can bounce the ball, throw it in the air, and catch it a few times before passing it. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✨ When everyone gets good at catching the ball, you can start moving around the room, still passing the ball. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⭐ Can you throw the ball under the leg? Behind the back? Over your head? Block a pass? Have fun with it!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Make Housework Fun*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Turn your chores into games! 🏆 \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "☀️ Making housework fun is a good way to teach your teen to be responsible and to rely on themselves. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📝 Together, make a list of all the chores that must be done in your home. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 Make sure the tasks are fair and things your teen can do. For example, washing up, sweeping, mopping, making the beds, and laundry.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 Each week, let a different person in the family choose a chore first.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎵 Play some music or turn on the radio. Music is a great way to make a boring task fun!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅ Tick off the tasks when they are done so you can see your progress as a family. You could offer small rewards as motivation to complete activities.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📺 For example, you could let your teen watch more TV, spend more time with their friends, choose what they want for dinner, or have something sweet if they do their chores in a fair amount of time.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "❓ If your child does not complete a chore, ask them why, and come up with a fair consequence together."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*I’m Going on a Picnic and I Will Bring…*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Memory games are a fun way to strengthen our brains! \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎂 Think of all the things you would have at your dream picnic. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎈 The first person says, “On Saturday, I am going to the park to have a picnic. To this picnic, I will bring...” and they say one thing they will bring to the picnic.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🍅 For example: a sandwich, a ball, a blanket, forks, cups, a dog, or coca cola.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔔 The second person adds to the first person's list, but must start at the beginning: “On Saturday, I am going to the park to have a picnic. To this picnic, I will bring...” and say the item that the first person said AND then add their own item to the list.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 Each time you add an item, you must say all previous items first - in the correct order!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⭐ Each person adds to the list, while remembering all the previous items. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👀 If everyone has a turn, keep going and building your list. The first person to forget an item restarts the game!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*This is who I am*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Self-esteem is the way you value yourself, either in a positive or negative way. Helping your teen to have high self-esteem is a recipe for success! 🏆\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⭐Share with your teen 3 things you like about yourself!\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "3️⃣ Ask your teen to tell you 3 things they like about themselves. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "For example: I am great at treating others kindly. I am great at styling my hair. I am great at football. ⚽\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "If your teen does not feel comfortable sharing these, ask them to write them down. 📝"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Things I like about others and me*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Here is an activity to help you and your teen notice the good parts of themselves.. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "☀️Ask your teen to share 3 things they like about a friend or someone they admire, like a celebrity.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "❓ Ask them if they share any of these qualities, too.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💙 You can do the same: share with your teen the qualities you like about yourself or about someone you admire - and what you like about your teen!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Make a family wish list*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Wish lists are a great way to set, plan and keep track of your goals and dreams. 🌷 \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📝 To start your wish list, gather your family together and grab pens and paper. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🚲 Allow each family member to write a list of goals and experiences they want to achieve this year.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎂 For example: exercise daily, read 1 book a month, make a new friend, learn to bake a cake, learn to juggle, or go watch the local soccer team play. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔔 Once you have finished, put the list up where everyone can see it daily.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎉 As members of the family reach their goals, tick them off the list and celebrate each goal reached. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "❓ As the year goes on, there might be some items some of you have not achieved. Talk to your family about whether you still want to reach this goal or whether the goal has changed. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔑 If you still want to achieve the goal, discuss with your family what you need to do to tick the goal off your wish list."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Weekly Goal Setting*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Let’s set some goals ⭐\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏰ It can be helpful to set smaller weekly goals that are easier to reach. This helps us reach our larger goals over time.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡Ask your teen for one goal that they would like to achieve this week. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔄 Make sure this goal is **specific**and  **achievable** to reach in 1 week.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💚 You can also share your own weekly goal with your teen and support each other so you can both achieve your goals.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🎉 Make sure to praise and celebrate your teen for their hard work towards reaching their goal.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔔 If your teen does not reach their goal, that is okay. Discuss with your teen the steps they still need to take or how they could reach it a different way."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Three cakes and a candle*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Working towards big goals can be hard! Here is a way you can help your teen set new goals for the things they want to achieve. 👑\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👑 Ask your teen to come up with three things that they are good at, and discuss what they did to become so good at them. For example: keeping their room neat, helping your family with housework, or playing a sport.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🏆 Next, ask your teen what they wish they were good at. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔑 Remind them that it took work and practice to become good at the skills they have. They will have to do the same for any new goal.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏰ Help your teen break down their goal and set up smaller goals they need to achieve to reach their greater goal. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "📝 It is much easier to achieve a goal if you write it down! This way, you can be reminded of it as you work towards it.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "☀️ For example, if the goal is to be good at football, small weekly goals could be to go to football practice 2 times per week, run at least 1 km 5 times per week, and learn about the sport from other football players in the community or from books or videos they find. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✅ It is important to write down these smaller goals and let your teen tick off each task as they do them each week. Seeing themselves reach smaller goals will keep them motivated to achieve the big goal!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Role Playing*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Let’s start acting! ⭐\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "❓Role playing common stressful social moments with your teen allows them to practise how to respond so they are prepared if this moment does happen. 🌷\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "✨ Ask your teen if they want to role play with you. You can also suggest a topic. For example, asking someone on a date, saying no to drugs/alcohol/sexting, dealing with a bully, getting a bad grade, or dealing with gossip.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🌙 Your teen could play the role of a friend asking you to drink at a party. You could role play an underage teen who does not want to drink. Encourage your teen to be silly and really get into character with them. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏯️ After you act out the scene, it is important to talk to your teen about the actions that you role played. You can act out this scenario as many times as you like!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "*Traffic Lights*"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "A group activity is a great way to bond with others! 💛 \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💡 Choose one person to turn and face a wall. This will be the traffic officer. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🏁 Everyone else will begin the game at the other side of the room, or if you are outside, at a starting line. Set a long distance between the traffic officer and the players. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "💚 The game begins when the officer shouts “Green”, and everyone can start moving towards the traffic officer at any speed they choose. \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🔴 The officer can shout “Red!” at any time, without looking behind them. When they shout this, everyone must stop and freeze! \r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "⏸ The officer turns around to see if everyone is frozen. If they see anyone moving, they have to send them back to the start line.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "🏆 The winner is the first person to get to the officer without being sent back to the start.\r"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "👑 The winner then becomes the traffic officer and you can play another round!"
+msgstr ""

@@ -1,0 +1,832 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "You’re doing great towards your goal, @(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal])."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to spend 5 minutes of 1-on-1 time with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! Well done for making this commitment."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and set aside some time in the coming days."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Sorry, I don't understand what you mean."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to use the three steps of praise: see it, say it, and repeat it?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done for remembering to praise your teen and other family members!"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "That’s okay! Try to praise @fields.child_nickname today, even if it’s something small."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try to praise your teen today, even if it’s something small."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to talk to your teen about the six steps to coping with their emotions?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! This will help your teen manage difficult emotions when they happen."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find some time today to talk to your teen about emotions."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to stretch and move yesterday?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done for taking the time to care for yourself!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find some time today to stretch."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to spend 1-on-1 time with your teen, listen to their experiences, notice their feelings, and thank them for sharing?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done for being open to listening to your teen!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try to listen to your teen today during your 1-on-1 time."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to use 1-on-1 time to talk to your teen about their friends?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! You are learning so much more about your teen."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and use your 1-on-1 time today to talk with your teen about their friends."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to complete the development assessment?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Great!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try to complete the assessment this week. You can type GROW at any time to begin."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to invite your teen to take a break from their homework and do something active?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! Taking a break can help your teen refocus and continue working on their school work. We all need a break sometime!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Next time your teen is doing homework, try and do something active and fun together!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to support your teen with their school work by setting their goals?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! This is one goal you can be proud of!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and take a few minutes with your teen to set goals with them. This is a great way to support their learning."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to talk to your teen about finding the right study spot?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! Finding a good place to study will help your teen focus and succeed with their school work."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try to help your teen find a good study spot today. This will help their learning."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to share a story with your teen about a time you learned from a mistake?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Being open is not always easy, well done for doing it anyways!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Being open can be difficult, but it’s important. Try and find time to share with your teen."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to chat with your teen and identify a possible study buddy?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Great! Studying with a friend is a great way to learn."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time to chat with your teen and find a study buddy. Studying with friends is a great way to learn."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to set a routine with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! Setting routines with your teen will help provide structure in their lives."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time to set a routine with your teen. It's a great way for your teen to feel secure and safe."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to create a family rule with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! Involving your teen in creating family rules will make it more likely that they follow them in the future."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and set up a rule with your teen in the next few days. It will make it more likely that they follow them in the future.!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to ask your teen what they do to stay safe online?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Great! It is so important that we are able to protect our children online."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Online safety is really important so try and find some time to chat to your teen about staying safe online."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to talk to your teen about their habits to stay safe online?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! You are helping your teen learn how to be safe online!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and chat to your teen in the next few days. Safe online habits are important for your teen's safety."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to discuss your wants and needs with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Great! You’re ready for today’s lesson."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and talk to your family about needs and wants, it’s the first step to building a family budget."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to discuss your monthly expenses with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! You are making great progress on your family budget!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Talking about your monthly expenses is an important step to family budgeting. Try to complete this step with your family."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to make a monthly budget with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! Making a monthly budget will set your family up for success!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Completing a monthly budget will set your family up for success. Try to find time to complete this activity."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to create a saving plan with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! You have completed all the steps for creating a family budget."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time to make a saving plan with your family."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to practise self-care yesterday?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done for taking the time to be kind to yourself!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find some time today to practise self-care."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to talk to your teen about what makes them stressed?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Good for you! Knowing what stresses your teen can help you and your teen work on reducing these and strengthen their wellbeing."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time to talk to your teen about what stresses them. This is important information so that you can help."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to go through the kindness tips together?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! Showing your teen kindness will keep your relationship strong and positive!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find some time today to go through the kindness tips together."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "You can always access the kindness tips again in the main menu. Type MENU to access the library."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to talk to your teen about the different sources of support in your community?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Great! This will be helpful whenever you and your teen need to find support in the community. Well done for doing this important work!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time to speak to your teen about what support is available in your community. Feeling supported is important when you are going through a difficult time."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to find time to do an activity that brings you joy?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Good for you! Doing things that make you happy is a great way to take care of yourself."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! If you have time today, try and do an activity that brings you joy"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to share the four steps of managing your teen's behaviour with a family member?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! Sharing these tips is great for everyone’s well-being."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try sharing the four steps with a family member today. It helps when everyone is working together."
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "Were you able to share the four steps to problem solving with @fields.child_nickname?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to share the four steps to problem solving with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Great! Teaching your teen how to solve problems will set them up for success in life!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time today to talk to your teen about the four steps to problem solving: know it, solve it, try it, and test it. This is an important life skill!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to write a list of fair consequences with your teen to use later?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Good for you! Involving your teen in this activity will make it more likely that they follow family rules and accept consequences when they don’t."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time with your teen to write a list of consequences, this will make it more likely that they follow family rules and accept consequences when they don’t."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to create a community safety map with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! Remember to revisit the safety map with your teen every now and then to see if things have changed."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time to create a safety map with your teen, this is a great tool to keep them safe."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to share teach self-defence tips with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Good for you! Self-defence is an important step to keep your teen safe."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find some time today to talk to your teen about the self-defence tips. Self-defence is an important step to keep your teen safe. You can type SAFE at any time to start the lesson over again with your teen."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to go through the sexual violence prevention tips with your teen?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Good for you. That was probably not easy. Well done for making the commitment to keep your teen safe from sexual harm."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try to go through the sexual violence prevention tips with your teen. This information can keep your teen safe. You can type PREVENT at any time to start the lesson over again with your teen."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to talk with your teen about possible crises that may happen and what to do?"
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "Well done! This will help you and @fields.child_nickname be prepared if a crisis ever happens. Good work!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! This will help you and your teen be prepared if a crisis ever happens. Good work!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time today. As a reminder, for this home activity you should: "
+msgstr ""
+
+#. type=text
+#. Strings like @fields.xxx and @results.yyy should not be translated. 
+msgctxt "text"
+msgid "1️⃣Find a calm time to talk with @fields.child_nickname about possible crises that may happen. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "2️⃣Discuss possible actions that you can take with your teen if they happen. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "3️⃣Revisit the Mapping Activity to identify other sources of support in the community. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "4️⃣Thank your teen for taking the time to chat about this."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "1️⃣Find a calm time to talk with your teen about possible crises that may happen. "
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to involve your partner in a decision you made yesterday?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done for making the effort to do this!!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and involve your partner in a decision you make today! It’s a great feeling to be valued!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to do childcare or housework with your partner?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Amazing! Sharing childcare or housework is a great way to support each other."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and share your childcare or housecare with your partner. It's a great way to support each other."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to invite your partner to discuss how you can share family responsibilities?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done for taking the time to discuss sharing responsibilities with your partner!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time to share responsibilities with your partner. Sharing responsibilities is an important part of a healthy relationship."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to practice taking a pause?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! Taking a pause is a great skill to use whenever you are stressed!"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Try and find time today to take a pause, the more you practise the more it will help."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Were you able to set aside time to talk to your partner about your feelings?"
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "Well done! Talking to your partner about how you are feeling can be difficult, but it is very important for a healthy relationship."
+msgstr ""
+
+#. type=text
+msgctxt "text"
+msgid "That’s okay! Talking about your feelings can seem scary, but being open and communicating is an important part of a healthy relationship."
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Yes"
+msgstr ""
+
+#. type=quick_replies
+#. This is a quick reply and its translation should be uniquely identified by the corresponding argument
+msgctxt "quick_replies"
+msgid "Not yet"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "@(parse_json(fields.goals_dictionary_0 &fields.goals_dictionary_1 &fields.goals_dictionary_2 &fields.goals_dictionary_3 &fields.goals_dictionary_4 &fields.goals_dictionary_5 &fields.goals_dictionary_6 &fields.goals_dictionary_7 )[contact.language][fields.curr_goal])"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "spend 5 minutes of 1-on-1 time with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "use the three steps of praise: see it, say it, and repeat it"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "talk to your teen about the six steps to coping with their emotions"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "stretch and move yesterday"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "spend 1-on-1 time with your teen, listen to their experiences, notice their feelings, and thank them for sharing"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "use 1-on-1 time to talk to your teen about their friends"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "complete the development assessment"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "invite your teen to take a break from their homework and do something active"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "support your teen with their school work by setting their goals"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "talk to your teen about finding the right study spot"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "share a story with your teen about a time you learned from a mistake"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "chat with your teen and identify a possible study buddy"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "set a routine with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "create a family rule with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "ask your teen what they do to stay safe online"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "talk to your teen about their habits to stay safe online"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "discuss your wants and needs with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "discuss your monthly expenses with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "make a monthly budget with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "create a saving plan with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "practise self-care yesterday"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "talk to your teen about what makes them stressed"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "go through the kindness tips together"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "talk to your teen about the different sources of support in your community"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "find time to do an activity that brings you joy"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "share the four steps of managing your teen's behaviour with a family member"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "share the four steps to problem solving with Your Teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "write a list of fair consequences with your teen to use later"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "create a community safety map with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "share teach self-defence tips with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "go through the sexual violence prevention tips with your teen"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "talk with your teen about possible crises that may happen and what to do"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "involve your partner in a decision you made yesterday"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "do childcare or housework with your partner"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "invite your partner to discuss how you can share family responsibilities"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "practice taking a pause"
+msgstr ""
+
+#. type=variables
+msgctxt "variables"
+msgid "set aside time to talk to your partner about your feelings"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "yes"
+msgstr ""
+
+#. type=arguments
+#. This is an argument and it may be used to identify a corresponding quick reply
+msgctxt "arguments"
+msgid "not yet"
+msgstr ""
