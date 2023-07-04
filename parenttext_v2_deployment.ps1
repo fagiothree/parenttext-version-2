@@ -14,13 +14,35 @@ $C_home_activity_checkin_ID = "1qjjM2XfkvGVk38GL2OASNkTrXyXuDMAuMUAKmgHYt_s"
 $T_C_menu_ID = "1lf80mIiuv_F6xAa9j5zGvXas50WxdSsLj6vrPccGNwY"
 $C_goal_checkin_ID = "1gympuD5KdlAdDJSuaVQiXjWSwJxoDcA9K-oBRyKmS7o"
 $C_dev_asess_tool_ID = "1OhhQF5yarUDmaSl2tlt7eIT7wJ8bGwNFzI3BOplJYsc"
-$C_malaysia_demo_ID = "1Fi1r42n5dg4yyPXWLWqS72QwpdKHVuvtvIBJT6fYOFQ"
+$safeguarding = "1PHgUhJnZdE0lK6C9teK-hwA6Tf-6Pgj1_OVdxoTgVOA"
+
+
+#$C_malaysia_demo_ID = "1Fi1r42n5dg4yyPXWLWqS72QwpdKHVuvtvIBJT6fYOFQ"
+
+#all flows
+python main.py create_flows $localised_sheets $T_C_onboarding_ID $T_content_ID $C_ltp_activities_ID $T_delivery_ID $C_modules_teen_ID $C_dictionaries_ID $C_home_activity_checkin_ID $T_C_menu_ID $C_goal_checkin_ID $C_dev_asess_tool_ID $safeguarding -o "..\parenttext-version-2\flows\parenttext_all_flows.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 2 $deployment_ 
+$source_file_name = "parenttext_all_flows"
+
+<#
+--tags 
+1 onboarding dev_assess ltp_activity home_activity_checkin module goal_checkin safeguarding menu delivery
+2 global  south_africa
+(3 demo)
+#>
 
 #home activity checkin
 python main.py create_flows $T_content_ID $C_home_activity_checkin_ID  -o "..\parenttext-version-2\flows\parenttext_homeactivitycheckin.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
 $source_file_name = "parenttext_homeactivitycheckin"
-$crowdin_file_name = "home_activity_checkin_teen"  
+$crowdin_file_name = "home_activity_checkin_teen" 
+ 
 <#
+
+
+#malaysia demo
+python main.py create_flows $T_content_ID $C_malaysia_demo_ID -o "..\parenttext-version-2\flows\parenttext_malaysia.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
+$source_file_name = "parenttext_malaysia"
+$crowdin_file_name = "malaysia_demo"
+
 #onboarding
 python main.py create_flows $T_C_onboarding_ID -o "..\parenttext-version-2\flows\parenttext_onboarding.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
 $source_file_name = "parenttext_onboarding"
@@ -53,9 +75,7 @@ python main.py create_flows $T_content_ID $C_ltp_activities_ID -o "..\parenttext
 $source_file_name = "parenttext_ltp_act_teen"
 $crowdin_file_name = "ltp_activities_teen
 "
-#malaysia demo
- python main.py create_flows $T_content_ID $C_malaysia_demo_ID -o "..\parenttext-version-2\flows\parenttext_malaysia.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
-$source_file_name = "parenttext_malaysia"
+
 
 #>
 
@@ -131,7 +151,17 @@ for ($i=0; $i -lt $languages.length; $i++) {
 ################################
 # step 4: text & translation edits for dictionaries
 ################################
-
+if ($SPREADSHEET_ID_transl){
+    
+  $JSON_FILENAME = "..\parenttext-version-2\parenttext-" + $deployment + "-repo\temp\" + $source_file_name +".json"
+  $source_file_name = $source_file_name + "_edited"
+  $output_path_t_edit = "..\parenttext-version-2\parenttext-" + $deployment + "-repo\temp\" + $source_file_name + ".json"
+  $transl_log = "..\parenttext-version-2\parenttext-" + $deployment + "-repo\temp\transl_warnings.log"
+  Set-Location "..\rapidpro_abtesting"
+  python main.py $JSON_FILENAME $output_path_t_edit $SPREADSHEET_ID_transl --format google_sheets --logfile $transl_log
+  Write-Output "Edited translations"
+  Set-Location "..\parenttext-version-2"
+}
 ################################
 # step 5: integrity check 
 ################################

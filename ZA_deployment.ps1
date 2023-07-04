@@ -3,6 +3,7 @@ $default_expiration_time = 120 #update to 24 hours?
 $expiration_times =  ".\parenttext-international-repo\edits\expiration_times.json"
 $deployment = "south-africa"
 $deployment_ = "south_africa"
+$localised_sheets = "13do_Qnc0VKC6Ao4N7YY3skUFKJMuwOixj2GyMVwnRLM"
 $SPREADSHEET_ID_loc = '1FfO-LLjodgEKaBVnn47QrvXaM68Cvui55FS1DKziA2c'
 $SPREADSHEET_ID_transl = '1fCLPfiqHy1nLLqh1qyvd3zrziw5Tz3uQ6_e7CyuEW-E'
 $CONFIG_ab_name = "ab_config_demo"
