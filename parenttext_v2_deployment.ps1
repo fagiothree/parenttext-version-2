@@ -19,9 +19,7 @@ $safeguarding = "1PHgUhJnZdE0lK6C9teK-hwA6Tf-6Pgj1_OVdxoTgVOA"
 
 #$C_malaysia_demo_ID = "1Fi1r42n5dg4yyPXWLWqS72QwpdKHVuvtvIBJT6fYOFQ"
 
-#all flows
-python main.py create_flows $localised_sheets $T_C_onboarding_ID $T_content_ID $C_ltp_activities_ID $T_delivery_ID $C_modules_teen_ID $C_dictionaries_ID $C_home_activity_checkin_ID $T_C_menu_ID $C_goal_checkin_ID $C_dev_asess_tool_ID $safeguarding -o "..\parenttext-version-2\flows\parenttext_all_flows.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 2 $deployment_ 
-$source_file_name = "parenttext_all_flows"
+
 
 <#
 --tags 
@@ -30,12 +28,28 @@ $source_file_name = "parenttext_all_flows"
 (3 demo)
 #>
 
+#$source_file_name = "parenttext_all_flows"
+$source_file_name = "parenttext_onboarding"
+$tag_flow_type =  @("onboarding")
+python main.py create_flows $localised_sheets $T_C_onboarding_ID $T_content_ID $C_ltp_activities_ID $T_delivery_ID $C_modules_teen_ID $C_dictionaries_ID $C_home_activity_checkin_ID $T_C_menu_ID $C_goal_checkin_ID $C_dev_asess_tool_ID $safeguarding -o ("..\parenttext-version-2\flows\" + $source_file_name + ".json") --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 1 $tag_flow_type 2 $deployment_ 
+$crowdin_file_name = "onboarding"
+
+
+<#
+
+#modules
+python main.py create_flows $T_content_ID $C_modules_teen_ID -o "..\parenttext-version-2\flows\parenttext_modules.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 1 "module" 2 $deployment_
+$source_file_name = "parenttext_modules"
+$crowdin_file_name = "modules_teen"
+
 #home activity checkin
 python main.py create_flows $T_content_ID $C_home_activity_checkin_ID  -o "..\parenttext-version-2\flows\parenttext_homeactivitycheckin.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
 $source_file_name = "parenttext_homeactivitycheckin"
 $crowdin_file_name = "home_activity_checkin_teen" 
- 
-<#
+
+#all flows
+python main.py create_flows $localised_sheets $T_C_onboarding_ID $T_content_ID $C_ltp_activities_ID $T_delivery_ID $C_modules_teen_ID $C_dictionaries_ID $C_home_activity_checkin_ID $T_C_menu_ID $C_goal_checkin_ID $C_dev_asess_tool_ID $safeguarding -o ("..\parenttext-version-2\flows\" + $source_file_name + ".json") --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 2 $deployment_ 
+$source_file_name = "parenttext_all_flows"
 
 
 #malaysia demo
@@ -48,33 +62,34 @@ python main.py create_flows $T_C_onboarding_ID -o "..\parenttext-version-2\flows
 $source_file_name = "parenttext_onboarding"
 
 #delivery with activity 
-python main.py create_flows $C_ltp_activities_ID $T_delivery_ID $C_modules_teen_ID $C_dictionaries_ID -o "..\parenttext-version-2\flows\parenttext_delivery_act.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
+python main.py create_flows $C_ltp_activities_ID $T_delivery_ID $C_modules_teen_ID $C_dictionaries_ID -o "..\parenttext-version-2\flows\parenttext_delivery_act.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 1 "delivery" 2 $deployment_
 $source_file_name = "parenttext_delivery_act"
 
 #modules
 python main.py create_flows $T_content_ID $C_modules_teen_ID -o "..\parenttext-version-2\flows\parenttext_modules.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
 $source_file_name = "parenttext_modules"
 $crowdin_file_name = "modules_teen"  
+
 #menu
 python main.py create_flows  $T_C_menu_ID 
 -o "..\parenttext-version-2\flows\parenttext_menu.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models  
 $source_file_name = "parenttext_menu"
 
 #goal checkin
-python main.py create_flows $T_content_ID $C_goal_checkin_ID -o "..\parenttext-version-2\flows\parenttext_goalcheckin.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
+python main.py create_flows $T_content_ID $C_goal_checkin_ID -o "..\parenttext-version-2\flows\parenttext_goalcheckin.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 1 "goal_checkin" 2 $deployment_ 
 $source_file_name = "parenttext_goalcheckin"
 $crowdin_file_name = "goal_checkins"
 
 #dev assess
-python main.py create_flows $T_content_ID $C_dev_asess_tool_ID -o "..\parenttext-version-2\flows\parenttext_dev_assess_tools.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
+python main.py create_flows $T_content_ID $C_dev_asess_tool_ID -o "..\parenttext-version-2\flows\parenttext_dev_assess_tools.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 1 "dev_assess" 2 $deployment_
 $source_file_name = "parenttext_dev_assess_tools"
 $crowdin_file_name = "dev_assess_tools"
 
 #ltp activities
-python main.py create_flows $T_content_ID $C_ltp_activities_ID -o "..\parenttext-version-2\parenttext_ltp_act_teen.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models
+python main.py create_flows $T_content_ID $C_ltp_activities_ID -o "..\parenttext-version-2\flows\parenttext_ltp_act_teen.json" --format=google_sheets --datamodels=tests.input.parenttext.parenttext_models --tags 1 "ltp_activity" 2 $deployment_
 $source_file_name = "parenttext_ltp_act_teen"
-$crowdin_file_name = "ltp_activities_teen
-"
+$crowdin_file_name = "ltp_activities_teen"
+
 
 
 #>
@@ -99,9 +114,9 @@ $JSON_FILENAME = "..\parenttext-version-2\flows\" + $flows
 $source_file_name = $source_file_name + "_ABtesting"
 #$output_path_2 = "parenttext-version-2\temp\" + $source_file_name + ".json"
 $output_path_2 = "parenttext-" + $deployment + "-repo\temp\" + $source_file_name + ".json"
-$AB_log = "..\parenttext-version-2\temp\AB_warnings.log"
+$AB_log = "..\parenttext-version-2\parenttext-" + $deployment + "-repo\temp\" +"AB_warnings.log"
 Set-Location "..\rapidpro_abtesting"
-python main.py $JSON_FILENAME ("..\parenttext-version-2\"  +$output_path_2) $SPREADSHEET_ID_ab --format google_sheets --logfile $AB_log 
+python main.py $JSON_FILENAME ("..\parenttext-version-2\"  +$output_path_2) $SPREADSHEET_ID_ab $SPREADSHEET_ID_loc --format google_sheets --logfile $AB_log 
 Write-Output "added A/B tests and localisation"
 
 
